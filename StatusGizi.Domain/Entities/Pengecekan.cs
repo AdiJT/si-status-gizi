@@ -11,7 +11,7 @@ public class Pengecekan
     public DateOnly TanggalPengecekan { get; set; }
     public KategoriGizi KategoriGizi { get; set; }
 
-    public TimeSpan Umur => TimeSpan.FromDays(TanggalPengecekan.DayNumber - Balita.TanggalLahir.DayNumber);
+    public TimeSpan Usia  => TimeSpan.FromDays(TanggalPengecekan.DayNumber - Balita.TanggalLahir.DayNumber);
 
     public Balita Balita { get; set; }
     public Posyandu Posyandu { get; set; }
