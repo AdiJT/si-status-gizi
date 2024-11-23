@@ -453,6 +453,54 @@ public static class ModelBuilderExtension
                 Id = 50,
                 Nama = "AMINUDIN",
                 DesaKelurahanId = 3
+            },
+            new
+            {
+                Id = 51,
+                Nama = "GERFAS LOLOMSAIT",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 52,
+                Nama = "",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 53,
+                Nama = "YOHANES KENJAM",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 54,
+                Nama = "MANUEL N",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 55,
+                Nama = "SONNY LY RAU",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 56,
+                Nama = "YOHANES FAHIK",
+                DesaKelurahanId = 3
+            },
+            new
+            {
+                Id = 57,
+                Nama = "STEFANUS NAIMUNI",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 58,
+                Nama = "MARIA A. SEKAB",
+                DesaKelurahanId = 3
             }
         );
         #endregion
@@ -738,6 +786,86 @@ public static class ModelBuilderExtension
                 BeratBadanWaktuLahir = 3.1d,
                 TinggiBadanWaktuLahir = 50d,
                 OrangTuaId = 50
+            },
+            new
+            {
+                NIK = "5306611907229365",
+                Nama = "GRACIANO LOLOMSAIT",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 7, 19),
+                BeratBadanWaktuLahir = 2.6d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 51
+            },
+            new
+            {
+                NIK = "5306612807224014",
+                Nama = "AGNESIA TIARA SIN MAU",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 7, 28),
+                BeratBadanWaktuLahir = 2.6d,
+                TinggiBadanWaktuLahir = 45d,
+                OrangTuaId = 52
+            },
+            new
+            {
+                NIK = "5303244310870001",
+                Nama = "ALANA FERNANDES",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 7, 18),
+                BeratBadanWaktuLahir = 3.1d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 53
+            },
+            new
+            {
+                NIK = "5304214606940004",
+                Nama = "ALFIAN E. N",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 7, 1),
+                BeratBadanWaktuLahir = 2.9d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 54
+            },
+            new
+            {
+                NIK = "5306611706223451",
+                Nama = "GIBRAN M. LY RATU",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 6, 17),
+                BeratBadanWaktuLahir = 3.5d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 55
+            },
+            new
+            {
+                NIK = "5306612404198011",
+                Nama = "ARYANTO ENYSIUS FAHIK",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2019, 4, 24),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 56
+            },
+            new
+            {
+                NIK = "5306616807201646",
+                Nama = "AGATHA L.F.NAIMUNI",
+                JenisKelamin = JenisKelamin.Perempuan,
+                TanggalLahir = new DateOnly(2020, 7, 28),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 57
+            },
+            new
+            {
+                NIK = "5306612404198011",
+                Nama = "GABRIEL RADINGA",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2021, 8, 17),
+                BeratBadanWaktuLahir = 2.5d,
+                TinggiBadanWaktuLahir = 49sd,
+                OrangTuaId = 58
             }
         );
         #endregion
@@ -1051,8 +1179,95 @@ public static class ModelBuilderExtension
                 LingkarLenganAtas = 14.5d,
                 KategoriGizi = KategoriGizi.GiziBaik,
                 PosyanduId = 15,
+            },
+            new
+            {
+                Id = 29,
+                BalitaNIK = "5306611907229365",
+                TanggalPengecekan = new DateOnly(2022, 8, 5),
+                BeratBadan = 4.7d,
+                TinggiBadan = 57d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 17,
+            },
+            new
+            {
+                Id = 30,
+                BalitaNIK = "5306612807224014",
+                TanggalPengecekan = new DateOnly(2022, 8, 19),
+                BeratBadan = 3.6d,
+                TinggiBadan = 51d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 9,
+            },
+            new
+            {
+                Id = 31,
+                BalitaNIK = "5303244310870001",
+                TanggalPengecekan = new DateOnly(2022, 8, 18),
+                BeratBadan = 4.1d,
+                TinggiBadan = 53.2d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 12,
+            },
+            new
+            {
+                Id = 32,
+                BalitaNIK = "5304214606940004",
+                TanggalPengecekan = new DateOnly(2022, 8, 18),
+                BeratBadan = 4.3d,
+                TinggiBadan = 53.4d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 12,
+            },
+            new
+            {
+                Id = 33,
+                BalitaNIK = "5306611706223451",
+                TanggalPengecekan = new DateOnly(2022, 8, 5),
+                BeratBadan = 5.1d,
+                TinggiBadan = 55.8d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 17,
+            },
+            new
+            {
+                Id = 34,
+                BalitaNIK = "5306612404198011",
+                TanggalPengecekan = new DateOnly(2022, 8, 11),
+                BeratBadan = 9d,
+                TinggiBadan = 88d,
+                LingkarLenganAtas = 14d,
+                KategoriGizi = KategoriGizi.GiziBuruk,
+                PosyanduId = 16,
+            },
+            new
+            {
+                Id = 35,
+                BalitaNIK = "5306616807201646",
+                TanggalPengecekan = new DateOnly(2022, 8, 12),
+                BeratBadan = 7.3d,
+                TinggiBadan = 77d,
+                LingkarLenganAtas = 13d,
+                KategoriGizi = KategoriGizi.GiziBuruk,
+                PosyanduId = 19,
+            },
+            new
+            {
+                Id = 36,
+                BalitaNIK = "5306611708215871",
+                TanggalPengecekan = new DateOnly(2022, 8, 12),
+                BeratBadan = 6.2d,
+                TinggiBadan = 71.2d,
+                LingkarLenganAtas = 13d,
+                KategoriGizi = KategoriGizi.GiziBuruk,
+                PosyanduId = 15,
             }
-
         );
         #endregion
 
