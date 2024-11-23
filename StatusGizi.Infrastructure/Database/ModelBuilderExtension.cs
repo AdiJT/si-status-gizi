@@ -859,12 +859,12 @@ public static class ModelBuilderExtension
             },
             new
             {
-                NIK = "5306612404198011",
+                NIK = "5306611708215871",
                 Nama = "GABRIEL RADINGA",
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TanggalLahir = new DateOnly(2021, 8, 17),
                 BeratBadanWaktuLahir = 2.5d,
-                TinggiBadanWaktuLahir = 49sd,
+                TinggiBadanWaktuLahir = 49d,
                 OrangTuaId = 58
             }
         );
