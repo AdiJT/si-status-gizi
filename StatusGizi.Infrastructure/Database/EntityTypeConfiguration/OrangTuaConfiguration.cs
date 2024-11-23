@@ -8,7 +8,7 @@ internal class OrangTuaConfiguration : IEntityTypeConfiguration<OrangTua>
 {
     public void Configure(EntityTypeBuilder<OrangTua> builder)
     {
-        builder.HasKey(o => o.NIK);
+        builder.HasKey(o => o.Id);
 
         builder.HasMany(o => o.DaftarBalita).WithOne(b => b.OrangTua);
         builder.HasOne(o => o.DesaKelurahan).WithMany(d => d.DaftarOrangTua);

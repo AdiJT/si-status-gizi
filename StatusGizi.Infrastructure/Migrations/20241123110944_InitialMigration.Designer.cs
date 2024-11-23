@@ -12,7 +12,7 @@ using StatusGizi.Infrastructure.Database;
 namespace StatusGizi.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241123100136_InitialMigration")]
+    [Migration("20241123110944_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -27,11 +27,8 @@ namespace StatusGizi.Infrastructure.Migrations
 
             modelBuilder.Entity("StatusGizi.Domain.Entities.Balita", b =>
                 {
-                    b.Property<int>("NIK")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("NIK"));
+                    b.Property<string>("NIK")
+                        .HasColumnType("text");
 
                     b.Property<double>("BeratBadanWaktuLahir")
                         .HasColumnType("double precision");
@@ -43,7 +40,7 @@ namespace StatusGizi.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("OrangTuaNIK")
+                    b.Property<int>("OrangTuaId")
                         .HasColumnType("integer");
 
                     b.Property<DateOnly>("TanggalLahir")
@@ -54,7 +51,7 @@ namespace StatusGizi.Infrastructure.Migrations
 
                     b.HasKey("NIK");
 
-                    b.HasIndex("OrangTuaNIK");
+                    b.HasIndex("OrangTuaId");
 
                     b.ToTable("TblBalita");
                 });
@@ -74,15 +71,37 @@ namespace StatusGizi.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TblDesaKelurahan");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nama = "Beirafu"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nama = "Berdao"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Nama = "Tulamalae"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Nama = "Umanen"
+                        });
                 });
 
             modelBuilder.Entity("StatusGizi.Domain.Entities.OrangTua", b =>
                 {
-                    b.Property<int>("NIK")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("NIK"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<int>("DesaKelurahanId")
                         .HasColumnType("integer");
@@ -91,11 +110,25 @@ namespace StatusGizi.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("NIK");
+                    b.HasKey("Id");
 
                     b.HasIndex("DesaKelurahanId");
 
                     b.ToTable("TblOrangTua");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DesaKelurahanId = 1,
+                            Nama = "VALENTINUS C.KIIK "
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DesaKelurahanId = 1,
+                            Nama = "VALENTINUS C.KIIK "
+                        });
                 });
 
             modelBuilder.Entity("StatusGizi.Domain.Entities.Pengecekan", b =>
@@ -106,8 +139,9 @@ namespace StatusGizi.Infrastructure.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BalitaNIK")
-                        .HasColumnType("integer");
+                    b.Property<string>("BalitaNIK")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<double>("BeratBadan")
                         .HasColumnType("double precision");
@@ -156,6 +190,122 @@ namespace StatusGizi.Infrastructure.Migrations
                     b.HasIndex("DesaKelurahanId");
 
                     b.ToTable("TblPosyandu");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DesaKelurahanId = 1,
+                            Nama = "Asparagus"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DesaKelurahanId = 4,
+                            Nama = "BTN"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            DesaKelurahanId = 4,
+                            Nama = "Hali Nurak"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            DesaKelurahanId = 2,
+                            Nama = "Kampung Jati"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            DesaKelurahanId = 1,
+                            Nama = "Ketapang"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            DesaKelurahanId = 2,
+                            Nama = "Madrasah"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            DesaKelurahanId = 1,
+                            Nama = "Melati"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            DesaKelurahanId = 3,
+                            Nama = "Nekafehan"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            DesaKelurahanId = 4,
+                            Nama = "Onoboi"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            DesaKelurahanId = 1,
+                            Nama = "Sedap Malam"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            DesaKelurahanId = 4,
+                            Nama = "Sesekoe A"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            DesaKelurahanId = 4,
+                            Nama = "Sesekoe B"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            DesaKelurahanId = 2,
+                            Nama = "Tatakiren"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            DesaKelurahanId = 3,
+                            Nama = "Toro"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            DesaKelurahanId = 3,
+                            Nama = "Tulamalae 1"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            DesaKelurahanId = 3,
+                            Nama = "Tulamalae 2"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            DesaKelurahanId = 4,
+                            Nama = "Wekatimun 1"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            DesaKelurahanId = 4,
+                            Nama = "Wekatimun 2"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            DesaKelurahanId = 4,
+                            Nama = "Wekatimun 3"
+                        });
                 });
 
             modelBuilder.Entity("StatusGizi.Domain.Entities.StandarBeratMenurutBBTB", b =>
@@ -205,7 +355,7 @@ namespace StatusGizi.Infrastructure.Migrations
                 {
                     b.HasOne("StatusGizi.Domain.Entities.OrangTua", "OrangTua")
                         .WithMany("DaftarBalita")
-                        .HasForeignKey("OrangTuaNIK")
+                        .HasForeignKey("OrangTuaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

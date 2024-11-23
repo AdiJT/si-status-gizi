@@ -4,7 +4,7 @@ namespace StatusGizi.Domain.Entities;
 
 public class Balita
 {
-    public int NIK { get; set; }
+    public string NIK { get; set; }
     public string Nama { get; set; }
     public DateOnly TanggalLahir { get; set; }
     public JenisKelamin JenisKelamin { get; set; }

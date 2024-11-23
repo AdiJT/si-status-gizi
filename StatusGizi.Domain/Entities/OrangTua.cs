@@ -2,7 +2,7 @@
 
 public class OrangTua
 {
-    public int NIK { get; set; }
+    public int Id { get; set; }
     public string Nama { get; set; }
 
     public DesaKelurahan DesaKelurahan { get; set; }

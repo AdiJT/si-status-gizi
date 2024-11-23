@@ -4,6 +4,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace StatusGizi.Infrastructure.Migrations
 {
     /// <inheritdoc />
@@ -51,14 +53,14 @@ namespace StatusGizi.Infrastructure.Migrations
                 name: "TblOrangTua",
                 columns: table => new
                 {
-                    NIK = table.Column<int>(type: "integer", nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Nama = table.Column<string>(type: "text", nullable: false),
                     DesaKelurahanId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TblOrangTua", x => x.NIK);
+                    table.PrimaryKey("PK_TblOrangTua", x => x.Id);
                     table.ForeignKey(
                         name: "FK_TblOrangTua_TblDesaKelurahan_DesaKelurahanId",
                         column: x => x.DesaKelurahanId,
@@ -91,23 +93,22 @@ namespace StatusGizi.Infrastructure.Migrations
                 name: "TblBalita",
                 columns: table => new
                 {
-                    NIK = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    NIK = table.Column<string>(type: "text", nullable: false),
                     Nama = table.Column<string>(type: "text", nullable: false),
                     TanggalLahir = table.Column<DateOnly>(type: "date", nullable: false),
                     JenisKelamin = table.Column<int>(type: "integer", nullable: false),
                     BeratBadanWaktuLahir = table.Column<double>(type: "double precision", nullable: false),
                     TinggiBadanWaktuLahir = table.Column<double>(type: "double precision", nullable: false),
-                    OrangTuaNIK = table.Column<int>(type: "integer", nullable: false)
+                    OrangTuaId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_TblBalita", x => x.NIK);
                     table.ForeignKey(
-                        name: "FK_TblBalita_TblOrangTua_OrangTuaNIK",
-                        column: x => x.OrangTuaNIK,
+                        name: "FK_TblBalita_TblOrangTua_OrangTuaId",
+                        column: x => x.OrangTuaId,
                         principalTable: "TblOrangTua",
-                        principalColumn: "NIK",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -122,7 +123,7 @@ namespace StatusGizi.Infrastructure.Migrations
                     TinggiBadan = table.Column<double>(type: "double precision", nullable: false),
                     TanggalPengecekan = table.Column<DateOnly>(type: "date", nullable: false),
                     KategoriGizi = table.Column<int>(type: "integer", nullable: false),
-                    BalitaNIK = table.Column<int>(type: "integer", nullable: false),
+                    BalitaNIK = table.Column<string>(type: "text", nullable: false),
                     PosyanduId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
@@ -142,10 +143,56 @@ namespace StatusGizi.Infrastructure.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.InsertData(
+                table: "TblDesaKelurahan",
+                columns: new[] { "Id", "Nama" },
+                values: new object[,]
+                {
+                    { 1, "Beirafu" },
+                    { 2, "Berdao" },
+                    { 3, "Tulamalae" },
+                    { 4, "Umanen" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "TblOrangTua",
+                columns: new[] { "Id", "DesaKelurahanId", "Nama" },
+                values: new object[,]
+                {
+                    { 1, 1, "VALENTINUS C.KIIK " },
+                    { 2, 1, "VALENTINUS C.KIIK " }
+                });
+
+            migrationBuilder.InsertData(
+                table: "TblPosyandu",
+                columns: new[] { "Id", "DesaKelurahanId", "Nama" },
+                values: new object[,]
+                {
+                    { 1, 1, "Asparagus" },
+                    { 2, 4, "BTN" },
+                    { 3, 4, "Hali Nurak" },
+                    { 4, 2, "Kampung Jati" },
+                    { 5, 1, "Ketapang" },
+                    { 6, 2, "Madrasah" },
+                    { 7, 1, "Melati" },
+                    { 8, 3, "Nekafehan" },
+                    { 9, 4, "Onoboi" },
+                    { 10, 1, "Sedap Malam" },
+                    { 11, 4, "Sesekoe A" },
+                    { 12, 4, "Sesekoe B" },
+                    { 13, 2, "Tatakiren" },
+                    { 14, 3, "Toro" },
+                    { 15, 3, "Tulamalae 1" },
+                    { 16, 3, "Tulamalae 2" },
+                    { 17, 4, "Wekatimun 1" },
+                    { 18, 4, "Wekatimun 2" },
+                    { 19, 4, "Wekatimun 3" }
+                });
+
             migrationBuilder.CreateIndex(
-                name: "IX_TblBalita_OrangTuaNIK",
+                name: "IX_TblBalita_OrangTuaId",
                 table: "TblBalita",
-                column: "OrangTuaNIK");
+                column: "OrangTuaId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TblOrangTua_DesaKelurahanId",
