@@ -236,7 +236,138 @@ public static class ModelBuilderExtension
         #endregion
 
         #region Balita
-
+        modelBuilder.Entity<Balita>().HasData(
+            new
+            {
+                NIK = "5306611607227754",
+                Nama = "LEANDREY C.KIIK",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 07, 16),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 1
+            }, 
+            new
+            {
+                NIK = "5306610207221488",
+                Nama = "LEANDER CHESTER ANDRADA",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 07, 2),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 2
+            },
+            new
+            {
+                NIK = "5306612306228330",
+                Nama = "RAFLY JALEXA",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 06, 23),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 3
+            },
+            new
+            {
+                NIK = "5306612109211986",
+                Nama = "SAMUEL A. LEKY",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 09, 21),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 3
+            },
+            new
+            {
+                NIK = "5306613009216892",
+                Nama = "DERIL TAMPANI",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 09, 30),
+                BeratBadanWaktuLahir = 3.1d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 3
+            },
+            new
+            {
+                NIK = "5306611509215054",
+                Nama = "GAMALIEL DAVIN LAHERA",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 09, 15),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 3
+            },
+            new
+            {
+                NIK = "5306611608216534",
+                Nama = "AGUSTINUS I. NITBANI",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 08, 16),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 3
+            },
+            new
+            {
+                NIK = "5306611708211553",
+                Nama = "DIRGARIUS A.TANEO",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 08, 17),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 3
+            },
+            new
+            {
+                NIK = "5306611506221514",
+                Nama = "KHAMALIK SAVERIO",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 06, 15),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 3
+            },
+            new
+            {
+                NIK = "5306612705226233",
+                Nama = "MUH. SYAHKIRULLAH ALGHANI",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 05, 27),
+                BeratBadanWaktuLahir = 3.2d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 3
+            },
+            new
+            {
+                NIK = "5306612105226289",
+                Nama = "FARHAN ZAKY",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 05, 21),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 3
+            },
+            new
+            {
+                NIK = "5306610606224235",
+                Nama = "SEAN",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 06, 06),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 46d,
+                OrangTuaId = 3
+            },
+            new
+            {
+                NIK = "5306611505225327",
+                Nama = "MEIDA AMELIA Y FAOT",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 06, 06),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 3
+            }
+        );
         #endregion
 
         #region Pengecekan
