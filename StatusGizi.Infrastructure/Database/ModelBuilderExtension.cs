@@ -658,6 +658,56 @@ public static class ModelBuilderExtension
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 50d,
                 OrangTuaId = 44
+            },
+            new
+            {
+                NIK = "5306611607222447",
+                Nama = "ALEXSIUS EL KAPITAN",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 07, 16),
+                BeratBadanWaktuLahir = 2.6d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 46
+            },
+            new
+            {
+                NIK = "5306611106228326",
+                Nama = "VASCO PEREIRA REIS",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 06, 11),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 47
+            },
+            new
+            {
+                NIK = "5306610807221629",
+                Nama = "DANTE A. BESSIE",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 07, 8),
+                BeratBadanWaktuLahir = 3.2d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 48
+            },
+            new
+            {
+                NIK = "5306611410216937",
+                Nama = "KORNELIS D. NAHAK",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 10, 14),
+                BeratBadanWaktuLahir = 2.8d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 49
+            },
+            new
+            {
+                NIK = "5306612709216413",
+                Nama = "ILHAM BAHMID",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 9, 27),
+                BeratBadanWaktuLahir = 3.1d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 50
             }
         );
         #endregion
