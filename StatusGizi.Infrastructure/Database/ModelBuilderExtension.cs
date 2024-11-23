@@ -423,9 +423,7 @@ public static class ModelBuilderExtension
                 Id = 45,
                 Nama = "SAVER TAEK",
                 DesaKelurahanId = 2
-            },
-
-
+            }
         );
         #endregion
 
@@ -660,8 +658,7 @@ public static class ModelBuilderExtension
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 50d,
                 OrangTuaId = 44
-            },
-
+            }
         );
         #endregion
 
