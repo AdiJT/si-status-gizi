@@ -231,6 +231,138 @@ public static class ModelBuilderExtension
                 Id = 13,
                 Nama = "MELKI SEDIK FAOT",
                 DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 14,
+                Nama = "YUVEN SERAN",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 15,
+                Nama = "PETRUS KAPITAN",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 16,
+                Nama = "MISDA",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 17,
+                Nama = "ADRIANUS IMPI",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 18,
+                Nama = "GAUDENSIA N. TAEK",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 19,
+                Nama = "NOBERTUS KLAU",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 20,
+                Nama = "MARTINUS TEFLOPO",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 21,
+                Nama = "MUSTOFA",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 22,
+                Nama = "R. PRASONG",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 23,
+                Nama = "HENDRIKUS LAISNESI",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 24,
+                Nama = "ARI PANO",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 25,
+                Nama = "RASID HANNS",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 26,
+                Nama = "JUFRIANUS SERAN",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 27,
+                Nama = "ADRIANUS LOROK",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 28,
+                Nama = "MELFIANUS WALENG",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 29,
+                Nama = "YEREMIA G.KABOSU",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 30,
+                Nama = "JERIKSON E FAOT",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 31,
+                Nama = "APOLINARIS AFEANPAH",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 32,
+                Nama = "LINUS UN ARYANDI",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 33,
+                Nama = "FLAVIANUS A. D. UN",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 34,
+                Nama = "AGUSTINUS TALAN",
+                DesaKelurahanId = 1
+            },
+            new
+            {
+                Id = 35,
+                Nama = "AGUSTINUS TALAN",
+                DesaKelurahanId = 1
             }
         );
         #endregion
