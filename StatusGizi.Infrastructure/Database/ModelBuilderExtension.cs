@@ -423,7 +423,38 @@ public static class ModelBuilderExtension
                 Id = 45,
                 Nama = "SAVER TAEK",
                 DesaKelurahanId = 2
-            }
+            },
+            new
+            {
+                Id = 46,
+                Nama = "AGAPITUS UN",
+                DesaKelurahanId = 3
+            },
+            new
+            {
+                Id = 47,
+                Nama = "PEDRO DOS REIS",
+                DesaKelurahanId = 3
+            },
+            new
+            {
+                Id = 48,
+                Nama = "ALFRED BESSIE",
+                DesaKelurahanId = 3
+            },
+            new
+            {
+                Id = 49,
+                Nama = "JHON NAHAK",
+                DesaKelurahanId = 3
+            },
+            new
+            {
+                Id = 50,
+                Nama = "AMINUDIN",
+                DesaKelurahanId = 3
+            },
+
         );
         #endregion
 
@@ -966,7 +997,63 @@ public static class ModelBuilderExtension
                 LingkarLenganAtas = 14.5d,
                 KategoriGizi = KategoriGizi.GiziBaik,
                 PosyanduId = 4,
+            },
+            new
+            {
+                Id = 24,
+                BalitaNIK = "5306611607222447",
+                TanggalPengecekan = new DateOnly(2022, 8, 11),
+                BeratBadan = 4.2d,
+                TinggiBadan = 53.5d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId =16 ,
+            },
+            new
+            {
+                Id = 25,
+                BalitaNIK = "5306611106228326",
+                TanggalPengecekan = new DateOnly(2022, 8, 8),
+                BeratBadan = 6.3d,
+                TinggiBadan = 63d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 14,
+            },
+            new
+            {
+                Id = 26,
+                BalitaNIK = "5306610807221629",
+                TanggalPengecekan = new DateOnly(2022, 8, 11),
+                BeratBadan = 4.8d,
+                TinggiBadan = 58.5d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 16,
+            },
+            new
+            {
+                Id = 26,
+                BalitaNIK = "5306611410216937",
+                TanggalPengecekan = new DateOnly(2022, 8, 16),
+                BeratBadan = 7.5d,
+                TinggiBadan = 71.8d,
+                LingkarLenganAtas = 12.5d,
+                KategoriGizi = KategoriGizi.GiziKurang,
+                PosyanduId = 8,
+            },
+            new
+            {
+                Id = 27,
+                BalitaNIK = "5306612709216413",
+                TanggalPengecekan = new DateOnly(2022, 8, 12),
+                BeratBadan = 9.4d,
+                TinggiBadan = 72.3d,
+                LingkarLenganAtas = 14.5d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 15,
             }
+
         );
         #endregion
 
