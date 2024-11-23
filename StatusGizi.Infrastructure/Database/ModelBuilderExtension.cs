@@ -361,9 +361,71 @@ public static class ModelBuilderExtension
             new
             {
                 Id = 35,
-                Nama = "AGUSTINUS TALAN",
-                DesaKelurahanId = 1
-            }
+                Nama = "JAMARIA NAMANG",
+                DesaKelurahanId = 2
+            },
+            new
+            {
+                Id = 36,
+                Nama = "HARI WADU",
+                DesaKelurahanId = 2
+            },
+            new
+            {
+                Id = 37,
+                Nama = "PAULUS PRAWIRA",
+                DesaKelurahanId = 2
+            },
+            new
+            {
+                Id = 38,
+                Nama = "IRFAN AMALO",
+                DesaKelurahanId = 2
+            },
+            new
+            {
+                Id = 39,
+                Nama = "KARLUS BEREMEO",
+                DesaKelurahanId = 2
+            },
+            new
+            {
+                Id = 40,
+                Nama = "JISMA",
+                DesaKelurahanId = 2
+            },
+            new
+            {
+                Id = 41,
+                Nama = "ERLIN KAMLASI",
+                DesaKelurahanId = 2
+            },
+            new
+            {
+                Id = 42,
+                Nama = "DIONISIUS NAHAK",
+                DesaKelurahanId = 2
+            },
+            new
+            {
+                Id = 43,
+                Nama = "SAHRUDIN",
+                DesaKelurahanId = 2
+            },
+            new
+            {
+                Id = 44,
+                Nama = "RANDI MANEK",
+                DesaKelurahanId = 2
+            },
+            new
+            {
+                Id = 45,
+                Nama = "SAVER TAEK",
+                DesaKelurahanId = 2
+            },
+
+
         );
         #endregion
 
