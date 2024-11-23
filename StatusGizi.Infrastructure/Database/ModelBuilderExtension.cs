@@ -440,7 +440,7 @@ public static class ModelBuilderExtension
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 49d,
                 OrangTuaId = 1
-            }, 
+            },
             new
             {
                 NIK = "5306610207221488",
@@ -560,7 +560,108 @@ public static class ModelBuilderExtension
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 48d,
                 OrangTuaId = 13
-            }
+            },
+            new
+            {
+                NIK = "5306611807227328",
+                Nama = "ADRIELO HABU PAH",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 07, 18),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 35
+            },
+            new
+            {
+                NIK = "5306610310212700",
+                Nama = "GIRLAND WADU",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 10, 03),
+                BeratBadanWaktuLahir = 2.9d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 36
+            },
+            new
+            {
+                NIK = "5306612608217549",
+                Nama = "AGUSTINUS H. PRAWIRA",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 08, 26),
+                BeratBadanWaktuLahir = 3.4d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 37
+            },
+            new
+            {
+                NIK = "5306611808214604",
+                Nama = "ABIMAE AMALO",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 08, 18),
+                BeratBadanWaktuLahir = 2.8d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 38
+            },
+            new
+            {
+                NIK = "5306611008217236",
+                Nama = "AGUS R. BEREMEO",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 08, 10),
+                BeratBadanWaktuLahir = 2.9d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 39
+            },
+            new
+            {
+                NIK = "5306612804228187",
+                Nama = "KRISTIAN PARERA",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 04, 28),
+                BeratBadanWaktuLahir = 3.1d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 40
+            },
+            new
+            {
+                NIK = "5306612404221654",
+                Nama = "ALEXANDRIO Z. KEFI",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 04, 24),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 41
+            },
+            new
+            {
+                NIK = "5306610805228603",
+                Nama = "ARSENIUS NAHAK",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 05, 08),
+                BeratBadanWaktuLahir = 2.6d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 42
+            },
+            new
+            {
+                NIK = "5306610305228386",
+                Nama = "MUHAMAD ARHAM SYAKAL",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 05, 03),
+                BeratBadanWaktuLahir = 2.8d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 43
+            },
+            new
+            {
+                NIK = "5306611503229344",
+                Nama = "CANELO ALVARES MANEK",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 03, 15),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 44
+            },
+
         );
         #endregion
 
