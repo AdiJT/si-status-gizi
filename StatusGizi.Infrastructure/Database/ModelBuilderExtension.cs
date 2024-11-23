@@ -407,7 +407,7 @@ public static class ModelBuilderExtension
                 TanggalLahir = new DateOnly(2022, 09, 21),
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 50d,
-                OrangTuaId = 3
+                OrangTuaId = 4
             },
             new
             {
@@ -417,7 +417,7 @@ public static class ModelBuilderExtension
                 TanggalLahir = new DateOnly(2022, 09, 30),
                 BeratBadanWaktuLahir = 3.1d,
                 TinggiBadanWaktuLahir = 50d,
-                OrangTuaId = 3
+                OrangTuaId = 5
             },
             new
             {
@@ -427,7 +427,7 @@ public static class ModelBuilderExtension
                 TanggalLahir = new DateOnly(2022, 09, 15),
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 48d,
-                OrangTuaId = 3
+                OrangTuaId = 6
             },
             new
             {
@@ -437,7 +437,7 @@ public static class ModelBuilderExtension
                 TanggalLahir = new DateOnly(2022, 08, 16),
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 50d,
-                OrangTuaId = 3
+                OrangTuaId = 7
             },
             new
             {
@@ -447,7 +447,7 @@ public static class ModelBuilderExtension
                 TanggalLahir = new DateOnly(2022, 08, 17),
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 48d,
-                OrangTuaId = 3
+                OrangTuaId = 8
             },
             new
             {
@@ -457,7 +457,7 @@ public static class ModelBuilderExtension
                 TanggalLahir = new DateOnly(2022, 06, 15),
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 49d,
-                OrangTuaId = 3
+                OrangTuaId = 9
             },
             new
             {
@@ -467,7 +467,7 @@ public static class ModelBuilderExtension
                 TanggalLahir = new DateOnly(2022, 05, 27),
                 BeratBadanWaktuLahir = 3.2d,
                 TinggiBadanWaktuLahir = 50d,
-                OrangTuaId = 3
+                OrangTuaId = 10
             },
             new
             {
@@ -477,7 +477,7 @@ public static class ModelBuilderExtension
                 TanggalLahir = new DateOnly(2022, 05, 21),
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 50d,
-                OrangTuaId = 3
+                OrangTuaId = 11
             },
             new
             {
@@ -487,7 +487,7 @@ public static class ModelBuilderExtension
                 TanggalLahir = new DateOnly(2022, 06, 06),
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 46d,
-                OrangTuaId = 3
+                OrangTuaId = 12
             },
             new
             {
@@ -497,13 +497,157 @@ public static class ModelBuilderExtension
                 TanggalLahir = new DateOnly(2022, 06, 06),
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 48d,
-                OrangTuaId = 3
+                OrangTuaId = 13
             }
         );
         #endregion
 
         #region Pengecekan
-
+        modelBuilder.Entity<Pengecekan>().HasData(
+            new
+            {
+                Id = 1,
+                TanggalPengecekan = new DateOnly(2022, 8, 15),
+                BeratBadan = 5.3d,
+                TinggiBadan = 52.9d,
+                LingkarLenganAtas = 13d,
+                KategoriGizi = KategoriGizi.Obesitas,
+                BalitaNIK = "5306611607227754",
+                PosyanduId = 1,
+            },
+            new
+            {
+                Id = 2,
+                TanggalPengecekan = new DateOnly(2022, 8, 15),
+                BeratBadan = 4.1d,
+                TinggiBadan = 52.7d,
+                LingkarLenganAtas = 11.8d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                BalitaNIK = "5306610207221488",
+                PosyanduId = 1,
+            },
+            new
+            {
+                Id = 3,
+                TanggalPengecekan = new DateOnly(2022, 8, 15),
+                BeratBadan = 5.1d,
+                TinggiBadan = 57.2d,
+                LingkarLenganAtas = 11.5d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                BalitaNIK = "5306612306228330",
+                PosyanduId = 1,
+            },
+            new
+            {
+                Id = 4,
+                BalitaNIK = "5306612109211986",
+                TanggalPengecekan = new DateOnly(2022, 8, 8),
+                BeratBadan = 8.4d,
+                TinggiBadan = 71.4d,
+                LingkarLenganAtas = 15d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 10,
+            },
+            new
+            {
+                Id = 5,
+                BalitaNIK = "5306613009216892",
+                TanggalPengecekan = new DateOnly(2022, 8, 8),
+                BeratBadan = 8.45d,
+                TinggiBadan = 72.9d,
+                LingkarLenganAtas = 13.5d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 10,
+            },
+            new
+            {
+                Id = 6,
+                BalitaNIK = "5306611509215054",
+                TanggalPengecekan = new DateOnly(2022, 8, 18),
+                BeratBadan = 8.4d,
+                TinggiBadan = 72.1d,
+                LingkarLenganAtas = 14d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 7,
+            },
+            new
+            {
+                Id = 7,
+                BalitaNIK = "5306611608216534",
+                TanggalPengecekan = new DateOnly(2022, 8, 8),
+                BeratBadan = 9.6d,
+                TinggiBadan = 76.2d,
+                LingkarLenganAtas = 14.2d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 10,
+            },
+            new
+            {
+                Id = 8,
+                BalitaNIK = "5306611708211553",
+                TanggalPengecekan = new DateOnly(2022, 8, 15),
+                BeratBadan = 8d,
+                TinggiBadan = 72d,
+                LingkarLenganAtas = 12.4d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 1,
+            },
+            new
+            {
+                Id = 9,
+                BalitaNIK = "5306611506221514",
+                TanggalPengecekan = new DateOnly(2022, 8, 15),
+                BeratBadan = 5.2d,
+                TinggiBadan = 55.9d,
+                LingkarLenganAtas = 15d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 1,
+            },
+            new
+            {
+                Id = 10,
+                BalitaNIK = "5306612705226233",
+                TanggalPengecekan = new DateOnly(2022, 8, 8),
+                BeratBadan = 4.85d,
+                TinggiBadan = 57.3d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 10,
+            },
+            new
+            {
+                Id = 11,
+                BalitaNIK = "5306612105226289",
+                TanggalPengecekan = new DateOnly(2022, 8, 8),
+                BeratBadan = 5.2d,
+                TinggiBadan = 59.2d,
+                LingkarLenganAtas = 14d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 10,
+            },
+            new
+            {
+                Id = 12,
+                BalitaNIK = "5306610606224235",
+                TanggalPengecekan = new DateOnly(2022, 8, 12),
+                BeratBadan = 6.3d,
+                TinggiBadan = 61.3d,
+                LingkarLenganAtas = 14d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 5,
+            },
+            new
+            {
+                Id = 13,
+                BalitaNIK = "5306611505225327",
+                TanggalPengecekan = new DateOnly(2022, 8, 15),
+                BeratBadan = 5.4d,
+                TinggiBadan = 57.7d,
+                LingkarLenganAtas = 13.2d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 1,
+            }
+        );
         #endregion
 
         return modelBuilder;
