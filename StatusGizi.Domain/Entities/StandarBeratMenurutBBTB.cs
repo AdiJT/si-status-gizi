@@ -4,6 +4,8 @@ namespace StatusGizi.Domain.Entities;
 
 public class StandarBeratMenurutBBTB
 {
+    public int Id { get; set; }
+
     public KategoriUmur KategoriUmur { get; set; }
     public JenisKelamin JenisKelamin { get; set; }
 

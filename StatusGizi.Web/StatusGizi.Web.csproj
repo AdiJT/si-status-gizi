@@ -19,4 +19,9 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StatusGizi.Domain\StatusGizi.Domain.csproj" />
+    <ProjectReference Include="..\StatusGizi.Infrastructure\StatusGizi.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

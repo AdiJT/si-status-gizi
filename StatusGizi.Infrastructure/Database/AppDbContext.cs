@@ -13,7 +13,6 @@ public class AppDbContext : DbContext
     {
         modelBuilder.ApplyConfigurationsFromAssembly(AssemblyReference.Assembly);
 
-
         base.OnModelCreating(modelBuilder);
     }
 
