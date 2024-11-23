@@ -453,8 +453,7 @@ public static class ModelBuilderExtension
                 Id = 50,
                 Nama = "AMINUDIN",
                 DesaKelurahanId = 3
-            },
-
+            }
         );
         #endregion
 
@@ -1033,7 +1032,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                Id = 26,
+                Id = 27,
                 BalitaNIK = "5306611410216937",
                 TanggalPengecekan = new DateOnly(2022, 8, 16),
                 BeratBadan = 7.5d,
@@ -1044,7 +1043,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                Id = 27,
+                Id = 28,
                 BalitaNIK = "5306612709216413",
                 TanggalPengecekan = new DateOnly(2022, 8, 12),
                 BeratBadan = 9.4d,
