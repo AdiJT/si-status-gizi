@@ -708,6 +708,116 @@ public static class ModelBuilderExtension
                 LingkarLenganAtas = 13.2d,
                 KategoriGizi = KategoriGizi.GiziBaik,
                 PosyanduId = 1,
+            },
+            new
+            {
+                Id = 14,
+                BalitaNIK = "5306611807227328",
+                TanggalPengecekan = new DateOnly(2022, 8, 9),
+                BeratBadan = 3.8d,
+                TinggiBadan = 52.9d,
+                LingkarLenganAtas = 11.7d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 6,
+            },
+            new
+            {
+                Id = 15,
+                BalitaNIK = "5306610310212700",
+                TanggalPengecekan = new DateOnly(2022, 8, 9),
+                BeratBadan = 9.1d,
+                TinggiBadan = 71.9d,
+                LingkarLenganAtas = 15.5d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 6,
+            },
+            new
+            {
+                Id = 16,
+                BalitaNIK = "5306612608217549",
+                TanggalPengecekan = new DateOnly(2022, 8, 12),
+                BeratBadan = 10.7d,
+                TinggiBadan = 78d,
+                LingkarLenganAtas = 15d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 4,
+            },
+            new
+            {
+                Id = 17,
+                BalitaNIK = "5306611808214604",
+                TanggalPengecekan = new DateOnly(2022, 8, 12),
+                BeratBadan = 8.9d,
+                TinggiBadan = 71.4d,
+                LingkarLenganAtas = 16d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 4,
+            },
+            new
+            {
+                Id = 18,
+                BalitaNIK = "5306611008217236",
+                TanggalPengecekan = new DateOnly(2022, 8, 10),
+                BeratBadan = 9.6d,
+                TinggiBadan = 82.2d,
+                LingkarLenganAtas = 14d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 13,
+            },
+            new
+            {
+                Id = 19,
+                BalitaNIK = "5306612804228187",
+                TanggalPengecekan = new DateOnly(2022, 8, 10),
+                BeratBadan = 5.5d,
+                TinggiBadan = 60.9d,
+                LingkarLenganAtas = 13d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 13,
+            },
+            new
+            {
+                Id = 20,
+                BalitaNIK = "5306612404221654",
+                TanggalPengecekan = new DateOnly(2022, 8, 10),
+                BeratBadan = 5.25d,
+                TinggiBadan = 59.2d,
+                LingkarLenganAtas = 12.5d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 13,
+            },
+            new
+            {
+                Id = 21,
+                BalitaNIK = "5306610805228603",
+                TanggalPengecekan = new DateOnly(2022, 8, 12),
+                BeratBadan = 5.6d,
+                TinggiBadan = 58.2d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 4,
+            },
+            new
+            {
+                Id = 22,
+                BalitaNIK = "5306610305228386",
+                TanggalPengecekan = new DateOnly(2022, 8, 12),
+                BeratBadan = 5.7d,
+                TinggiBadan = 61.2d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 4,
+            },
+            new
+            {
+                Id = 23,
+                BalitaNIK = "5306611503229344",
+                TanggalPengecekan = new DateOnly(2022, 8, 12),
+                BeratBadan = 6.7d,
+                TinggiBadan = 63d,
+                LingkarLenganAtas = 14.5d,
+                KategoriGizi = KategoriGizi.GiziBaik,
+                PosyanduId = 4,
             }
         );
         #endregion
