@@ -423,7 +423,38 @@ public static class ModelBuilderExtension
                 Id = 45,
                 Nama = "SAVER TAEK",
                 DesaKelurahanId = 2
+            },
+            new
+            {
+                Id = 46,
+                Nama = "AGAPITUS UN",
+                DesaKelurahanId = 3
+            },
+            new
+            {
+                Id = 47,
+                Nama = "PEDRO DOS REIS",
+                DesaKelurahanId = 3
+            },
+            new
+            {
+                Id = 48,
+                Nama = "ALFRED BESSIE",
+                DesaKelurahanId = 3
+            },
+            new
+            {
+                Id = 49,
+                Nama = "JHON NAHAK",
+                DesaKelurahanId = 3
+            },
+            new
+            {
+                Id = 50,
+                Nama = "AMINUDIN",
+                DesaKelurahanId = 3
             }
+
         );
         #endregion
 
