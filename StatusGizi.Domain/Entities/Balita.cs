@@ -12,4 +12,5 @@ public class Balita
     public double TinggiBadanWaktuLahir { get; set; }
 
     public OrangTua OrangTua { get; set; }
+    public List<Pengecekan> DaftarPengecekan { get; set; } = [];
 }
