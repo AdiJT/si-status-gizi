@@ -1,0 +1,44 @@
+﻿@using Humanizer.Localisation
+@model AnalisisVM
+
+@{
+    ViewData["Title"] = "Analisis";
+    var cultureInfo = new CultureInfo("id-ID");
+}
+
+Data Pengecekan
+
+<table class="table dataTable">
+    <thead>
+        <tr>
+            <th>NIK</th>
+            <th>Nama</th>
+            <th>JK</th>
+            <th>Tgl Lahir</th>
+            <th>BB Lahir</th>
+            <th>TB Lahir</th>
+            <th>Posyandu</th>
+            <th>Tgl Ukur</th>
+            <th>Usia Saat Ukur</th>
+            <th>Berat Badan</th>
+            <th>Tinggi Badan</th>
+            <th>Kategori Gizi (BB/TB)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Pengecekan.Balita.NIK</td>
+            <td>@Model.Pengecekan.Balita.Nama</td>
+            <td>@Model.Pengecekan.Balita.JenisKelamin.Humanize()</td>
+            <td>@Model.Pengecekan.Balita.TanggalLahir.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
+            <td>@Model.Pengecekan.Balita.BeratBadanWaktuLahir</td>
+            <td>@Model.Pengecekan.Balita.TinggiBadanWaktuLahir</td>
+            <td>@Model.Pengecekan.Posyandu.Nama</td>
+            <td>@Model.Pengecekan.TanggalPengecekan.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
+            <td>@Model.Pengecekan.Usia.Humanize(7, countEmptyUnits: true, culture: cultureInfo, maxUnit: TimeUnit.Year, minUnit: TimeUnit.Day, collectionSeparator: " ")</td>
+            <td>@Model.Pengecekan.BeratBadan</td>
+            <td>@Model.Pengecekan.TinggiBadan</td>
+            <td>@Model.Pengecekan.KategoriGizi</td>
+        </tr>
+    </tbody>
+</table>

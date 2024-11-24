@@ -58,8 +58,8 @@
     @{
         var chartVM = new ChartVM
         {
-            Label = $"Gizi Balita Desa {Model.DesaKelurahan.Nama}",
-            Type = ChartType.Bar,
+            Label = $"Jumlah",
+            Type = ChartType.Pie,
             Data = new Dictionary<string, double>(Model.DaftarPengecekan.GroupBy(p => p.KategoriGizi).OrderBy(g => g.Key).Select(g => new KeyValuePair<string, double>(g.Key.Humanize(), g.Count()))),
         };
     }

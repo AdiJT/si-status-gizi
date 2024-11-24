@@ -12,7 +12,7 @@ public class Pengecekan
     public KategoriGizi KategoriGizi { get; set; }
 
     public TimeSpan Usia  => TimeSpan.FromDays(TanggalPengecekan.DayNumber - Balita.TanggalLahir.DayNumber);
-    public int Bulan => (int)(Usia.TotalDays / 30);
+    public int UsiaDalamBulan => (int)(Usia.TotalDays / 30.4369);
 
     public Balita Balita { get; set; }
     public Posyandu Posyandu { get; set; }
