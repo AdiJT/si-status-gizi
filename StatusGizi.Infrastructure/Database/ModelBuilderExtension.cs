@@ -1565,13 +1565,12 @@ public static class ModelBuilderExtension
 
         #region StandarBeratMenurutBBTB
         modelBuilder.Entity<StandarBeratMenurutBBTB>().HasData(
-<<<<<<< HEAD
             new
             {
-                id = 1,
+                Id = 1,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
-                TinggiBadan = 45,
+                TinggiBadan = 45d,
                 SDMinus3 = 1.9d,
                 SDMinus2 = 2d,
                 SDMinus1 = 2.2d,
@@ -1582,7 +1581,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 2,
+                Id = 2,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 45.5d,
@@ -1596,7 +1595,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 3,
+                Id = 3,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 46d,
@@ -1610,7 +1609,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 4,
+                Id = 4,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 46.5d,
@@ -1624,7 +1623,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 5,
+                Id = 5,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 47d,
@@ -1638,7 +1637,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 6,
+                Id = 6,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 47.5d,
@@ -1652,7 +1651,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 7,
+                Id = 7,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 48d,
@@ -1666,7 +1665,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 8,
+                Id = 8,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 48.5d,
@@ -1680,7 +1679,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 9,
+                Id = 9,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 49d,
@@ -1694,7 +1693,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 10,
+                Id = 10,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 49.5d,
@@ -1708,7 +1707,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 11,
+                Id = 11,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 50d,
@@ -1722,7 +1721,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 12,
+                Id = 12,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 50.5d,
@@ -1736,7 +1735,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 13,
+                Id = 13,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 51d,
@@ -1750,7 +1749,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 14,
+                Id = 14,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 51.5d,
@@ -1764,7 +1763,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 15,
+                Id = 15,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 52d,
@@ -1778,7 +1777,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 16,
+                Id = 16,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 52.5d,
@@ -1792,7 +1791,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 17,
+                Id = 17,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 53d,
@@ -1806,7 +1805,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 18,
+                Id = 18,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 53.5d,
@@ -1820,7 +1819,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 19,
+                Id = 19,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 54d,
@@ -1834,7 +1833,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 20,
+                Id = 20,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 54.5d,
@@ -1848,7 +1847,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 21,
+                Id = 21,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 55d,
@@ -1862,7 +1861,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 22,
+                Id = 22,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 55.5d,
@@ -1876,7 +1875,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 23,
+                Id = 23,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 56d,
@@ -1890,7 +1889,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 24,
+                Id = 24,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 56.5d,
@@ -1904,7 +1903,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 35,
+                Id = 35,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 57d,
@@ -1918,7 +1917,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 36,
+                Id = 36,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 57.5d,
@@ -1932,7 +1931,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 37,
+                Id = 37,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 58d,
@@ -1946,7 +1945,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 38,
+                Id = 38,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 58.5d,
@@ -1960,7 +1959,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 39,
+                Id = 39,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 59d,
@@ -1974,7 +1973,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 40,
+                Id = 40,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 59.5d,
@@ -1988,7 +1987,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 41,
+                Id = 41,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 60d,
@@ -2002,7 +2001,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 42,
+                Id = 42,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 60.5d,
@@ -2016,7 +2015,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 43,
+                Id = 43,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 61d,
@@ -2030,7 +2029,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 44,
+                Id = 44,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 61.5d,
@@ -2044,7 +2043,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 45,
+                Id = 45,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 62d,
@@ -2058,7 +2057,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 46,
+                Id = 46,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 62.5d,
@@ -2072,7 +2071,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 47,
+                Id = 47,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 63d,
@@ -2086,7 +2085,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 48,
+                Id = 48,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 63.5d,
@@ -2100,7 +2099,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 49,
+                Id = 49,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 64d,
@@ -2114,7 +2113,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 50,
+                Id = 50,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 64.5d,
@@ -2128,7 +2127,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 51,
+                Id = 51,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 65d,
@@ -2142,7 +2141,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 52,
+                Id = 52,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 65.5d,
@@ -2156,7 +2155,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 53,
+                Id = 53,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 66d,
@@ -2170,7 +2169,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 54,
+                Id = 54,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 66.5d,
@@ -2184,7 +2183,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 55,
+                Id = 55,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 67d,
@@ -2198,7 +2197,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 56,
+                Id = 56,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 67.5d,
@@ -2212,7 +2211,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 57,
+                Id = 57,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 68d,
@@ -2226,7 +2225,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 58,
+                Id = 58,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 68.5d,
@@ -2240,7 +2239,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 59,
+                Id = 59,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 69d,
@@ -2254,7 +2253,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 60,
+                Id = 60,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 69.5d,
@@ -2268,7 +2267,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 61,
+                Id = 61,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 70.5d,
@@ -2282,7 +2281,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 62,
+                Id = 62,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 70.5d,
@@ -2296,7 +2295,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 63,
+                Id = 63,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 71d,
@@ -2310,7 +2309,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 64,
+                Id = 64,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 71.5d,
@@ -2324,7 +2323,7 @@ public static class ModelBuilderExtension
             },
             new
             {
-                id = 65,
+                Id = 65,
                 KategoriUmur = KategoriUmur.BulanBawah24,
                 JenisKelamin = JenisKelamin.LakiLaki,
                 TinggiBadan = 72d,
