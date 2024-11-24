@@ -29,7 +29,73 @@ public static class ModelBuilderExtension
             {
                 Id = 4,
                 Nama = "Umanen",
+            },
+            new DesaKelurahan
+            {
+                Id = 5,
+                Nama = "Bangka Kuleng",
+            },
+            new DesaKelurahan
+            {
+                Id = 6,
+                Nama = "Bangka Leleng",
+            },
+            new DesaKelurahan
+            {
+                Id = 7,
+                Nama = "Bangka Pau",
+            },
+            new DesaKelurahan
+            {
+                Id = 8,
+                Nama = "Bea Waek",
+            },
+            new DesaKelurahan
+            {
+                Id = 9,
+                Nama = "Compang Wesang",
+            },
+            new DesaKelurahan
+            {
+                Id = 10,
+                Nama = "Golo Lobos",
+            },
+            new DesaKelurahan
+            {
+                Id = 11,
+                Nama = "Golo Nderu",
+            },
+            new DesaKelurahan
+            {
+                Id = 12,
+                Nama = "Golo Rengket",
+            },
+            new DesaKelurahan
+            {
+                Id = 13,
+                Nama = "Gurung Turi",
+            },
+            new DesaKelurahan
+            {
+                Id = 14,
+                Nama = "Mando Sawu",
+            },
+            new DesaKelurahan
+            {
+                Id = 15,
+                Nama = "Nggalak Leleng",
+            },
+            new DesaKelurahan
+            {
+                Id = 16,
+                Nama = "Pocolia",
+            },
+            new DesaKelurahan
+            {
+                Id = 17,
+                Nama = "Satar Tesem",
             }
+
         );
         #endregion
 
@@ -148,7 +214,176 @@ public static class ModelBuilderExtension
                 Id = 19,
                 Nama = "Wekatimun 3",
                 DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 20,
+                Nama = "Bealing 1",
+                DesaKelurahanId = 7
+            },
+            new
+            {
+                Id = 21,
+                Nama = "Bealing 2",
+                DesaKelurahanId = 7
+            },
+            new
+            {
+                Id = 22,
+                Nama = "Bealing 2",
+                DesaKelurahanId = 7
+            },
+            new
+            {
+                Id = 23,
+                Nama = "Leci",
+                DesaKelurahanId = 5
+            },
+            new
+            {
+                Id = 24,
+                Nama = "Ceka Likang",
+                DesaKelurahanId = 6
+            },
+            new
+            {
+                Id = 25,
+                Nama = "Golo Tenda",
+                DesaKelurahanId = 6
+            },
+            new
+            {
+                Id = 26,
+                Nama = "Carang",
+                DesaKelurahanId = 8
+            },
+            new
+            {
+                Id = 27,
+                Nama = "Geleng",
+                DesaKelurahanId = 9
+            },
+            new
+            {
+                Id = 28,
+                Nama = "Golo Ara",
+                DesaKelurahanId = 9
+            },
+            new
+            {
+                Id = 29,
+                Nama = "Wesang",
+                DesaKelurahanId = 9
+            },
+            new
+            {
+                Id = 30,
+                Nama = "Lame 2",
+                DesaKelurahanId = 10
+            },
+            new
+            {
+                Id = 31,
+                Nama = "Pelus",
+                DesaKelurahanId = 10
+            },
+            new
+            {
+                Id = 32,
+                Nama = "Lamba",
+                DesaKelurahanId = 11
+            },
+            new
+            {
+                Id = 33,
+                Nama = "Nderu",
+                DesaKelurahanId = 11
+            },
+            new
+            {
+                Id = 34,
+                Nama = "Nggari",
+                DesaKelurahanId = 11
+            },
+            new
+            {
+                Id = 35,
+                Nama = "Majung",
+                DesaKelurahanId = 12
+            },
+            new
+            {
+                Id = 36,
+                Nama = "Ncuang",
+                DesaKelurahanId = 13
+            },
+            new
+            {
+                Id = 37,
+                Nama = "Ndueng",
+                DesaKelurahanId = 13
+            },
+            new
+            {
+                Id = 38,
+                Nama = "Nengkal",
+                DesaKelurahanId = 13
+            },
+            new
+            {
+                Id = 39,
+                Nama = "Pocong",
+                DesaKelurahanId = 13
+            },
+            new
+            {
+                Id = 40,
+                Nama = "Benteng Dima",
+                DesaKelurahanId = 14
+            },
+            new
+            {
+                Id = 41,
+                Nama = "Golo Laci",
+                DesaKelurahanId = 14
+            },
+            new
+            {
+                Id = 42,
+                Nama = "Kompas",
+                DesaKelurahanId = 14
+            },
+            new
+            {
+                Id = 43,
+                Nama = "Lewe",
+                DesaKelurahanId = 15
+            },
+            new
+            {
+                Id = 44,
+                Nama = "Watu Cie",
+                DesaKelurahanId = 15
+            },
+            new
+            {
+                Id = 45,
+                Nama = "Pandang",
+                DesaKelurahanId = 16
+            },
+            new
+            {
+                Id = 46,
+                Nama = "Pongkor",
+                DesaKelurahanId = 16
+            },
+            new
+            {
+                Id = 47,
+                Nama = "Moncok",
+                DesaKelurahanId = 17
             }
+
         );
         #endregion
 
@@ -501,7 +736,20 @@ public static class ModelBuilderExtension
                 Id = 58,
                 Nama = "MARIA A. SEKAB",
                 DesaKelurahanId = 3
+            },
+            new
+            {
+                Id = 59,
+                Nama = "BONEFASIUS KEOR",
+                DesaKelurahanId = 14
+            },
+            new
+            {
+                Id = 60,
+                Nama = "ELFRIDA NDIMUN",
+                DesaKelurahanId = 13
             }
+
         );
         #endregion
 
@@ -866,7 +1114,28 @@ public static class ModelBuilderExtension
                 BeratBadanWaktuLahir = 2.5d,
                 TinggiBadanWaktuLahir = 49d,
                 OrangTuaId = 58
+            },
+            new
+            {
+                NIK = "5319024912229990",
+                Nama = "MELTIADES KEOR",
+                JenisKelamin = JenisKelamin.Perempuan,
+                TanggalLahir = new DateOnly(2022, 12, 9),
+                BeratBadanWaktuLahir = 3.2d,
+                TinggiBadanWaktuLahir = 51d,
+                OrangTuaId = 59
+            },
+            new
+            {
+                NIK = "5319025103229974",
+                Nama = "MARIA Y.T. QUIN",
+                JenisKelamin = JenisKelamin.Perempuan,
+                TanggalLahir = new DateOnly(2022, 3, 11),
+                BeratBadanWaktuLahir = 3.2d,
+                TinggiBadanWaktuLahir = 51d,
+                OrangTuaId = 60
             }
+
         );
         #endregion
 
@@ -1267,7 +1536,30 @@ public static class ModelBuilderExtension
                 LingkarLenganAtas = 13d,
                 KategoriGizi = KategoriGizi.GiziBuruk,
                 PosyanduId = 15,
+            },
+            new
+            {
+                Id = 37,
+                BalitaNIK = "5319024912229990",
+                TanggalPengecekan = new DateOnly(2022, 12, 9),
+                BeratBadan = 3.4d,
+                TinggiBadan = 59.9d,
+                LingkarLenganAtas = 10.5d,
+                KategoriGizi = KategoriGizi.GiziBuruk,
+                PosyanduId = 40,
+            },
+            new
+            {
+                Id = 38,
+                BalitaNIK = "5319025103229974",
+                TanggalPengecekan = new DateOnly(2022, 3, 11),
+                BeratBadan = 6.8d,
+                TinggiBadan = 75.9d,
+                LingkarLenganAtas = 13.7d,
+                KategoriGizi = KategoriGizi.GiziBuruk,
+                PosyanduId = 36,
             }
+
         );
         #endregion
 
