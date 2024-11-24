@@ -15,14 +15,11 @@ Data Pengecekan
             <th>Nama</th>
             <th>JK</th>
             <th>Tgl Lahir</th>
-            <th>BB Lahir</th>
-            <th>TB Lahir</th>
             <th>Posyandu</th>
             <th>Tgl Ukur</th>
             <th>Usia Saat Ukur</th>
             <th>Berat Badan</th>
             <th>Tinggi Badan</th>
-            <th>Kategori Gizi (BB/TB)</th>
         </tr>
     </thead>
     <tbody>
@@ -31,18 +28,16 @@ Data Pengecekan
             <td>@Model.Pengecekan.Balita.Nama</td>
             <td>@Model.Pengecekan.Balita.JenisKelamin.Humanize()</td>
             <td>@Model.Pengecekan.Balita.TanggalLahir.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
-            <td>@Model.Pengecekan.Balita.BeratBadanWaktuLahir</td>
-            <td>@Model.Pengecekan.Balita.TinggiBadanWaktuLahir</td>
             <td>@Model.Pengecekan.Posyandu.Nama</td>
             <td>@Model.Pengecekan.TanggalPengecekan.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
             <td>@Model.Pengecekan.Usia.Humanize(7, countEmptyUnits: true, culture: cultureInfo, maxUnit: TimeUnit.Year, minUnit: TimeUnit.Day, collectionSeparator: " ")</td>
             <td>@Model.Pengecekan.BeratBadan</td>
             <td>@Model.Pengecekan.TinggiBadan</td>
-            <td>@Model.Pengecekan.KategoriGizi</td>
         </tr>
     </tbody>
 </table>
 
+Standar Berat Badan
 <table class="table">
     <thead>
         <tr>
@@ -69,3 +64,99 @@ Data Pengecekan
         </tr>
     </tbody>
 </table>
+
+Rule
+<table class="table">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Ambang Batas</th>
+            <th>Kategori Status Gizi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>< -3 SD</td>
+            <td>Gizi Buruk</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>-3 SD sd. < -2 SD</td>
+            <td>Gizi kurang</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>-2 SD sd. +1SD</td>
+            <td>Gizi Baik</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>> +1 SD sd. +2 SD</td>
+            <td>Berpotensi Berlebih</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>> +2 SD sd. +3 SD</td>
+            <td>Gizi Berlebih</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>> +3 SD</td>
+            <td>Obesitas</td>
+        </tr>
+    </tbody>
+</table>
+
+Hasil
+@{
+    var beratBadan = Model.Pengecekan.BeratBadan;
+}
+@if(beratBadan < Model.StandarBeratMenurutBBTB.SDMinus3)
+{
+    <div class="card">
+        <div class="card-body">
+            Menurut Rule No. 1, karena Berat Badan &lt; -3 SD maka kategori gizi adalah : @KategoriGizi.GiziBuruk.Humanize()
+        </div>
+    </div>
+}
+else if(beratBadan >= Model.StandarBeratMenurutBBTB.SDMinus3 && beratBadan < Model.StandarBeratMenurutBBTB.SDMinus2)
+{
+    <div class="card">
+        <div class="card-body">
+            Menurut Rule No. 2, karena Berat Badan -3 SD sd. &lt; -2 SD maka kategori gizi adalah : @KategoriGizi.GiziKurang.Humanize()
+        </div>
+    </div>
+}
+else if (beratBadan >= Model.StandarBeratMenurutBBTB.SDMinus2 && beratBadan <= Model.StandarBeratMenurutBBTB.SDPlus1)
+{
+    <div class="card">
+        <div class="card-body">
+            Menurut Rule No. 3, karena Berat Badan -2 SD sd. +1 SD maka kategori gizi adalah : @KategoriGizi.GiziBaik.Humanize()
+        </div>
+    </div>
+}
+else if (beratBadan > Model.StandarBeratMenurutBBTB.SDPlus1 && beratBadan <= Model.StandarBeratMenurutBBTB.SDPlus2)
+{
+    <div class="card">
+        <div class="card-body">
+            Menurut Rule No. 4, karena Berat Badan &gt; +1 SD sd. +2 SD maka kategori gizi adalah : @KategoriGizi.BerpotensiBerlebih.Humanize()
+        </div>
+    </div>
+}
+else if (beratBadan > Model.StandarBeratMenurutBBTB.SDPlus2 && beratBadan <= Model.StandarBeratMenurutBBTB.SDPlus3)
+{
+    <div class="card">
+        <div class="card-body">
+            Menurut Rule No. 5, karena Berat Badan &gt; +2 SD sd. +3 SD maka kategori gizi adalah : @KategoriGizi.GiziBerlebih.Humanize()
+        </div>
+    </div>
+}
+else
+{
+    <div class="card">
+        <div class="card-body">
+            Menurut Rule No. 6, karena Berat Badan &gt; +3 SD maka kategori gizi adalah : @KategoriGizi.Obesitas.Humanize()
+        </div>
+    </div>
+}

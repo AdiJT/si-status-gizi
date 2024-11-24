@@ -49,13 +49,13 @@
                         <td>@pengecekan.Balita.Nama</td>
                         <td>@pengecekan.Balita.JenisKelamin.Humanize()</td>
                         <td>@pengecekan.Balita.TanggalLahir.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
-                        <td>@pengecekan.Balita.BeratBadanWaktuLahir</td>
-                        <td>@pengecekan.Balita.TinggiBadanWaktuLahir</td>
+                        <td>@pengecekan.Balita.BeratBadanWaktuLahir Kg</td>
+                        <td>@pengecekan.Balita.TinggiBadanWaktuLahir cm</td>
                         <td>@pengecekan.Posyandu.Nama</td>
                         <td>@pengecekan.TanggalPengecekan.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
                         <td>@pengecekan.Usia.Humanize(7, countEmptyUnits: true, culture: cultureInfo, maxUnit: TimeUnit.Year, minUnit: TimeUnit.Day, collectionSeparator: " ")</td>
-                        <td>@pengecekan.BeratBadan</td>
-                        <td>@pengecekan.TinggiBadan</td>
+                        <td>@pengecekan.BeratBadan Kg</td>
+                        <td>@pengecekan.TinggiBadan cm</td>
                         <td>@pengecekan.KategoriGizi</td>
                         <td>
                             <a asp-action="Analisis" asp-route-id="@pengecekan.Id">Detail</a>
