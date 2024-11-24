@@ -3,16 +3,16 @@ using Microsoft.EntityFrameworkCore;
 using StatusGizi.Domain.Entities;
 using StatusGizi.Domain.Enums;
 using StatusGizi.Infrastructure.Database;
-using StatusGizi.Web.Models.StatusGizi;
+using StatusGizi.Web.Models.KelurahanController;
 using System.Data;
 
 namespace StatusGizi.Web.Controllers;
 
-public class StatusGiziController : Controller
+public class KelurahanController : Controller
 {
     private readonly AppDbContext _appDbContext;
 
-    public StatusGiziController(AppDbContext appDbContext)
+    public KelurahanController(AppDbContext appDbContext)
     {
         _appDbContext = appDbContext;
     }
@@ -46,29 +46,6 @@ public class StatusGiziController : Controller
             DesaKelurahan = desaKelurahan,
             DaftarPengecekan = daftarPengecekan,
         });
-    }
-
-    public async Task<IActionResult> Analisis(int id)
-    {
-        var pengecekan = await _appDbContext
-            .TblPengecekan
-            .Include(p => p.Balita).ThenInclude(b => b.OrangTua).ThenInclude(o => o.DesaKelurahan)
-            .Include(p => p.Posyandu).ThenInclude(p => p.DesaKelurahan)
-            .FirstOrDefaultAsync(p => p.Id == id);
-
-        if (pengecekan is null) return NotFound();
-
-        var kategoriUmur = pengecekan.UsiaDalamBulan <= 24 ? KategoriUmur.BulanBawah24 : KategoriUmur.Bulan24Sampai60;
-
-        var standarBeratMenurutBBTB = await _appDbContext
-            .TblStandarBeratMenurutBBTB
-            .Where(s => s.JenisKelamin == pengecekan.Balita.JenisKelamin && s.KategoriUmur == kategoriUmur && s.TinggiBadan <= pengecekan.TinggiBadan)
-            .OrderBy(s => s.TinggiBadan)
-            .LastOrDefaultAsync();
-
-        if (standarBeratMenurutBBTB is null) return BadRequest();
-
-        return View(new AnalisisVM { StandarBeratMenurutBBTB = standarBeratMenurutBBTB, Pengecekan = pengecekan });
     }
 
     public IActionResult IsiData()
@@ -177,6 +154,6 @@ public class StatusGiziController : Controller
             return View(vm);
         }
 
-        return RedirectToAction(nameof(Analisis), new { id = pengecekan.Id });
+        return View(vm);
     }
 }

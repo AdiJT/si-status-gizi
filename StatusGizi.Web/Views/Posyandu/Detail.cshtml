@@ -1,0 +1,81 @@
+﻿@using Humanizer.Localisation
+@model Posyandu
+
+@{
+    ViewData["Title"] = "Detail";
+    var cultureInfo = new CultureInfo("id-ID");
+}
+
+<style>
+    .table {
+        font-size: 0.7em;
+    }
+
+    .btn {
+        font-size: 0.7em;
+    }
+</style>
+
+<h1>Posyandu : @Model.Nama</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <table class="table dataTable">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>NIK</th>
+                    <th>Nama</th>
+                    <th>Posyandu</th>
+                    <th>Tgl Ukur</th>
+                    <th>Usia Saat Ukur</th>
+                    <th>Berat Badan</th>
+                    <th>Tinggi Badan</th>
+                    <th>Kategori Gizi (BB/TB)</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    var no = 1;
+                }
+                @foreach (var pengecekan in Model.DaftarPengecekan)
+                {
+                    <tr>
+                        <td>@no</td>
+                        <td>@pengecekan.Balita.NIK</td>
+                        <td>@pengecekan.Balita.Nama</td>
+                        <td>@pengecekan.Posyandu.Nama</td>
+                        <td>@pengecekan.TanggalPengecekan.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
+                        <td>@pengecekan.Usia.Humanize(7, countEmptyUnits: true, culture: cultureInfo, maxUnit: TimeUnit.Year, minUnit: TimeUnit.Day, collectionSeparator: " ")</td>
+                        <td>@pengecekan.BeratBadan Kg</td>
+                        <td>@pengecekan.TinggiBadan cm</td>
+                        <td>@pengecekan.KategoriGizi.Humanize()</td>
+                        <td>
+                            <a asp-action="Index" asp-controller="Pemeriksaan" asp-route-id="@pengecekan.Id" class="btn btn-primary">Detail</a>
+                        </td>
+                    </tr>
+                    no++;
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Distribusi Kategori Gizi Balita di Posyandu @Model.Nama
+            </div>
+            <div class="card-body">
+                @{
+                    var chartVM = new ChartVM
+                    {
+                        Label = $"Jumlah",
+                        Type = ChartType.Pie,
+                        Data = new Dictionary<string, double>(Model.DaftarPengecekan.GroupBy(p => p.KategoriGizi).OrderBy(g => g.Key).Select(g => new KeyValuePair<string, double>(g.Key.Humanize(), g.Count()))),
+                    };
+                }
+                <vc:chart chart-model=chartVM />
+            </div>
+        </div>
+    </div>
+</div>

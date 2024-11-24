@@ -1,7 +1,7 @@
-﻿@model List<IGrouping<DesaKelurahan, Pengecekan>>
+﻿@model List<IGrouping<Posyandu, Pengecekan>>
 
 @{
-    ViewData["Title"] = "Status Gizi";
+    ViewData["Title"] = "Posyandu";
 }
 
 <style>
@@ -19,7 +19,7 @@
         <table class="table dataTable">
             <thead>
                 <tr>
-                    <th>Desa/Kelurahan</th>
+                    <th>Posyandu</th>
                     @foreach (var kategoriGizi in Enum.GetValues<KategoriGizi>())
                     {
                         <th>@kategoriGizi.Humanize()</th>

@@ -54,7 +54,7 @@
                         <td>@pengecekan.TinggiBadan cm</td>
                         <td>@pengecekan.KategoriGizi.Humanize()</td>
                         <td>
-                            <a asp-action="Analisis" asp-route-id="@pengecekan.Id" class="btn btn-primary">Detail</a>
+                            <a asp-action="Index" asp-controller="Pemeriksaan" asp-route-id="@pengecekan.Id" class="btn btn-primary">Detail</a>
                         </td>
                     </tr>
                     no++;

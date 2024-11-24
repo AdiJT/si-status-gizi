@@ -1,7 +1,7 @@
 ﻿using StatusGizi.Domain.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace StatusGizi.Web.Models.StatusGizi;
+namespace StatusGizi.Web.Models.KelurahanController;
 
 public class IsiDataVM
 {

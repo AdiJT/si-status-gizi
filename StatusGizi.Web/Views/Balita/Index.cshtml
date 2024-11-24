@@ -17,6 +17,7 @@
             <th>TB Lahir</th>
             <th>Orang Tua</th>
             <th>Desa/Kelurahan</th>
+            <th>Aksi</th>
         </tr>
     </thead>
     <tbody>
@@ -35,6 +36,9 @@
                 <td>@balita.TinggiBadanWaktuLahir cm</td>
                 <td>@balita.OrangTua.Nama</td>
                 <td>@balita.OrangTua.DesaKelurahan.Nama</td>
+                <td>
+                    <a asp-action="Detail" asp-route-id="@balita.NIK" class="btn btn-primary">Detail</a>
+                </td>
             </tr>
             no++;
         }
