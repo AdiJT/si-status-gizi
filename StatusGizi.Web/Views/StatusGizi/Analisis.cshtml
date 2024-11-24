@@ -8,111 +8,117 @@
 
 Data Pengecekan
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>NIK</th>
-            <th>Nama</th>
-            <th>JK</th>
-            <th>Tgl Lahir</th>
-            <th>Posyandu</th>
-            <th>Tgl Ukur</th>
-            <th>Usia Saat Ukur</th>
-            <th>Berat Badan</th>
-            <th>Tinggi Badan</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>@Model.Pengecekan.Balita.NIK</td>
-            <td>@Model.Pengecekan.Balita.Nama</td>
-            <td>@Model.Pengecekan.Balita.JenisKelamin.Humanize()</td>
-            <td>@Model.Pengecekan.Balita.TanggalLahir.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
-            <td>@Model.Pengecekan.Posyandu.Nama</td>
-            <td>@Model.Pengecekan.TanggalPengecekan.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
-            <td>@Model.Pengecekan.Usia.Humanize(7, countEmptyUnits: true, culture: cultureInfo, maxUnit: TimeUnit.Year, minUnit: TimeUnit.Day, collectionSeparator: " ")</td>
-            <td>@Model.Pengecekan.BeratBadan Kg</td>
-            <td>@Model.Pengecekan.TinggiBadan cm</td>
-        </tr>
-    </tbody>
-</table>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>NIK</th>
+                <th>Nama</th>
+                <th>JK</th>
+                <th>Tgl Lahir</th>
+                <th>Posyandu</th>
+                <th>Tgl Ukur</th>
+                <th>Usia Saat Ukur</th>
+                <th>Berat Badan</th>
+                <th>Tinggi Badan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Pengecekan.Balita.NIK</td>
+                <td>@Model.Pengecekan.Balita.Nama</td>
+                <td>@Model.Pengecekan.Balita.JenisKelamin.Humanize()</td>
+                <td>@Model.Pengecekan.Balita.TanggalLahir.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
+                <td>@Model.Pengecekan.Posyandu.Nama</td>
+                <td>@Model.Pengecekan.TanggalPengecekan.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
+                <td>@Model.Pengecekan.Usia.Humanize(7, countEmptyUnits: true, culture: cultureInfo, maxUnit: TimeUnit.Year, minUnit: TimeUnit.Day, collectionSeparator: " ")</td>
+                <td>@Model.Pengecekan.BeratBadan Kg</td>
+                <td>@Model.Pengecekan.TinggiBadan cm</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 Standar Berat Badan
-<table class="table">
-    <thead>
-        <tr>
-            <th>Tinggi Badan</th>
-            <th>-3 SD</th>
-            <th>-2 SD</th>
-            <th>-1 SD</th>
-            <th>Median</th>
-            <th>+1 SD</th>
-            <th>+2 SD</th>
-            <th>+3 SD</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>@Model.StandarBeratMenurutBBTB.TinggiBadan cm</td>
-            <td>@Model.StandarBeratMenurutBBTB.SDMinus3 Kg</td>
-            <td>@Model.StandarBeratMenurutBBTB.SDMinus2 Kg</td>
-            <td>@Model.StandarBeratMenurutBBTB.SDMinus1 Kg</td>
-            <td>@Model.StandarBeratMenurutBBTB.MedianBeratBadan Kg</td>
-            <td>@Model.StandarBeratMenurutBBTB.SDPlus1 Kg</td>
-            <td>@Model.StandarBeratMenurutBBTB.SDPlus2 Kg</td>
-            <td>@Model.StandarBeratMenurutBBTB.SDPlus3 Kg</td>
-        </tr>
-    </tbody>
-</table>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tinggi Badan</th>
+                <th>-3 SD</th>
+                <th>-2 SD</th>
+                <th>-1 SD</th>
+                <th>Median</th>
+                <th>+1 SD</th>
+                <th>+2 SD</th>
+                <th>+3 SD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.StandarBeratMenurutBBTB.TinggiBadan cm</td>
+                <td>@Model.StandarBeratMenurutBBTB.SDMinus3 Kg</td>
+                <td>@Model.StandarBeratMenurutBBTB.SDMinus2 Kg</td>
+                <td>@Model.StandarBeratMenurutBBTB.SDMinus1 Kg</td>
+                <td>@Model.StandarBeratMenurutBBTB.MedianBeratBadan Kg</td>
+                <td>@Model.StandarBeratMenurutBBTB.SDPlus1 Kg</td>
+                <td>@Model.StandarBeratMenurutBBTB.SDPlus2 Kg</td>
+                <td>@Model.StandarBeratMenurutBBTB.SDPlus3 Kg</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 Rule
-<table class="table">
-    <thead>
-        <tr>
-            <th>No</th>
-            <th>Ambang Batas</th>
-            <th>Kategori Status Gizi</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>< -3 SD</td>
-            <td>Gizi Buruk</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>-3 SD sd. < -2 SD</td>
-            <td>Gizi kurang</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>-2 SD sd. +1SD</td>
-            <td>Gizi Baik</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>> +1 SD sd. +2 SD</td>
-            <td>Berpotensi Berlebih</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>> +2 SD sd. +3 SD</td>
-            <td>Gizi Berlebih</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>> +3 SD</td>
-            <td>Obesitas</td>
-        </tr>
-    </tbody>
-</table>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Ambang Batas</th>
+                <th>Kategori Status Gizi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>< -3 SD</td>
+                <td>Gizi Buruk</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>-3 SD sd. < -2 SD</td>
+                <td>Gizi kurang</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>-2 SD sd. +1SD</td>
+                <td>Gizi Baik</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>> +1 SD sd. +2 SD</td>
+                <td>Berpotensi Berlebih</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>> +2 SD sd. +3 SD</td>
+                <td>Gizi Berlebih</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>> +3 SD</td>
+                <td>Obesitas</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 Hasil
 @{
     var beratBadan = Model.Pengecekan.BeratBadan;
 }
-@if(beratBadan < Model.StandarBeratMenurutBBTB.SDMinus3)
+@if (beratBadan < Model.StandarBeratMenurutBBTB.SDMinus3)
 {
     <div class="card">
         <div class="card-body">
@@ -120,7 +126,7 @@ Hasil
         </div>
     </div>
 }
-else if(beratBadan >= Model.StandarBeratMenurutBBTB.SDMinus3 && beratBadan < Model.StandarBeratMenurutBBTB.SDMinus2)
+else if (beratBadan >= Model.StandarBeratMenurutBBTB.SDMinus3 && beratBadan < Model.StandarBeratMenurutBBTB.SDMinus2)
 {
     <div class="card">
         <div class="card-body">
