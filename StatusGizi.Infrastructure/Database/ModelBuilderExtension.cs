@@ -1565,6 +1565,7 @@ public static class ModelBuilderExtension
 
         #region StandarBeratMenurutBBTB
         modelBuilder.Entity<StandarBeratMenurutBBTB>().HasData(
+<<<<<<< HEAD
             new
             {
                 id = 1,
