@@ -8,6 +8,10 @@
     .table {
         font-size: 0.6em;
     }
+
+    .btn {
+        font-size: 0.6em;
+    }
 </style>
 
 <div class="row">
@@ -37,7 +41,7 @@
                         <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.Obesitas)?.Count() ?? 0)</td>
                         <td>@(group.Count())</td>
                         <td>
-                            <a asp-action="Detail" asp-route-id="@group.Key.Id">Detail</a>
+                            <a asp-action="Detail" asp-route-id="@group.Key.Id" class="btn btn-primary">Detail</a>
                         </td>
                     </tr>
                 }

@@ -1,0 +1,42 @@
+﻿@model List<Balita>
+
+@{
+    ViewData["Title"] = "Balita";
+    var cultureInfo = new CultureInfo("id-ID");
+}
+
+<table class="table dataTable">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>NIK</th>
+            <th>Nama</th>
+            <th>JK</th>
+            <th>Tgl Lahir</th>
+            <th>BB Lahir</th>
+            <th>TB Lahir</th>
+            <th>Orang Tua</th>
+            <th>Desa/Kelurahan</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var no = 1;
+        }
+        @foreach (var balita in Model)
+        {
+            <tr>
+                <td>@no</td>
+                <td>@balita.NIK</td>
+                <td>@balita.Nama</td>
+                <td>@balita.JenisKelamin.Humanize()</td>
+                <td>@balita.TanggalLahir.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
+                <td>@balita.BeratBadanWaktuLahir Kg</td>
+                <td>@balita.TinggiBadanWaktuLahir cm</td>
+                <td>@balita.OrangTua.Nama</td>
+                <td>@balita.OrangTua.DesaKelurahan.Nama</td>
+            </tr>
+            no++;
+        }
+    </tbody>
+</table>

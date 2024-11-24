@@ -10,7 +10,11 @@
 
 <style>
     .table {
-        font-size: 0.55em;
+        font-size: 0.7em;
+    }
+
+    .btn {
+        font-size: 0.7em;
     }
 </style>
 
@@ -24,10 +28,6 @@
                     <th>No</th>
                     <th>NIK</th>
                     <th>Nama</th>
-                    <th>JK</th>
-                    <th>Tgl Lahir</th>
-                    <th>BB Lahir</th>
-                    <th>TB Lahir</th>
                     <th>Posyandu</th>
                     <th>Tgl Ukur</th>
                     <th>Usia Saat Ukur</th>
@@ -47,10 +47,6 @@
                         <td>@no</td>
                         <td>@pengecekan.Balita.NIK</td>
                         <td>@pengecekan.Balita.Nama</td>
-                        <td>@pengecekan.Balita.JenisKelamin.Humanize()</td>
-                        <td>@pengecekan.Balita.TanggalLahir.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
-                        <td>@pengecekan.Balita.BeratBadanWaktuLahir Kg</td>
-                        <td>@pengecekan.Balita.TinggiBadanWaktuLahir cm</td>
                         <td>@pengecekan.Posyandu.Nama</td>
                         <td>@pengecekan.TanggalPengecekan.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
                         <td>@pengecekan.Usia.Humanize(7, countEmptyUnits: true, culture: cultureInfo, maxUnit: TimeUnit.Year, minUnit: TimeUnit.Day, collectionSeparator: " ")</td>
@@ -58,7 +54,7 @@
                         <td>@pengecekan.TinggiBadan cm</td>
                         <td>@pengecekan.KategoriGizi.Humanize()</td>
                         <td>
-                            <a asp-action="Analisis" asp-route-id="@pengecekan.Id">Detail</a>
+                            <a asp-action="Analisis" asp-route-id="@pengecekan.Id" class="btn btn-primary">Detail</a>
                         </td>
                     </tr>
                     no++;
