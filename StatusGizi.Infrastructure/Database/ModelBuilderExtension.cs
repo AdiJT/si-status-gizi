@@ -1563,6 +1563,24 @@ public static class ModelBuilderExtension
         );
         #endregion
 
+        #region StandarBeratMenurutBBTB
+        modelBuilder.Entity<StandarBeratMenurutBBTB>().HasData(
+            new StandarBeratMenurutBBTB
+            {
+                Id = 1,
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TinggiBadan = 1,
+                SDMinus3 = 1,
+                SDMinus2 = 1,
+                SDMinus1 = 1,
+                MedianBeratBadan = 1,
+                SDPlus1 = 1,
+                SDPlus2 = 1,
+                SDPlus3 = 1,
+            }
+        );
+        #endregion
+
         return modelBuilder;
     }
 }
