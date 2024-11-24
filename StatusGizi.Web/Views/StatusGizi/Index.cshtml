@@ -1,0 +1,35 @@
+﻿@model List<IGrouping<DesaKelurahan, Pengecekan>>
+
+@{
+    ViewData["Title"] = "Status Gizi";
+}
+
+<table class="table dataTable">
+    <thead>
+        <tr>
+            <th>Desa/Kelurahan</th>
+            @foreach(var kategoriGizi in Enum.GetValues<KategoriGizi>())
+            {
+                <th>@kategoriGizi.Humanize()</th>
+            }
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var group in Model)
+        {
+            <tr>
+                <th>@group.Key.Nama</th>
+                <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBuruk)?.Count() ?? 0)</td>
+                <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziKurang)?.Count() ?? 0)</td>
+                <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBaik)?.Count() ?? 0)</td>
+                <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.BerpotensiBerlebih)?.Count() ?? 0)</td>
+                <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBerlebih)?.Count() ?? 0)</td>
+                <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.Obesitas)?.Count() ?? 0)</td>
+                <td>
+                    <a asp-action="Detail" asp-route-id="@group.Key.Id">Detail</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

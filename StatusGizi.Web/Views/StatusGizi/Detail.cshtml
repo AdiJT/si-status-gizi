@@ -1,0 +1,56 @@
+﻿@model List<Pengecekan>
+
+@{
+    ViewData["Titlw"] = "Detail";
+    var cultureInfo = new CultureInfo("id-ID");
+}
+
+<table class="table dataTable">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>NIK</th>
+            <th>Nama</th>
+            <th>Jenis Kelamin</th>
+            <th>Tgl Lahir</th>
+            <th>Berat Badan Lahir</th>
+            <th>Tinggi Badan Lahir</th>
+            <th>Orang Tua</th>
+            <th>Desa/Kelurahan</th>
+            <th>Posyandu</th>
+            <th>Tanggal Pengukuran</th>
+            <th>Usia Saat Ukur</th>
+            <th>Berat Badan</th>
+            <th>Tinggi Badan</th>
+            <th>LiLA</th>
+            <th>Kategori Gizi (BB/TB)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var no = 1;
+        }
+        @foreach(var pengecekan in Model)
+        {
+            <tr>
+                <td>@no</td>
+                <td>@pengecekan.Balita.NIK</td>
+                <td>@pengecekan.Balita.Nama</td>
+                <td>@pengecekan.Balita.JenisKelamin.Humanize()</td>
+                <td>@pengecekan.Balita.TanggalLahir.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
+                <td>@pengecekan.Balita.BeratBadanWaktuLahir</td>
+                <td>@pengecekan.Balita.TinggiBadanWaktuLahir</td>
+                <td>@pengecekan.Balita.OrangTua.Nama</td>
+                <td>@pengecekan.Posyandu.DesaKelurahan.Nama</td>
+                <td>@pengecekan.Posyandu.Nama</td>
+                <td>@pengecekan.TanggalPengecekan.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
+                <td>@pengecekan.Usia.Humanize()</td>
+                <td>@pengecekan.BeratBadan</td>
+                <td>@pengecekan.TinggiBadan</td>
+                <td>@pengecekan.LingkarLenganAtas</td>
+                <td>@pengecekan.KategoriGizi</td>
+            </tr>
+            no++;
+        }
+    </tbody>
+</table>

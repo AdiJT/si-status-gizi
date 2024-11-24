@@ -542,7 +542,7 @@ public static class ModelBuilderExtension
                 NIK = "5306612109211986",
                 Nama = "SAMUEL A. LEKY",
                 JenisKelamin = JenisKelamin.LakiLaki,
-                TanggalLahir = new DateOnly(2022, 09, 21),
+                TanggalLahir = new DateOnly(2021, 09, 21),
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 50d,
                 OrangTuaId = 4
@@ -552,7 +552,7 @@ public static class ModelBuilderExtension
                 NIK = "5306613009216892",
                 Nama = "DERIL TAMPANI",
                 JenisKelamin = JenisKelamin.LakiLaki,
-                TanggalLahir = new DateOnly(2022, 09, 30),
+                TanggalLahir = new DateOnly(2021, 09, 30),
                 BeratBadanWaktuLahir = 3.1d,
                 TinggiBadanWaktuLahir = 50d,
                 OrangTuaId = 5
@@ -562,7 +562,7 @@ public static class ModelBuilderExtension
                 NIK = "5306611509215054",
                 Nama = "GAMALIEL DAVIN LAHERA",
                 JenisKelamin = JenisKelamin.LakiLaki,
-                TanggalLahir = new DateOnly(2022, 09, 15),
+                TanggalLahir = new DateOnly(2021, 09, 15),
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 48d,
                 OrangTuaId = 6
@@ -572,7 +572,7 @@ public static class ModelBuilderExtension
                 NIK = "5306611608216534",
                 Nama = "AGUSTINUS I. NITBANI",
                 JenisKelamin = JenisKelamin.LakiLaki,
-                TanggalLahir = new DateOnly(2022, 08, 16),
+                TanggalLahir = new DateOnly(2021, 08, 16),
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 50d,
                 OrangTuaId = 7
@@ -582,7 +582,7 @@ public static class ModelBuilderExtension
                 NIK = "5306611708211553",
                 Nama = "DIRGARIUS A.TANEO",
                 JenisKelamin = JenisKelamin.LakiLaki,
-                TanggalLahir = new DateOnly(2022, 08, 17),
+                TanggalLahir = new DateOnly(2021, 08, 17),
                 BeratBadanWaktuLahir = 3d,
                 TinggiBadanWaktuLahir = 48d,
                 OrangTuaId = 8
@@ -662,7 +662,7 @@ public static class ModelBuilderExtension
                 NIK = "5306612608217549",
                 Nama = "AGUSTINUS H. PRAWIRA",
                 JenisKelamin = JenisKelamin.LakiLaki,
-                TanggalLahir = new DateOnly(2022, 08, 26),
+                TanggalLahir = new DateOnly(2021, 08, 26),
                 BeratBadanWaktuLahir = 3.4d,
                 TinggiBadanWaktuLahir = 50d,
                 OrangTuaId = 37
@@ -672,7 +672,7 @@ public static class ModelBuilderExtension
                 NIK = "5306611808214604",
                 Nama = "ABIMAE AMALO",
                 JenisKelamin = JenisKelamin.LakiLaki,
-                TanggalLahir = new DateOnly(2022, 08, 18),
+                TanggalLahir = new DateOnly(2021, 08, 18),
                 BeratBadanWaktuLahir = 2.8d,
                 TinggiBadanWaktuLahir = 48d,
                 OrangTuaId = 38
@@ -931,7 +931,7 @@ public static class ModelBuilderExtension
             {
                 Id = 6,
                 BalitaNIK = "5306611509215054",
-                TanggalPengecekan = new DateOnly(2022, 8, 18),
+                TanggalPengecekan = new DateOnly(2021, 8, 18),
                 BeratBadan = 8.4d,
                 TinggiBadan = 72.1d,
                 LingkarLenganAtas = 14d,
@@ -1030,7 +1030,7 @@ public static class ModelBuilderExtension
             {
                 Id = 15,
                 BalitaNIK = "5306610310212700",
-                TanggalPengecekan = new DateOnly(2022, 8, 9),
+                TanggalPengecekan = new DateOnly(2021, 8, 9),
                 BeratBadan = 9.1d,
                 TinggiBadan = 71.9d,
                 LingkarLenganAtas = 15.5d,
@@ -1063,7 +1063,7 @@ public static class ModelBuilderExtension
             {
                 Id = 18,
                 BalitaNIK = "5306611008217236",
-                TanggalPengecekan = new DateOnly(2022, 8, 10),
+                TanggalPengecekan = new DateOnly(2021, 8, 10),
                 BeratBadan = 9.6d,
                 TinggiBadan = 82.2d,
                 LingkarLenganAtas = 14d,
@@ -1162,7 +1162,7 @@ public static class ModelBuilderExtension
             {
                 Id = 27,
                 BalitaNIK = "5306611410216937",
-                TanggalPengecekan = new DateOnly(2022, 8, 16),
+                TanggalPengecekan = new DateOnly(2021, 8, 16),
                 BeratBadan = 7.5d,
                 TinggiBadan = 71.8d,
                 LingkarLenganAtas = 12.5d,
@@ -1173,7 +1173,7 @@ public static class ModelBuilderExtension
             {
                 Id = 28,
                 BalitaNIK = "5306612709216413",
-                TanggalPengecekan = new DateOnly(2022, 8, 12),
+                TanggalPengecekan = new DateOnly(2021, 8, 12),
                 BeratBadan = 9.4d,
                 TinggiBadan = 72.3d,
                 LingkarLenganAtas = 14.5d,

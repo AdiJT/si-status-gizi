@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - StatusGizi.Web</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link href="~/lib/datatables/css/jquery.dataTables.min.css" rel="stylesheet" asp-append-version="true" />
+
+    @* Responsive *@
+    <link href="~/lib/datatables/responsive-2.5.0/css/responsive.bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/datatables/responsive-2.5.0/css/responsive.bootstrap4.css" rel="stylesheet" />
+    <link href="~/lib/datatables/responsive-2.5.0/css/responsive.datatables.css" rel="stylesheet" />
+    <link href="~/lib/datatables/responsive-2.5.0/css/responsive.jqueryui.css" rel="stylesheet" />
+    @* Responsive *@
+
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/StatusGizi.Web.styles.css" asp-append-version="true" />
 </head>
@@ -41,9 +51,36 @@
             &copy; 2024 - StatusGizi.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+
+    @* Responsive *@
+    <script src="~/lib/datatables/responsive-2.5.0/js/dataTables.responsive.js"></script>
+    <script src="~/lib/datatables/responsive-2.5.0/js/responsive.bootstrap.js"></script>
+    <script src="~/lib/datatables/responsive-2.5.0/js/responsive.bootstrap4.js"></script>
+    <script src="~/lib/datatables/responsive-2.5.0/js/responsive.dataTables.js"></script>
+    <script src="~/lib/datatables/responsive-2.5.0/js/responsive.jqueryui.js"></script>
+    @* Responsive *@
+
+    <script type="text/javascript">
+        $(
+            function () {
+                $('table.dataTable').DataTable({
+                    responsive: {
+                        details: {
+                            renderer: $.fn.dataTable.Responsive.renderer.listHiddenNodes()
+                        }
+                    }
+                });
+                $('.table').addClass('table-responsive-sm table-striped');
+            }
+        );
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

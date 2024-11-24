@@ -90,7 +90,7 @@ namespace StatusGizi.Infrastructure.Migrations
                             JenisKelamin = 0,
                             Nama = "SAMUEL A. LEKY",
                             OrangTuaId = 4,
-                            TanggalLahir = new DateOnly(2022, 9, 21),
+                            TanggalLahir = new DateOnly(2021, 9, 21),
                             TinggiBadanWaktuLahir = 50.0
                         },
                         new
@@ -100,7 +100,7 @@ namespace StatusGizi.Infrastructure.Migrations
                             JenisKelamin = 0,
                             Nama = "DERIL TAMPANI",
                             OrangTuaId = 5,
-                            TanggalLahir = new DateOnly(2022, 9, 30),
+                            TanggalLahir = new DateOnly(2021, 9, 30),
                             TinggiBadanWaktuLahir = 50.0
                         },
                         new
@@ -110,7 +110,7 @@ namespace StatusGizi.Infrastructure.Migrations
                             JenisKelamin = 0,
                             Nama = "GAMALIEL DAVIN LAHERA",
                             OrangTuaId = 6,
-                            TanggalLahir = new DateOnly(2022, 9, 15),
+                            TanggalLahir = new DateOnly(2021, 9, 15),
                             TinggiBadanWaktuLahir = 48.0
                         },
                         new
@@ -120,7 +120,7 @@ namespace StatusGizi.Infrastructure.Migrations
                             JenisKelamin = 0,
                             Nama = "AGUSTINUS I. NITBANI",
                             OrangTuaId = 7,
-                            TanggalLahir = new DateOnly(2022, 8, 16),
+                            TanggalLahir = new DateOnly(2021, 8, 16),
                             TinggiBadanWaktuLahir = 50.0
                         },
                         new
@@ -130,7 +130,7 @@ namespace StatusGizi.Infrastructure.Migrations
                             JenisKelamin = 0,
                             Nama = "DIRGARIUS A.TANEO",
                             OrangTuaId = 8,
-                            TanggalLahir = new DateOnly(2022, 8, 17),
+                            TanggalLahir = new DateOnly(2021, 8, 17),
                             TinggiBadanWaktuLahir = 48.0
                         },
                         new
@@ -210,7 +210,7 @@ namespace StatusGizi.Infrastructure.Migrations
                             JenisKelamin = 0,
                             Nama = "AGUSTINUS H. PRAWIRA",
                             OrangTuaId = 37,
-                            TanggalLahir = new DateOnly(2022, 8, 26),
+                            TanggalLahir = new DateOnly(2021, 8, 26),
                             TinggiBadanWaktuLahir = 50.0
                         },
                         new
@@ -220,7 +220,7 @@ namespace StatusGizi.Infrastructure.Migrations
                             JenisKelamin = 0,
                             Nama = "ABIMAE AMALO",
                             OrangTuaId = 38,
-                            TanggalLahir = new DateOnly(2022, 8, 18),
+                            TanggalLahir = new DateOnly(2021, 8, 18),
                             TinggiBadanWaktuLahir = 48.0
                         },
                         new
@@ -928,7 +928,7 @@ namespace StatusGizi.Infrastructure.Migrations
                             KategoriGizi = 2,
                             LingkarLenganAtas = 14.0,
                             PosyanduId = 7,
-                            TanggalPengecekan = new DateOnly(2022, 8, 18),
+                            TanggalPengecekan = new DateOnly(2021, 8, 18),
                             TinggiBadan = 72.099999999999994
                         },
                         new
@@ -1027,7 +1027,7 @@ namespace StatusGizi.Infrastructure.Migrations
                             KategoriGizi = 2,
                             LingkarLenganAtas = 15.5,
                             PosyanduId = 6,
-                            TanggalPengecekan = new DateOnly(2022, 8, 9),
+                            TanggalPengecekan = new DateOnly(2021, 8, 9),
                             TinggiBadan = 71.900000000000006
                         },
                         new
@@ -1060,7 +1060,7 @@ namespace StatusGizi.Infrastructure.Migrations
                             KategoriGizi = 2,
                             LingkarLenganAtas = 14.0,
                             PosyanduId = 13,
-                            TanggalPengecekan = new DateOnly(2022, 8, 10),
+                            TanggalPengecekan = new DateOnly(2021, 8, 10),
                             TinggiBadan = 82.200000000000003
                         },
                         new
@@ -1159,7 +1159,7 @@ namespace StatusGizi.Infrastructure.Migrations
                             KategoriGizi = 1,
                             LingkarLenganAtas = 12.5,
                             PosyanduId = 8,
-                            TanggalPengecekan = new DateOnly(2022, 8, 16),
+                            TanggalPengecekan = new DateOnly(2021, 8, 16),
                             TinggiBadan = 71.799999999999997
                         },
                         new
@@ -1170,7 +1170,7 @@ namespace StatusGizi.Infrastructure.Migrations
                             KategoriGizi = 2,
                             LingkarLenganAtas = 14.5,
                             PosyanduId = 15,
-                            TanggalPengecekan = new DateOnly(2022, 8, 12),
+                            TanggalPengecekan = new DateOnly(2021, 8, 12),
                             TinggiBadan = 72.299999999999997
                         },
                         new
