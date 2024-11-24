@@ -4,71 +4,87 @@
     ViewData["Title"] = "Status Gizi";
 }
 
-<table class="table dataTable">
-    <thead>
-        <tr>
-            <th>Desa/Kelurahan</th>
-            @foreach(var kategoriGizi in Enum.GetValues<KategoriGizi>())
+<style>
+    .table {
+        font-size: 0.6em;
+    }
+</style>
+
+<div class="row">
+    <div class="col-6">
+        <table class="table dataTable">
+            <thead>
+                <tr>
+                    <th>Desa/Kelurahan</th>
+                    @foreach (var kategoriGizi in Enum.GetValues<KategoriGizi>())
+                    {
+                        <th>@kategoriGizi.Humanize()</th>
+                    }
+                    <th>Sub Total</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var group in Model)
+                {
+                    <tr>
+                        <th>@group.Key.Nama</th>
+                        <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBuruk)?.Count() ?? 0)</td>
+                        <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziKurang)?.Count() ?? 0)</td>
+                        <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBaik)?.Count() ?? 0)</td>
+                        <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.BerpotensiBerlebih)?.Count() ?? 0)</td>
+                        <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBerlebih)?.Count() ?? 0)</td>
+                        <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.Obesitas)?.Count() ?? 0)</td>
+                        <td>@(group.Count())</td>
+                        <td>
+                            <a asp-action="Detail" asp-route-id="@group.Key.Id">Detail</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziBuruk).Count())</td>
+                    <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziKurang).Count())</td>
+                    <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziBaik).Count())</td>
+                    <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.BerpotensiBerlebih).Count())</td>
+                    <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziBerlebih).Count())</td>
+                    <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.Obesitas).Count())</td>
+                    <td>@(Model.SelectMany(g => g.ToList()).Count())</td>
+                    <td> </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="col-6">
+        <div class="owl-carousel owl-theme grafikContainer">
+            @foreach (var kategoriGizi in Enum.GetValues<KategoriGizi>())
             {
-                <th>@kategoriGizi.Humanize()</th>
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                            Jumlah Balita @kategoriGizi.Humanize()
+                        </div>
+                        <div class="card-body">
+                            <vc:chart chart-model=@(new ChartVM { Label = $"Jumlah Balita {kategoriGizi.Humanize()}", Type = ChartType.Bar, Data = new Dictionary<string, double>(Model.Select(g => new KeyValuePair<string, double>(g.Key.Nama, g.Where(p => p.KategoriGizi == kategoriGizi).Count())))}) />
+                        </div>
+                    </div>
+                </div>
             }
-            <th>Sub Total</th>
-            <th>Aksi</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach(var group in Model)
-        {
-            <tr>
-                <th>@group.Key.Nama</th>
-                <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBuruk)?.Count() ?? 0)</td>
-                <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziKurang)?.Count() ?? 0)</td>
-                <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBaik)?.Count() ?? 0)</td>
-                <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.BerpotensiBerlebih)?.Count() ?? 0)</td>
-                <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBerlebih)?.Count() ?? 0)</td>
-                <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.Obesitas)?.Count() ?? 0)</td>
-                <td>@(group.Count())</td>
-                <td>
-                    <a asp-action="Detail" asp-route-id="@group.Key.Id">Detail</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-    <tfoot>
-        <tr>
-            <th>Total</th>
-            <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziBuruk).Count())</td>
-            <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziKurang).Count())</td>
-            <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziBaik).Count())</td>
-            <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.BerpotensiBerlebih).Count())</td>
-            <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziBerlebih).Count())</td>
-            <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.Obesitas).Count())</td>
-            <td>@(Model.SelectMany(g => g.ToList()).Count())</td>
-            <td> </td>
-        </tr>
-    </tfoot>
-</table>
-
-<div class="row">
-    <vc:chart chart-model=@(new ChartVM { Label = "Jumlah Balita Gizi Buruk", Type = ChartType.Bar, Data = new Dictionary<string, double>(Model.Select(g => new KeyValuePair<string, double>(g.Key.Nama, g.Where(p => p.KategoriGizi == KategoriGizi.GiziBuruk).Count())))}) />
+        </div>
+    </div>
 </div>
 
-<div class="row">
-    <vc:chart chart-model=@(new ChartVM { Label = "Jumlah Balita Gizi Kurang", Type = ChartType.Bar, Data = new Dictionary<string, double>(Model.Select(g => new KeyValuePair<string, double>(g.Key.Nama, g.Where(p => p.KategoriGizi == KategoriGizi.GiziKurang).Count())))}) />
-</div>
-
-<div class="row">
-    <vc:chart chart-model=@(new ChartVM { Label = "Jumlah Balita Gizi Baik", Type = ChartType.Bar, Data = new Dictionary<string, double>(Model.Select(g => new KeyValuePair<string, double>(g.Key.Nama, g.Where(p => p.KategoriGizi == KategoriGizi.GiziBaik).Count())))}) />
-</div>
-
-<div class="row">
-    <vc:chart chart-model=@(new ChartVM { Label = "Jumlah Balita Berpotensi Berlebih", Type = ChartType.Bar, Data = new Dictionary<string, double>(Model.Select(g => new KeyValuePair<string, double>(g.Key.Nama, g.Where(p => p.KategoriGizi == KategoriGizi.BerpotensiBerlebih).Count())))}) />
-</div>
-
-<div class="row">
-    <vc:chart chart-model=@(new ChartVM { Label = "Jumlah Balita Gizi Berlebih", Type = ChartType.Bar, Data = new Dictionary<string, double>(Model.Select(g => new KeyValuePair<string, double>(g.Key.Nama, g.Where(p => p.KategoriGizi == KategoriGizi.GiziBerlebih).Count())))}) />
-</div>
-
-<div class="row">
-    <vc:chart chart-model=@(new ChartVM { Label = "Jumlah Balita Obesitas", Type = ChartType.Bar, Data = new Dictionary<string, double>(Model.Select(g => new KeyValuePair<string, double>(g.Key.Nama, g.Where(p => p.KategoriGizi == KategoriGizi.Obesitas).Count())))}) />
-</div>
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+            $('.grafikContainer').owlCarousel({
+                loop: false,
+                autoPlay: false,
+                nav: false,
+                items: 1
+            });
+        });
+    </script>
+}

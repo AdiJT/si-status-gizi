@@ -8,7 +8,7 @@
 
 Data Pengecekan
 
-<table class="table dataTable">
+<table class="table">
     <thead>
         <tr>
             <th>NIK</th>
@@ -39,6 +39,33 @@ Data Pengecekan
             <td>@Model.Pengecekan.BeratBadan</td>
             <td>@Model.Pengecekan.TinggiBadan</td>
             <td>@Model.Pengecekan.KategoriGizi</td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tinggi Badan</th>
+            <th>-3 SD</th>
+            <th>-2 SD</th>
+            <th>-1 SD</th>
+            <th>Median</th>
+            <th>+1 SD</th>
+            <th>+2 SD</th>
+            <th>+3 SD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.StandarBeratMenurutBBTB.TinggiBadan</td>
+            <td>@Model.StandarBeratMenurutBBTB.SDMinus3</td>
+            <td>@Model.StandarBeratMenurutBBTB.SDMinus2</td>
+            <td>@Model.StandarBeratMenurutBBTB.SDMinus1</td>
+            <td>@Model.StandarBeratMenurutBBTB.MedianBeratBadan</td>
+            <td>@Model.StandarBeratMenurutBBTB.SDPlus1</td>
+            <td>@Model.StandarBeratMenurutBBTB.SDPlus2</td>
+            <td>@Model.StandarBeratMenurutBBTB.SDPlus3</td>
         </tr>
     </tbody>
 </table>
