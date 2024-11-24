@@ -31,8 +31,8 @@ Data Pengecekan
             <td>@Model.Pengecekan.Posyandu.Nama</td>
             <td>@Model.Pengecekan.TanggalPengecekan.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
             <td>@Model.Pengecekan.Usia.Humanize(7, countEmptyUnits: true, culture: cultureInfo, maxUnit: TimeUnit.Year, minUnit: TimeUnit.Day, collectionSeparator: " ")</td>
-            <td>@Model.Pengecekan.BeratBadan</td>
-            <td>@Model.Pengecekan.TinggiBadan</td>
+            <td>@Model.Pengecekan.BeratBadan Kg</td>
+            <td>@Model.Pengecekan.TinggiBadan cm</td>
         </tr>
     </tbody>
 </table>
@@ -53,14 +53,14 @@ Standar Berat Badan
     </thead>
     <tbody>
         <tr>
-            <td>@Model.StandarBeratMenurutBBTB.TinggiBadan</td>
-            <td>@Model.StandarBeratMenurutBBTB.SDMinus3</td>
-            <td>@Model.StandarBeratMenurutBBTB.SDMinus2</td>
-            <td>@Model.StandarBeratMenurutBBTB.SDMinus1</td>
-            <td>@Model.StandarBeratMenurutBBTB.MedianBeratBadan</td>
-            <td>@Model.StandarBeratMenurutBBTB.SDPlus1</td>
-            <td>@Model.StandarBeratMenurutBBTB.SDPlus2</td>
-            <td>@Model.StandarBeratMenurutBBTB.SDPlus3</td>
+            <td>@Model.StandarBeratMenurutBBTB.TinggiBadan cm</td>
+            <td>@Model.StandarBeratMenurutBBTB.SDMinus3 Kg</td>
+            <td>@Model.StandarBeratMenurutBBTB.SDMinus2 Kg</td>
+            <td>@Model.StandarBeratMenurutBBTB.SDMinus1 Kg</td>
+            <td>@Model.StandarBeratMenurutBBTB.MedianBeratBadan Kg</td>
+            <td>@Model.StandarBeratMenurutBBTB.SDPlus1 Kg</td>
+            <td>@Model.StandarBeratMenurutBBTB.SDPlus2 Kg</td>
+            <td>@Model.StandarBeratMenurutBBTB.SDPlus3 Kg</td>
         </tr>
     </tbody>
 </table>
