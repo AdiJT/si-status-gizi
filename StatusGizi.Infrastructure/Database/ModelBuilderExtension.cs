@@ -29,72 +29,8 @@ public static class ModelBuilderExtension
             {
                 Id = 4,
                 Nama = "Umanen",
-            },
-            new DesaKelurahan
-            {
-                Id = 5,
-                Nama = "Bangka Kuleng",
-            },
-            new DesaKelurahan
-            {
-                Id = 6,
-                Nama = "Bangka Leleng",
-            },
-            new DesaKelurahan
-            {
-                Id = 7,
-                Nama = "Bangka Pau",
-            },
-            new DesaKelurahan
-            {
-                Id = 8,
-                Nama = "Bea Waek",
-            },
-            new DesaKelurahan
-            {
-                Id = 9,
-                Nama = "Compang Wesang",
-            },
-            new DesaKelurahan
-            {
-                Id = 10,
-                Nama = "Golo Lobos",
-            },
-            new DesaKelurahan
-            {
-                Id = 11,
-                Nama = "Golo Nderu",
-            },
-            new DesaKelurahan
-            {
-                Id = 12,
-                Nama = "Golo Rengket",
-            },
-            new DesaKelurahan
-            {
-                Id = 13,
-                Nama = "Gurung Turi",
-            },
-            new DesaKelurahan
-            {
-                Id = 14,
-                Nama = "Mando Sawu",
-            },
-            new DesaKelurahan
-            {
-                Id = 15,
-                Nama = "Nggalak Leleng",
-            },
-            new DesaKelurahan
-            {
-                Id = 16,
-                Nama = "Pocolia",
-            },
-            new DesaKelurahan
-            {
-                Id = 17,
-                Nama = "Satar Tesem",
             }
+
 
         );
         #endregion
@@ -214,174 +150,6 @@ public static class ModelBuilderExtension
                 Id = 19,
                 Nama = "Wekatimun 3",
                 DesaKelurahanId = 4
-            },
-            new
-            {
-                Id = 20,
-                Nama = "Bealing 1",
-                DesaKelurahanId = 7
-            },
-            new
-            {
-                Id = 21,
-                Nama = "Bealing 2",
-                DesaKelurahanId = 7
-            },
-            new
-            {
-                Id = 22,
-                Nama = "Bealing 2",
-                DesaKelurahanId = 7
-            },
-            new
-            {
-                Id = 23,
-                Nama = "Leci",
-                DesaKelurahanId = 5
-            },
-            new
-            {
-                Id = 24,
-                Nama = "Ceka Likang",
-                DesaKelurahanId = 6
-            },
-            new
-            {
-                Id = 25,
-                Nama = "Golo Tenda",
-                DesaKelurahanId = 6
-            },
-            new
-            {
-                Id = 26,
-                Nama = "Carang",
-                DesaKelurahanId = 8
-            },
-            new
-            {
-                Id = 27,
-                Nama = "Geleng",
-                DesaKelurahanId = 9
-            },
-            new
-            {
-                Id = 28,
-                Nama = "Golo Ara",
-                DesaKelurahanId = 9
-            },
-            new
-            {
-                Id = 29,
-                Nama = "Wesang",
-                DesaKelurahanId = 9
-            },
-            new
-            {
-                Id = 30,
-                Nama = "Lame 2",
-                DesaKelurahanId = 10
-            },
-            new
-            {
-                Id = 31,
-                Nama = "Pelus",
-                DesaKelurahanId = 10
-            },
-            new
-            {
-                Id = 32,
-                Nama = "Lamba",
-                DesaKelurahanId = 11
-            },
-            new
-            {
-                Id = 33,
-                Nama = "Nderu",
-                DesaKelurahanId = 11
-            },
-            new
-            {
-                Id = 34,
-                Nama = "Nggari",
-                DesaKelurahanId = 11
-            },
-            new
-            {
-                Id = 35,
-                Nama = "Majung",
-                DesaKelurahanId = 12
-            },
-            new
-            {
-                Id = 36,
-                Nama = "Ncuang",
-                DesaKelurahanId = 13
-            },
-            new
-            {
-                Id = 37,
-                Nama = "Ndueng",
-                DesaKelurahanId = 13
-            },
-            new
-            {
-                Id = 38,
-                Nama = "Nengkal",
-                DesaKelurahanId = 13
-            },
-            new
-            {
-                Id = 39,
-                Nama = "Pocong",
-                DesaKelurahanId = 13
-            },
-            new
-            {
-                Id = 40,
-                Nama = "Benteng Dima",
-                DesaKelurahanId = 14
-            },
-            new
-            {
-                Id = 41,
-                Nama = "Golo Laci",
-                DesaKelurahanId = 14
-            },
-            new
-            {
-                Id = 42,
-                Nama = "Kompas",
-                DesaKelurahanId = 14
-            },
-            new
-            {
-                Id = 43,
-                Nama = "Lewe",
-                DesaKelurahanId = 15
-            },
-            new
-            {
-                Id = 44,
-                Nama = "Watu Cie",
-                DesaKelurahanId = 15
-            },
-            new
-            {
-                Id = 45,
-                Nama = "Pandang",
-                DesaKelurahanId = 16
-            },
-            new
-            {
-                Id = 46,
-                Nama = "Pongkor",
-                DesaKelurahanId = 16
-            },
-            new
-            {
-                Id = 47,
-                Nama = "Moncok",
-                DesaKelurahanId = 17
             }
 
         );
@@ -740,14 +508,122 @@ public static class ModelBuilderExtension
             new
             {
                 Id = 59,
-                Nama = "BONEFASIUS KEOR",
-                DesaKelurahanId = 14
+                Nama = "YASINTUS NAHAK",
+                DesaKelurahanId = 3
             },
             new
             {
                 Id = 60,
-                Nama = "ELFRIDA NDIMUN",
-                DesaKelurahanId = 13
+                Nama = "SUSAN NAES",
+                DesaKelurahanId = 3
+            },
+            new
+            {
+                Id = 61,
+                Nama = "DIONISIUS MAU",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 62,
+                Nama = "AGUSTINO DE. J",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 63,
+                Nama = "YASINTUS KOFI",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 64,
+                Nama = "I PUTU DEDI SETIAWAN",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 65,
+                Nama = "FLORA",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 66,
+                Nama = "MUHAMMAD ISA F USI",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 67,
+                Nama = "FRANSISKUS PONGKI SERAN",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 68,
+                Nama = "ADELINO O. SOARES",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 69,
+                Nama = "JAFRIANUS NAIFATIN",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 70,
+                Nama = "FRANSISKUS TRINDADE",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 71,
+                Nama = "SON UKAT",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 72,
+                Nama = "LONGGINUS LOE",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 73,
+                Nama = "UKAT",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 74,
+                Nama = "GERFAS LOLOMSAIT",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 75,
+                Nama = "",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 76,
+                Nama = "YOHANES KENJAM",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 77,
+                Nama = "MANUEL N",
+                DesaKelurahanId = 4
+            },
+            new
+            {
+                Id = 78,
+                Nama = "SONNY LY RAU",
+                DesaKelurahanId = 4
             }
 
         );
@@ -1117,23 +993,203 @@ public static class ModelBuilderExtension
             },
             new
             {
-                NIK = "5319024912229990",
-                Nama = "MELTIADES KEOR",
-                JenisKelamin = JenisKelamin.Perempuan,
-                TanggalLahir = new DateOnly(2022, 12, 9),
-                BeratBadanWaktuLahir = 3.2d,
-                TinggiBadanWaktuLahir = 51d,
+                NIK = "5306612509215198",
+                Nama = "VARELIO NAHAK",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2021, 9, 25),
+                BeratBadanWaktuLahir = 2.7d,
+                TinggiBadanWaktuLahir = 49d,
                 OrangTuaId = 59
             },
             new
             {
-                NIK = "5319025103229974",
-                Nama = "MARIA Y.T. QUIN",
-                JenisKelamin = JenisKelamin.Perempuan,
-                TanggalLahir = new DateOnly(2022, 3, 11),
+                NIK = "5306612601222598",
+                Nama = "GILBERT BANUNAEK",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 1, 26),
                 BeratBadanWaktuLahir = 3.2d,
-                TinggiBadanWaktuLahir = 51d,
+                TinggiBadanWaktuLahir = 50d,
                 OrangTuaId = 60
+            },
+            new
+            {
+                NIK = "5306611707228503",
+                Nama = "JOAKIM JOVANO MAU",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 7, 17),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 61
+            },
+            new
+            {
+                NIK = "5306610306226179",
+                Nama = "MARIA RASTIANA DE.J",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 6, 3),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 62
+            },
+            new
+            {
+                NIK = "5306612104224910",
+                Nama = "APRILIO ADEN KOFI",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 4, 21),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 63
+            },
+            new
+            {
+                NIK = "5306612303229952",
+                Nama = "KOMANG B.D.S.P",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 3, 23),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 64
+            },
+            new
+            {
+                NIK = "5306611401221414",
+                Nama = "JEREMI TURNIP",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 1, 14),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 65
+            },
+            new
+            {
+                NIK = "5306610310217582",
+                Nama = "MUHAMMAD SYFID",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2021, 10, 3),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 66
+            },
+            new
+            {
+                NIK = "5306612405226168",
+                Nama = "ALBERT SERAN",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 5, 24),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 67
+            },
+            new
+            {
+                NIK = "5306610311217965",
+                Nama = "MIKHAEL O. SOARES",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2021, 11, 3),
+                BeratBadanWaktuLahir = 3.1d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 68
+            },
+            new
+            {
+                NIK = "5306612609215986",
+                Nama = "GILBERT NAIFATIN",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2021, 9, 26),
+                BeratBadanWaktuLahir = 3.1d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 69
+            },
+            new
+            {
+                NIK = "5306613103226645",
+                Nama = "ANTONIO TRINDADE DA COSTA",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 3, 31),
+                BeratBadanWaktuLahir = 3d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 70
+            },
+            new
+            {
+                NIK = "5306611502224363",
+                Nama = "DAFA UKAT",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 2, 15),
+                BeratBadanWaktuLahir = 2.5d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 71
+            },
+            new
+            {
+                NIK = "5306612010213287",
+                Nama = "EDWARD F. C. LOE",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2021, 10, 20),
+                BeratBadanWaktuLahir = 2.8d,
+                TinggiBadanWaktuLahir = 48d,
+                OrangTuaId = 72
+            },
+            new
+            {
+                NIK = "5306612907215730",
+                Nama = "JESON UKAT",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2021, 7, 29),
+                BeratBadanWaktuLahir = 3.1d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 73
+            },
+            new
+            {
+                NIK = "5306611907229365",
+                Nama = "GRACIANO LOLOMSAIT",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 7, 19),
+                BeratBadanWaktuLahir = 2.6d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 74
+            },
+            new
+            {
+                NIK = "5306612807224014",
+                Nama = "AGNESIA TIARA SIN MAU",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 7, 28),
+                BeratBadanWaktuLahir = 2.6d,
+                TinggiBadanWaktuLahir = 45d,
+                OrangTuaId = 75
+            },
+            new
+            {
+                NIK = "5303244310870001",
+                Nama = "ALANA FERNANDES",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 7, 18),
+                BeratBadanWaktuLahir = 3.1d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 76
+            },
+            new
+            {
+                NIK = "5304214606940004",
+                Nama = "ALFIAN E. N",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 7, 1),
+                BeratBadanWaktuLahir = 2.9d,
+                TinggiBadanWaktuLahir = 49d,
+                OrangTuaId = 77
+            },
+            new
+            {
+                NIK = "5306611706223451",
+                Nama = "GIBRAN M. LY RATU",
+                JenisKelamin = JenisKelamin.LakiLaki,
+                TanggalLahir = new DateOnly(2022, 6, 17),
+                BeratBadanWaktuLahir = 3.5d,
+                TinggiBadanWaktuLahir = 50d,
+                OrangTuaId = 78
             }
 
         );
@@ -1540,25 +1596,180 @@ public static class ModelBuilderExtension
             new
             {
                 Id = 37,
-                BalitaNIK = "5319024912229990",
-                TanggalPengecekan = new DateOnly(2022, 12, 9),
-                BeratBadan = 3.4d,
-                TinggiBadan = 59.9d,
-                LingkarLenganAtas = 10.5d,
-                KategoriGizi = KategoriGizi.GiziBuruk,
-                PosyanduId = 40,
+                BalitaNIK = "5306612509215198",
+                TanggalPengecekan = new DateOnly(2022, 8, 12),
+                BeratBadan = 8.1d,
+                TinggiBadan = 65.3d,
+                LingkarLenganAtas = 14d,
+                KategoriGizi = KategoriGizi.BerpotensiBerlebih,
+                PosyanduId = 15,
             },
             new
             {
                 Id = 38,
-                BalitaNIK = "5319025103229974",
-                TanggalPengecekan = new DateOnly(2022, 3, 11),
+                BalitaNIK = "5306612509215198",
+                TanggalPengecekan = new DateOnly(2022, 8, 12),
+                BeratBadan = 8.1d,
+                TinggiBadan = 64.7d,
+                LingkarLenganAtas = 15d,
+                KategoriGizi = KategoriGizi.BerpotensiBerlebih,
+                PosyanduId = 15,
+            },
+            new
+            {
+                Id = 39,
+                BalitaNIK = "5306611707228503",
+                TanggalPengecekan = new DateOnly(2022, 8, 19),
+                BeratBadan = 5.1d,
+                TinggiBadan = 54.3d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.BerpotensiBerlebih,
+                PosyanduId = 15,
+            },
+            new
+            {
+                Id = 39,
+                BalitaNIK = "5306611707228503",
+                TanggalPengecekan = new DateOnly(2022, 8, 19),
+                BeratBadan = 5.1d,
+                TinggiBadan = 54.3d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.BerpotensiBerlebih,
+                PosyanduId = 9,
+            },
+            new
+            {
+                Id = 40,
+                BalitaNIK = "5306610306226179",
+                TanggalPengecekan = new DateOnly(2022, 8, 9),
+                BeratBadan = 5.2d,
+                TinggiBadan = 55.3d,
+                LingkarLenganAtas = 15d,
+                KategoriGizi = KategoriGizi.BerpotensiBerlebih,
+                PosyanduId = 11,
+            },
+            new
+            {
+                Id = 41,
+                BalitaNIK = "5306612104224910",
+                TanggalPengecekan = new DateOnly(2022, 8, 5),
                 BeratBadan = 6.8d,
-                TinggiBadan = 75.9d,
-                LingkarLenganAtas = 13.7d,
-                KategoriGizi = KategoriGizi.GiziBuruk,
-                PosyanduId = 36,
+                TinggiBadan = 60.8d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.BerpotensiBerlebih,
+                PosyanduId = 17,
+            },
+            new
+            {
+                Id = 42,
+                BalitaNIK = "5306612303229952",
+                TanggalPengecekan = new DateOnly(2022, 8, 9),
+                BeratBadan = 8.9d,
+                TinggiBadan = 66.3d,
+                LingkarLenganAtas = 19d,
+                KategoriGizi = KategoriGizi.BerpotensiBerlebih,
+                PosyanduId = 9,
+            },
+            new
+            {
+                Id = 43,
+                BalitaNIK = "5306611401221414",
+                TanggalPengecekan = new DateOnly(2022, 8, 8),
+                BeratBadan = 9.5d,
+                TinggiBadan = 70d,
+                LingkarLenganAtas = 17d,
+                KategoriGizi = KategoriGizi.BerpotensiBerlebih,
+                PosyanduId = 2,
+            },
+            new
+            {
+                Id = 44,
+                BalitaNIK = "5306610310217582 ",
+                TanggalPengecekan = new DateOnly(2022, 8, 15),
+                BeratBadan = 10d,
+                TinggiBadan = 70d,
+                LingkarLenganAtas = 14d,
+                KategoriGizi = KategoriGizi.GiziBerlebih,
+                PosyanduId = 18,
+            },
+            new
+            {
+                Id = 45,
+                BalitaNIK = "5306610310217582",
+                TanggalPengecekan = new DateOnly(2022, 8, 20),
+                BeratBadan = 6.9d,
+                TinggiBadan = 58d,
+                LingkarLenganAtas = 14.4d,
+                KategoriGizi = KategoriGizi.GiziBerlebih,
+                PosyanduId = 3,
+            },
+            new
+            {
+                Id = 46,
+                BalitaNIK = "5306610311217965",
+                TanggalPengecekan = new DateOnly(2022, 8, 19),
+                BeratBadan = 10d,
+                TinggiBadan = 69d,
+                LingkarLenganAtas = 14d,
+                KategoriGizi = KategoriGizi.GiziBerlebih,
+                PosyanduId = 9,
+            },
+            new
+            {
+                Id = 47,
+                BalitaNIK = "5306612609215986",
+                TanggalPengecekan = new DateOnly(2022, 8, 18),
+                BeratBadan = 7.3d,
+                TinggiBadan = 72.8d,
+                LingkarLenganAtas = 14d,
+                KategoriGizi = KategoriGizi.GiziKurang,
+                PosyanduId = 12,
+            },
+            new
+            {
+                Id = 48,
+                BalitaNIK = "5306613103226645",
+                TanggalPengecekan = new DateOnly(2022, 8, 9),
+                BeratBadan = 5.5d,
+                TinggiBadan = 62d,
+                LingkarLenganAtas = 13d,
+                KategoriGizi = KategoriGizi.GiziKurang,
+                PosyanduId = 11,
+            },
+            new
+            {
+                Id = 49,
+                BalitaNIK = "5306611502224363",
+                TanggalPengecekan = new DateOnly(2022, 8, 5),
+                BeratBadan = 5.8d,
+                TinggiBadan = 63.7d,
+                LingkarLenganAtas = 0d,
+                KategoriGizi = KategoriGizi.GiziKurang,
+                PosyanduId = 17,
+            },
+            new
+            {
+                Id = 50,
+                BalitaNIK = "5306612010213287",
+                TanggalPengecekan = new DateOnly(2022, 8, 15),
+                BeratBadan = 6.8d,
+                TinggiBadan = 68.8d,
+                LingkarLenganAtas = 13d,
+                KategoriGizi = KategoriGizi.GiziKurang,
+                PosyanduId = 18,
+            },
+            new
+            {
+                Id = 51,
+                BalitaNIK = "5306612907215730",
+                TanggalPengecekan = new DateOnly(2022, 8, 8),
+                BeratBadan = 7.8d,
+                TinggiBadan = 74d,
+                LingkarLenganAtas = 14d,
+                KategoriGizi = KategoriGizi.GiziKurang,
+                PosyanduId = 2,
             }
+
 
         );
         #endregion
