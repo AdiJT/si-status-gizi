@@ -1,4 +1,7 @@
-﻿@model DetailVM
+﻿@using Humanizer
+@using Humanizer.Localisation
+
+@model DetailVM
 
 @{
     ViewData["Titlw"] = "Detail";
@@ -32,7 +35,7 @@
         @{
             var no = 1;
         }
-        @foreach(var pengecekan in Model.DaftarPengecekan)
+        @foreach (var pengecekan in Model.DaftarPengecekan)
         {
             <tr>
                 <td>@no</td>
@@ -46,7 +49,7 @@
                 <td>@pengecekan.Posyandu.DesaKelurahan.Nama</td>
                 <td>@pengecekan.Posyandu.Nama</td>
                 <td>@pengecekan.TanggalPengecekan.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
-                <td>@pengecekan.Usia.Humanize()</td>
+                <td>@pengecekan.Usia.Humanize(7, countEmptyUnits: true, culture: cultureInfo, maxUnit: TimeUnit.Year, minUnit: TimeUnit.Day)</td>
                 <td>@pengecekan.BeratBadan</td>
                 <td>@pengecekan.TinggiBadan</td>
                 <td>@pengecekan.LingkarLenganAtas</td>
@@ -56,3 +59,15 @@
         }
     </tbody>
 </table>
+
+<div class="row">
+    @{
+        var chartVM = new ChartVM
+        {
+            Label = $"Gizi Balita Desa {Model.DesaKelurahan.Nama}",
+            Type = ChartType.Bar,
+            Data = new Dictionary<string, double>(Model.DaftarPengecekan.GroupBy(p => p.KategoriGizi).OrderBy(g => g.Key).Select(g => new KeyValuePair<string, double>(g.Key.Humanize(), g.Count()))),
+        };
+    }
+    <vc:chart chart-model=chartVM />
+</div>
