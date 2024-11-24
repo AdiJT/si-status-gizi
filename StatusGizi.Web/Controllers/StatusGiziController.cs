@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using StatusGizi.Domain.Entities;
 using StatusGizi.Infrastructure.Database;
+using StatusGizi.Web.Models.StatusGizi;
 
 namespace StatusGizi.Web.Controllers;
 
@@ -30,7 +31,7 @@ public class StatusGiziController : Controller
         var desaKelurahan = await _appDbContext.TblDesaKelurahan
             .FirstOrDefaultAsync(d => d.Id == id);
 
-        if (desaKelurahan is null) return View(new List<Pengecekan>());
+        if (desaKelurahan is null) return NotFound();
 
         var daftarPengecekan = await _appDbContext.TblPengecekan
             .Include(p => p.Balita).ThenInclude(b => b.OrangTua).ThenInclude(o => o.DesaKelurahan)
@@ -38,6 +39,10 @@ public class StatusGiziController : Controller
             .Where(p => p.Posyandu.DesaKelurahan.Id == desaKelurahan.Id)
             .ToListAsync();
 
-        return View(daftarPengecekan);
+        return View(new DetailVM
+        {
+            DesaKelurahan = desaKelurahan,
+            DaftarPengecekan = daftarPengecekan,
+        });
     }
 }
