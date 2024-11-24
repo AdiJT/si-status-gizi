@@ -56,7 +56,7 @@
                         <td>@pengecekan.Usia.Humanize(7, countEmptyUnits: true, culture: cultureInfo, maxUnit: TimeUnit.Year, minUnit: TimeUnit.Day, collectionSeparator: " ")</td>
                         <td>@pengecekan.BeratBadan Kg</td>
                         <td>@pengecekan.TinggiBadan cm</td>
-                        <td>@pengecekan.KategoriGizi</td>
+                        <td>@pengecekan.KategoriGizi.Humanize()</td>
                         <td>
                             <a asp-action="Analisis" asp-route-id="@pengecekan.Id">Detail</a>
                         </td>
