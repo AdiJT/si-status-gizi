@@ -1622,7 +1622,7 @@ public static class ModelBuilderExtension
             new
             {
                 Id = 44,
-                BalitaNIK = "5306610310217582 ",
+                BalitaNIK = "5306610310217582",
                 TanggalPengecekan = new DateOnly(2022, 8, 15),
                 BeratBadan = 10d,
                 TinggiBadan = 70d,

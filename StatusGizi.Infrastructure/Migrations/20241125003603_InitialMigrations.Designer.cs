@@ -12,8 +12,8 @@ using StatusGizi.Infrastructure.Database;
 namespace StatusGizi.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241124035042_SeedingData6")]
-    partial class SeedingData6
+    [Migration("20241125003603_InitialMigrations")]
+    partial class InitialMigrations
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -418,23 +418,153 @@ namespace StatusGizi.Infrastructure.Migrations
                         },
                         new
                         {
-                            NIK = "5319024912229990",
-                            BeratBadanWaktuLahir = 3.2000000000000002,
-                            JenisKelamin = 1,
-                            Nama = "MELTIADES KEOR",
+                            NIK = "5306612509215198",
+                            BeratBadanWaktuLahir = 2.7000000000000002,
+                            JenisKelamin = 0,
+                            Nama = "VARELIO NAHAK",
                             OrangTuaId = 59,
-                            TanggalLahir = new DateOnly(2022, 12, 9),
-                            TinggiBadanWaktuLahir = 51.0
+                            TanggalLahir = new DateOnly(2021, 9, 25),
+                            TinggiBadanWaktuLahir = 49.0
                         },
                         new
                         {
-                            NIK = "5319025103229974",
+                            NIK = "5306612601222598",
                             BeratBadanWaktuLahir = 3.2000000000000002,
-                            JenisKelamin = 1,
-                            Nama = "MARIA Y.T. QUIN",
+                            JenisKelamin = 0,
+                            Nama = "GILBERT BANUNAEK",
                             OrangTuaId = 60,
-                            TanggalLahir = new DateOnly(2022, 3, 11),
-                            TinggiBadanWaktuLahir = 51.0
+                            TanggalLahir = new DateOnly(2022, 1, 26),
+                            TinggiBadanWaktuLahir = 50.0
+                        },
+                        new
+                        {
+                            NIK = "5306611707228503",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "JOAKIM JOVANO MAU",
+                            OrangTuaId = 61,
+                            TanggalLahir = new DateOnly(2022, 7, 17),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306610306226179",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "MARIA RASTIANA DE.J",
+                            OrangTuaId = 62,
+                            TanggalLahir = new DateOnly(2022, 6, 3),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306612104224910",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "APRILIO ADEN KOFI",
+                            OrangTuaId = 63,
+                            TanggalLahir = new DateOnly(2022, 4, 21),
+                            TinggiBadanWaktuLahir = 50.0
+                        },
+                        new
+                        {
+                            NIK = "5306612303229952",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "KOMANG B.D.S.P",
+                            OrangTuaId = 64,
+                            TanggalLahir = new DateOnly(2022, 3, 23),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306611401221414",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "JEREMI TURNIP",
+                            OrangTuaId = 65,
+                            TanggalLahir = new DateOnly(2022, 1, 14),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306610310217582",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "MUHAMMAD SYFID",
+                            OrangTuaId = 66,
+                            TanggalLahir = new DateOnly(2021, 10, 3),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306612405226168",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "ALBERT SERAN",
+                            OrangTuaId = 67,
+                            TanggalLahir = new DateOnly(2022, 5, 24),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306610311217965",
+                            BeratBadanWaktuLahir = 3.1000000000000001,
+                            JenisKelamin = 0,
+                            Nama = "MIKHAEL O. SOARES",
+                            OrangTuaId = 68,
+                            TanggalLahir = new DateOnly(2021, 11, 3),
+                            TinggiBadanWaktuLahir = 50.0
+                        },
+                        new
+                        {
+                            NIK = "5306612609215986",
+                            BeratBadanWaktuLahir = 3.1000000000000001,
+                            JenisKelamin = 0,
+                            Nama = "GILBERT NAIFATIN",
+                            OrangTuaId = 69,
+                            TanggalLahir = new DateOnly(2021, 9, 26),
+                            TinggiBadanWaktuLahir = 50.0
+                        },
+                        new
+                        {
+                            NIK = "5306613103226645",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "ANTONIO TRINDADE DA COSTA",
+                            OrangTuaId = 70,
+                            TanggalLahir = new DateOnly(2022, 3, 31),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306611502224363",
+                            BeratBadanWaktuLahir = 2.5,
+                            JenisKelamin = 0,
+                            Nama = "DAFA UKAT",
+                            OrangTuaId = 71,
+                            TanggalLahir = new DateOnly(2022, 2, 15),
+                            TinggiBadanWaktuLahir = 49.0
+                        },
+                        new
+                        {
+                            NIK = "5306612010213287",
+                            BeratBadanWaktuLahir = 2.7999999999999998,
+                            JenisKelamin = 0,
+                            Nama = "EDWARD F. C. LOE",
+                            OrangTuaId = 72,
+                            TanggalLahir = new DateOnly(2021, 10, 20),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306612907215730",
+                            BeratBadanWaktuLahir = 3.1000000000000001,
+                            JenisKelamin = 0,
+                            Nama = "JESON UKAT",
+                            OrangTuaId = 73,
+                            TanggalLahir = new DateOnly(2021, 7, 29),
+                            TinggiBadanWaktuLahir = 50.0
                         });
                 });
 
@@ -474,71 +604,6 @@ namespace StatusGizi.Infrastructure.Migrations
                         {
                             Id = 4,
                             Nama = "Umanen"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Nama = "Bangka Kuleng"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Nama = "Bangka Leleng"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Nama = "Bangka Pau"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Nama = "Bea Waek"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Nama = "Compang Wesang"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            Nama = "Golo Lobos"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            Nama = "Golo Nderu"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            Nama = "Golo Rengket"
-                        },
-                        new
-                        {
-                            Id = 13,
-                            Nama = "Gurung Turi"
-                        },
-                        new
-                        {
-                            Id = 14,
-                            Nama = "Mando Sawu"
-                        },
-                        new
-                        {
-                            Id = 15,
-                            Nama = "Nggalak Leleng"
-                        },
-                        new
-                        {
-                            Id = 16,
-                            Nama = "Pocolia"
-                        },
-                        new
-                        {
-                            Id = 17,
-                            Nama = "Satar Tesem"
                         });
                 });
 
@@ -915,14 +980,122 @@ namespace StatusGizi.Infrastructure.Migrations
                         new
                         {
                             Id = 59,
-                            DesaKelurahanId = 14,
-                            Nama = "BONEFASIUS KEOR"
+                            DesaKelurahanId = 3,
+                            Nama = "YASINTUS NAHAK"
                         },
                         new
                         {
                             Id = 60,
-                            DesaKelurahanId = 13,
-                            Nama = "ELFRIDA NDIMUN"
+                            DesaKelurahanId = 3,
+                            Nama = "SUSAN NAES"
+                        },
+                        new
+                        {
+                            Id = 61,
+                            DesaKelurahanId = 4,
+                            Nama = "DIONISIUS MAU"
+                        },
+                        new
+                        {
+                            Id = 62,
+                            DesaKelurahanId = 4,
+                            Nama = "AGUSTINO DE. J"
+                        },
+                        new
+                        {
+                            Id = 63,
+                            DesaKelurahanId = 4,
+                            Nama = "YASINTUS KOFI"
+                        },
+                        new
+                        {
+                            Id = 64,
+                            DesaKelurahanId = 4,
+                            Nama = "I PUTU DEDI SETIAWAN"
+                        },
+                        new
+                        {
+                            Id = 65,
+                            DesaKelurahanId = 4,
+                            Nama = "FLORA"
+                        },
+                        new
+                        {
+                            Id = 66,
+                            DesaKelurahanId = 4,
+                            Nama = "MUHAMMAD ISA F USI"
+                        },
+                        new
+                        {
+                            Id = 67,
+                            DesaKelurahanId = 4,
+                            Nama = "FRANSISKUS PONGKI SERAN"
+                        },
+                        new
+                        {
+                            Id = 68,
+                            DesaKelurahanId = 4,
+                            Nama = "ADELINO O. SOARES"
+                        },
+                        new
+                        {
+                            Id = 69,
+                            DesaKelurahanId = 4,
+                            Nama = "JAFRIANUS NAIFATIN"
+                        },
+                        new
+                        {
+                            Id = 70,
+                            DesaKelurahanId = 4,
+                            Nama = "FRANSISKUS TRINDADE"
+                        },
+                        new
+                        {
+                            Id = 71,
+                            DesaKelurahanId = 4,
+                            Nama = "SON UKAT"
+                        },
+                        new
+                        {
+                            Id = 72,
+                            DesaKelurahanId = 4,
+                            Nama = "LONGGINUS LOE"
+                        },
+                        new
+                        {
+                            Id = 73,
+                            DesaKelurahanId = 4,
+                            Nama = "UKAT"
+                        },
+                        new
+                        {
+                            Id = 74,
+                            DesaKelurahanId = 4,
+                            Nama = "GERFAS LOLOMSAIT"
+                        },
+                        new
+                        {
+                            Id = 75,
+                            DesaKelurahanId = 4,
+                            Nama = ""
+                        },
+                        new
+                        {
+                            Id = 76,
+                            DesaKelurahanId = 4,
+                            Nama = "YOHANES KENJAM"
+                        },
+                        new
+                        {
+                            Id = 77,
+                            DesaKelurahanId = 4,
+                            Nama = "MANUEL N"
+                        },
+                        new
+                        {
+                            Id = 78,
+                            DesaKelurahanId = 4,
+                            Nama = "SONNY LY RAU"
                         });
                 });
 
@@ -1364,24 +1537,167 @@ namespace StatusGizi.Infrastructure.Migrations
                         new
                         {
                             Id = 37,
-                            BalitaNIK = "5319024912229990",
-                            BeratBadan = 3.3999999999999999,
-                            KategoriGizi = 0,
-                            LingkarLenganAtas = 10.5,
-                            PosyanduId = 40,
-                            TanggalPengecekan = new DateOnly(2022, 12, 9),
-                            TinggiBadan = 59.899999999999999
+                            BalitaNIK = "5306612509215198",
+                            BeratBadan = 8.0999999999999996,
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 14.0,
+                            PosyanduId = 15,
+                            TanggalPengecekan = new DateOnly(2022, 8, 12),
+                            TinggiBadan = 65.299999999999997
                         },
                         new
                         {
                             Id = 38,
-                            BalitaNIK = "5319025103229974",
+                            BalitaNIK = "5306612509215198",
+                            BeratBadan = 8.0999999999999996,
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 15.0,
+                            PosyanduId = 15,
+                            TanggalPengecekan = new DateOnly(2022, 8, 12),
+                            TinggiBadan = 64.700000000000003
+                        },
+                        new
+                        {
+                            Id = 39,
+                            BalitaNIK = "5306611707228503",
+                            BeratBadan = 5.0999999999999996,
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 0.0,
+                            PosyanduId = 15,
+                            TanggalPengecekan = new DateOnly(2022, 8, 19),
+                            TinggiBadan = 54.299999999999997
+                        },
+                        new
+                        {
+                            Id = 40,
+                            BalitaNIK = "5306610306226179",
+                            BeratBadan = 5.2000000000000002,
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 15.0,
+                            PosyanduId = 11,
+                            TanggalPengecekan = new DateOnly(2022, 8, 9),
+                            TinggiBadan = 55.299999999999997
+                        },
+                        new
+                        {
+                            Id = 41,
+                            BalitaNIK = "5306612104224910",
                             BeratBadan = 6.7999999999999998,
-                            KategoriGizi = 0,
-                            LingkarLenganAtas = 13.699999999999999,
-                            PosyanduId = 36,
-                            TanggalPengecekan = new DateOnly(2022, 3, 11),
-                            TinggiBadan = 75.900000000000006
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 0.0,
+                            PosyanduId = 17,
+                            TanggalPengecekan = new DateOnly(2022, 8, 5),
+                            TinggiBadan = 60.799999999999997
+                        },
+                        new
+                        {
+                            Id = 42,
+                            BalitaNIK = "5306612303229952",
+                            BeratBadan = 8.9000000000000004,
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 19.0,
+                            PosyanduId = 9,
+                            TanggalPengecekan = new DateOnly(2022, 8, 9),
+                            TinggiBadan = 66.299999999999997
+                        },
+                        new
+                        {
+                            Id = 43,
+                            BalitaNIK = "5306611401221414",
+                            BeratBadan = 9.5,
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 17.0,
+                            PosyanduId = 2,
+                            TanggalPengecekan = new DateOnly(2022, 8, 8),
+                            TinggiBadan = 70.0
+                        },
+                        new
+                        {
+                            Id = 44,
+                            BalitaNIK = "5306610310217582",
+                            BeratBadan = 10.0,
+                            KategoriGizi = 4,
+                            LingkarLenganAtas = 14.0,
+                            PosyanduId = 18,
+                            TanggalPengecekan = new DateOnly(2022, 8, 15),
+                            TinggiBadan = 70.0
+                        },
+                        new
+                        {
+                            Id = 45,
+                            BalitaNIK = "5306610310217582",
+                            BeratBadan = 6.9000000000000004,
+                            KategoriGizi = 4,
+                            LingkarLenganAtas = 14.4,
+                            PosyanduId = 3,
+                            TanggalPengecekan = new DateOnly(2022, 8, 20),
+                            TinggiBadan = 58.0
+                        },
+                        new
+                        {
+                            Id = 46,
+                            BalitaNIK = "5306610311217965",
+                            BeratBadan = 10.0,
+                            KategoriGizi = 4,
+                            LingkarLenganAtas = 14.0,
+                            PosyanduId = 9,
+                            TanggalPengecekan = new DateOnly(2022, 8, 19),
+                            TinggiBadan = 69.0
+                        },
+                        new
+                        {
+                            Id = 47,
+                            BalitaNIK = "5306612609215986",
+                            BeratBadan = 7.2999999999999998,
+                            KategoriGizi = 1,
+                            LingkarLenganAtas = 14.0,
+                            PosyanduId = 12,
+                            TanggalPengecekan = new DateOnly(2022, 8, 18),
+                            TinggiBadan = 72.799999999999997
+                        },
+                        new
+                        {
+                            Id = 48,
+                            BalitaNIK = "5306613103226645",
+                            BeratBadan = 5.5,
+                            KategoriGizi = 1,
+                            LingkarLenganAtas = 13.0,
+                            PosyanduId = 11,
+                            TanggalPengecekan = new DateOnly(2022, 8, 9),
+                            TinggiBadan = 62.0
+                        },
+                        new
+                        {
+                            Id = 49,
+                            BalitaNIK = "5306611502224363",
+                            BeratBadan = 5.7999999999999998,
+                            KategoriGizi = 1,
+                            LingkarLenganAtas = 0.0,
+                            PosyanduId = 17,
+                            TanggalPengecekan = new DateOnly(2022, 8, 5),
+                            TinggiBadan = 63.700000000000003
+                        },
+                        new
+                        {
+                            Id = 50,
+                            BalitaNIK = "5306612010213287",
+                            BeratBadan = 6.7999999999999998,
+                            KategoriGizi = 1,
+                            LingkarLenganAtas = 13.0,
+                            PosyanduId = 18,
+                            TanggalPengecekan = new DateOnly(2022, 8, 15),
+                            TinggiBadan = 68.799999999999997
+                        },
+                        new
+                        {
+                            Id = 51,
+                            BalitaNIK = "5306612907215730",
+                            BeratBadan = 7.7999999999999998,
+                            KategoriGizi = 1,
+                            LingkarLenganAtas = 14.0,
+                            PosyanduId = 2,
+                            TanggalPengecekan = new DateOnly(2022, 8, 8),
+                            TinggiBadan = 74.0
                         });
                 });
 
@@ -1520,174 +1836,6 @@ namespace StatusGizi.Infrastructure.Migrations
                             Id = 19,
                             DesaKelurahanId = 4,
                             Nama = "Wekatimun 3"
-                        },
-                        new
-                        {
-                            Id = 20,
-                            DesaKelurahanId = 7,
-                            Nama = "Bealing 1"
-                        },
-                        new
-                        {
-                            Id = 21,
-                            DesaKelurahanId = 7,
-                            Nama = "Bealing 2"
-                        },
-                        new
-                        {
-                            Id = 22,
-                            DesaKelurahanId = 7,
-                            Nama = "Bealing 2"
-                        },
-                        new
-                        {
-                            Id = 23,
-                            DesaKelurahanId = 5,
-                            Nama = "Leci"
-                        },
-                        new
-                        {
-                            Id = 24,
-                            DesaKelurahanId = 6,
-                            Nama = "Ceka Likang"
-                        },
-                        new
-                        {
-                            Id = 25,
-                            DesaKelurahanId = 6,
-                            Nama = "Golo Tenda"
-                        },
-                        new
-                        {
-                            Id = 26,
-                            DesaKelurahanId = 8,
-                            Nama = "Carang"
-                        },
-                        new
-                        {
-                            Id = 27,
-                            DesaKelurahanId = 9,
-                            Nama = "Geleng"
-                        },
-                        new
-                        {
-                            Id = 28,
-                            DesaKelurahanId = 9,
-                            Nama = "Golo Ara"
-                        },
-                        new
-                        {
-                            Id = 29,
-                            DesaKelurahanId = 9,
-                            Nama = "Wesang"
-                        },
-                        new
-                        {
-                            Id = 30,
-                            DesaKelurahanId = 10,
-                            Nama = "Lame 2"
-                        },
-                        new
-                        {
-                            Id = 31,
-                            DesaKelurahanId = 10,
-                            Nama = "Pelus"
-                        },
-                        new
-                        {
-                            Id = 32,
-                            DesaKelurahanId = 11,
-                            Nama = "Lamba"
-                        },
-                        new
-                        {
-                            Id = 33,
-                            DesaKelurahanId = 11,
-                            Nama = "Nderu"
-                        },
-                        new
-                        {
-                            Id = 34,
-                            DesaKelurahanId = 11,
-                            Nama = "Nggari"
-                        },
-                        new
-                        {
-                            Id = 35,
-                            DesaKelurahanId = 12,
-                            Nama = "Majung"
-                        },
-                        new
-                        {
-                            Id = 36,
-                            DesaKelurahanId = 13,
-                            Nama = "Ncuang"
-                        },
-                        new
-                        {
-                            Id = 37,
-                            DesaKelurahanId = 13,
-                            Nama = "Ndueng"
-                        },
-                        new
-                        {
-                            Id = 38,
-                            DesaKelurahanId = 13,
-                            Nama = "Nengkal"
-                        },
-                        new
-                        {
-                            Id = 39,
-                            DesaKelurahanId = 13,
-                            Nama = "Pocong"
-                        },
-                        new
-                        {
-                            Id = 40,
-                            DesaKelurahanId = 14,
-                            Nama = "Benteng Dima"
-                        },
-                        new
-                        {
-                            Id = 41,
-                            DesaKelurahanId = 14,
-                            Nama = "Golo Laci"
-                        },
-                        new
-                        {
-                            Id = 42,
-                            DesaKelurahanId = 14,
-                            Nama = "Kompas"
-                        },
-                        new
-                        {
-                            Id = 43,
-                            DesaKelurahanId = 15,
-                            Nama = "Lewe"
-                        },
-                        new
-                        {
-                            Id = 44,
-                            DesaKelurahanId = 15,
-                            Nama = "Watu Cie"
-                        },
-                        new
-                        {
-                            Id = 45,
-                            DesaKelurahanId = 16,
-                            Nama = "Pandang"
-                        },
-                        new
-                        {
-                            Id = 46,
-                            DesaKelurahanId = 16,
-                            Nama = "Pongkor"
-                        },
-                        new
-                        {
-                            Id = 47,
-                            DesaKelurahanId = 17,
-                            Nama = "Moncok"
                         });
                 });
 
@@ -1732,6 +1880,778 @@ namespace StatusGizi.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TblStandarBeratMenurutBBTB");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 2.3999999999999999,
+                            SDMinus1 = 2.2000000000000002,
+                            SDMinus2 = 2.0,
+                            SDMinus3 = 1.8999999999999999,
+                            SDPlus1 = 2.7000000000000002,
+                            SDPlus2 = 3.0,
+                            SDPlus3 = 3.2999999999999998,
+                            TinggiBadan = 45.0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 2.5,
+                            SDMinus1 = 2.2999999999999998,
+                            SDMinus2 = 2.1000000000000001,
+                            SDMinus3 = 1.8999999999999999,
+                            SDPlus1 = 2.7999999999999998,
+                            SDPlus2 = 3.1000000000000001,
+                            SDPlus3 = 3.3999999999999999,
+                            TinggiBadan = 45.5
+                        },
+                        new
+                        {
+                            Id = 3,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 2.6000000000000001,
+                            SDMinus1 = 2.3999999999999999,
+                            SDMinus2 = 2.2000000000000002,
+                            SDMinus3 = 2.0,
+                            SDPlus1 = 2.8999999999999999,
+                            SDPlus2 = 3.1000000000000001,
+                            SDPlus3 = 3.5,
+                            TinggiBadan = 46.0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 2.7000000000000002,
+                            SDMinus1 = 2.5,
+                            SDMinus2 = 2.2999999999999998,
+                            SDMinus3 = 2.1000000000000001,
+                            SDPlus1 = 3.0,
+                            SDPlus2 = 3.2000000000000002,
+                            SDPlus3 = 3.6000000000000001,
+                            TinggiBadan = 46.5
+                        },
+                        new
+                        {
+                            Id = 5,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 2.7999999999999998,
+                            SDMinus1 = 2.5,
+                            SDMinus2 = 2.2999999999999998,
+                            SDMinus3 = 2.1000000000000001,
+                            SDPlus1 = 3.0,
+                            SDPlus2 = 3.2999999999999998,
+                            SDPlus3 = 3.7000000000000002,
+                            TinggiBadan = 47.0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 2.8999999999999999,
+                            SDMinus1 = 2.6000000000000001,
+                            SDMinus2 = 2.3999999999999999,
+                            SDMinus3 = 2.2000000000000002,
+                            SDPlus1 = 3.1000000000000001,
+                            SDPlus2 = 3.3999999999999999,
+                            SDPlus3 = 3.7999999999999998,
+                            TinggiBadan = 47.5
+                        },
+                        new
+                        {
+                            Id = 7,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 2.8999999999999999,
+                            SDMinus1 = 2.7000000000000002,
+                            SDMinus2 = 2.5,
+                            SDMinus3 = 2.2999999999999998,
+                            SDPlus1 = 3.2000000000000002,
+                            SDPlus2 = 3.6000000000000001,
+                            SDPlus3 = 3.8999999999999999,
+                            TinggiBadan = 48.0
+                        },
+                        new
+                        {
+                            Id = 8,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 3.0,
+                            SDMinus1 = 2.7999999999999998,
+                            SDMinus2 = 2.6000000000000001,
+                            SDMinus3 = 2.2999999999999998,
+                            SDPlus1 = 3.2000000000000002,
+                            SDPlus2 = 3.7000000000000002,
+                            SDPlus3 = 4.0,
+                            TinggiBadan = 48.5
+                        },
+                        new
+                        {
+                            Id = 9,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 3.1000000000000001,
+                            SDMinus1 = 2.8999999999999999,
+                            SDMinus2 = 2.6000000000000001,
+                            SDMinus3 = 2.3999999999999999,
+                            SDPlus1 = 3.3999999999999999,
+                            SDPlus2 = 3.7999999999999998,
+                            SDPlus3 = 4.2000000000000002,
+                            TinggiBadan = 49.0
+                        },
+                        new
+                        {
+                            Id = 10,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 3.2000000000000002,
+                            SDMinus1 = 3.0,
+                            SDMinus2 = 2.7000000000000002,
+                            SDMinus3 = 2.5,
+                            SDPlus1 = 3.5,
+                            SDPlus2 = 3.8999999999999999,
+                            SDPlus3 = 4.2999999999999998,
+                            TinggiBadan = 49.5
+                        },
+                        new
+                        {
+                            Id = 11,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 3.2999999999999998,
+                            SDMinus1 = 3.0,
+                            SDMinus2 = 2.7999999999999998,
+                            SDMinus3 = 2.6000000000000001,
+                            SDPlus1 = 3.6000000000000001,
+                            SDPlus2 = 4.0,
+                            SDPlus3 = 4.4000000000000004,
+                            TinggiBadan = 50.0
+                        },
+                        new
+                        {
+                            Id = 12,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 3.3999999999999999,
+                            SDMinus1 = 3.1000000000000001,
+                            SDMinus2 = 2.8999999999999999,
+                            SDMinus3 = 2.7000000000000002,
+                            SDPlus1 = 3.7999999999999998,
+                            SDPlus2 = 4.0999999999999996,
+                            SDPlus3 = 4.5,
+                            TinggiBadan = 50.5
+                        },
+                        new
+                        {
+                            Id = 13,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 3.5,
+                            SDMinus1 = 3.2000000000000002,
+                            SDMinus2 = 3.0,
+                            SDMinus3 = 2.7000000000000002,
+                            SDPlus1 = 3.8999999999999999,
+                            SDPlus2 = 4.2000000000000002,
+                            SDPlus3 = 4.7000000000000002,
+                            TinggiBadan = 51.0
+                        },
+                        new
+                        {
+                            Id = 14,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 3.6000000000000001,
+                            SDMinus1 = 3.2999999999999998,
+                            SDMinus2 = 3.1000000000000001,
+                            SDMinus3 = 2.7999999999999998,
+                            SDPlus1 = 4.0,
+                            SDPlus2 = 4.4000000000000004,
+                            SDPlus3 = 4.7999999999999998,
+                            TinggiBadan = 51.5
+                        },
+                        new
+                        {
+                            Id = 15,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 3.7999999999999998,
+                            SDMinus1 = 3.5,
+                            SDMinus2 = 3.2000000000000002,
+                            SDMinus3 = 2.8999999999999999,
+                            SDPlus1 = 4.0999999999999996,
+                            SDPlus2 = 4.5,
+                            SDPlus3 = 5.0,
+                            TinggiBadan = 52.0
+                        },
+                        new
+                        {
+                            Id = 16,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 3.8999999999999999,
+                            SDMinus1 = 3.6000000000000001,
+                            SDMinus2 = 3.2999999999999998,
+                            SDMinus3 = 3.0,
+                            SDPlus1 = 4.2000000000000002,
+                            SDPlus2 = 4.5999999999999996,
+                            SDPlus3 = 5.0999999999999996,
+                            TinggiBadan = 52.5
+                        },
+                        new
+                        {
+                            Id = 17,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 4.0,
+                            SDMinus1 = 3.7000000000000002,
+                            SDMinus2 = 3.3999999999999999,
+                            SDMinus3 = 3.1000000000000001,
+                            SDPlus1 = 4.4000000000000004,
+                            SDPlus2 = 4.7999999999999998,
+                            SDPlus3 = 5.2999999999999998,
+                            TinggiBadan = 53.0
+                        },
+                        new
+                        {
+                            Id = 18,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 4.0999999999999996,
+                            SDMinus1 = 3.7999999999999998,
+                            SDMinus2 = 3.5,
+                            SDMinus3 = 3.2000000000000002,
+                            SDPlus1 = 4.5,
+                            SDPlus2 = 4.9000000000000004,
+                            SDPlus3 = 5.4000000000000004,
+                            TinggiBadan = 53.5
+                        },
+                        new
+                        {
+                            Id = 19,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 4.2999999999999998,
+                            SDMinus1 = 3.8999999999999999,
+                            SDMinus2 = 3.6000000000000001,
+                            SDMinus3 = 3.2999999999999998,
+                            SDPlus1 = 4.7000000000000002,
+                            SDPlus2 = 5.0999999999999996,
+                            SDPlus3 = 5.5999999999999996,
+                            TinggiBadan = 54.0
+                        },
+                        new
+                        {
+                            Id = 20,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 4.4000000000000004,
+                            SDMinus1 = 4.0,
+                            SDMinus2 = 3.7000000000000002,
+                            SDMinus3 = 3.3999999999999999,
+                            SDPlus1 = 4.7999999999999998,
+                            SDPlus2 = 5.2999999999999998,
+                            SDPlus3 = 5.7999999999999998,
+                            TinggiBadan = 54.5
+                        },
+                        new
+                        {
+                            Id = 21,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 4.5,
+                            SDMinus1 = 4.2000000000000002,
+                            SDMinus2 = 3.7999999999999998,
+                            SDMinus3 = 3.6000000000000001,
+                            SDPlus1 = 5.0,
+                            SDPlus2 = 5.4000000000000004,
+                            SDPlus3 = 6.0,
+                            TinggiBadan = 55.0
+                        },
+                        new
+                        {
+                            Id = 22,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 4.7000000000000002,
+                            SDMinus1 = 4.2999999999999998,
+                            SDMinus2 = 4.0,
+                            SDMinus3 = 3.7000000000000002,
+                            SDPlus1 = 5.0999999999999996,
+                            SDPlus2 = 5.5999999999999996,
+                            SDPlus3 = 6.0999999999999996,
+                            TinggiBadan = 55.5
+                        },
+                        new
+                        {
+                            Id = 23,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 4.7999999999999998,
+                            SDMinus1 = 4.4000000000000004,
+                            SDMinus2 = 4.0999999999999996,
+                            SDMinus3 = 3.7999999999999998,
+                            SDPlus1 = 5.2999999999999998,
+                            SDPlus2 = 5.7999999999999998,
+                            SDPlus3 = 6.2999999999999998,
+                            TinggiBadan = 56.0
+                        },
+                        new
+                        {
+                            Id = 24,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 5.0,
+                            SDMinus1 = 4.5999999999999996,
+                            SDMinus2 = 4.2000000000000002,
+                            SDMinus3 = 3.8999999999999999,
+                            SDPlus1 = 5.4000000000000004,
+                            SDPlus2 = 5.9000000000000004,
+                            SDPlus3 = 6.5,
+                            TinggiBadan = 56.5
+                        },
+                        new
+                        {
+                            Id = 35,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 5.0999999999999996,
+                            SDMinus1 = 4.7000000000000002,
+                            SDMinus2 = 4.2999999999999998,
+                            SDMinus3 = 4.0,
+                            SDPlus1 = 5.5999999999999996,
+                            SDPlus2 = 6.0999999999999996,
+                            SDPlus3 = 6.7000000000000002,
+                            TinggiBadan = 57.0
+                        },
+                        new
+                        {
+                            Id = 36,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 5.2999999999999998,
+                            SDMinus1 = 4.9000000000000004,
+                            SDMinus2 = 4.5,
+                            SDMinus3 = 4.0999999999999996,
+                            SDPlus1 = 5.7000000000000002,
+                            SDPlus2 = 6.2999999999999998,
+                            SDPlus3 = 6.9000000000000004,
+                            TinggiBadan = 57.5
+                        },
+                        new
+                        {
+                            Id = 37,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 5.4000000000000004,
+                            SDMinus1 = 5.0,
+                            SDMinus2 = 4.5999999999999996,
+                            SDMinus3 = 4.2999999999999998,
+                            SDPlus1 = 5.9000000000000004,
+                            SDPlus2 = 6.4000000000000004,
+                            SDPlus3 = 7.0999999999999996,
+                            TinggiBadan = 58.0
+                        },
+                        new
+                        {
+                            Id = 38,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 5.5999999999999996,
+                            SDMinus1 = 5.0999999999999996,
+                            SDMinus2 = 4.7000000000000002,
+                            SDMinus3 = 4.4000000000000004,
+                            SDPlus1 = 6.0999999999999996,
+                            SDPlus2 = 6.5999999999999996,
+                            SDPlus3 = 7.2000000000000002,
+                            TinggiBadan = 58.5
+                        },
+                        new
+                        {
+                            Id = 39,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 5.7000000000000002,
+                            SDMinus1 = 5.2999999999999998,
+                            SDMinus2 = 4.7999999999999998,
+                            SDMinus3 = 4.5,
+                            SDPlus1 = 6.2000000000000002,
+                            SDPlus2 = 6.7999999999999998,
+                            SDPlus3 = 7.4000000000000004,
+                            TinggiBadan = 59.0
+                        },
+                        new
+                        {
+                            Id = 40,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 5.9000000000000004,
+                            SDMinus1 = 5.4000000000000004,
+                            SDMinus2 = 5.0,
+                            SDMinus3 = 4.5999999999999996,
+                            SDPlus1 = 6.4000000000000004,
+                            SDPlus2 = 7.0,
+                            SDPlus3 = 7.5999999999999996,
+                            TinggiBadan = 59.5
+                        },
+                        new
+                        {
+                            Id = 41,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 6.0,
+                            SDMinus1 = 5.5,
+                            SDMinus2 = 5.0999999999999996,
+                            SDMinus3 = 4.7000000000000002,
+                            SDPlus1 = 6.5,
+                            SDPlus2 = 7.0999999999999996,
+                            SDPlus3 = 7.7999999999999998,
+                            TinggiBadan = 60.0
+                        },
+                        new
+                        {
+                            Id = 42,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 6.0999999999999996,
+                            SDMinus1 = 5.5999999999999996,
+                            SDMinus2 = 5.2000000000000002,
+                            SDMinus3 = 4.7999999999999998,
+                            SDPlus1 = 6.7000000000000002,
+                            SDPlus2 = 7.2999999999999998,
+                            SDPlus3 = 8.0,
+                            TinggiBadan = 60.5
+                        },
+                        new
+                        {
+                            Id = 43,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 6.2999999999999998,
+                            SDMinus1 = 5.7999999999999998,
+                            SDMinus2 = 5.2999999999999998,
+                            SDMinus3 = 4.9000000000000004,
+                            SDPlus1 = 6.7999999999999998,
+                            SDPlus2 = 7.4000000000000004,
+                            SDPlus3 = 8.0999999999999996,
+                            TinggiBadan = 61.0
+                        },
+                        new
+                        {
+                            Id = 44,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 6.4000000000000004,
+                            SDMinus1 = 5.9000000000000004,
+                            SDMinus2 = 5.4000000000000004,
+                            SDMinus3 = 5.0,
+                            SDPlus1 = 7.0,
+                            SDPlus2 = 7.5999999999999996,
+                            SDPlus3 = 8.3000000000000007,
+                            TinggiBadan = 61.5
+                        },
+                        new
+                        {
+                            Id = 45,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 6.5,
+                            SDMinus1 = 6.0,
+                            SDMinus2 = 5.5999999999999996,
+                            SDMinus3 = 5.0999999999999996,
+                            SDPlus1 = 7.0999999999999996,
+                            SDPlus2 = 7.7000000000000002,
+                            SDPlus3 = 8.5,
+                            TinggiBadan = 62.0
+                        },
+                        new
+                        {
+                            Id = 46,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 6.7000000000000002,
+                            SDMinus1 = 6.0999999999999996,
+                            SDMinus2 = 5.7000000000000002,
+                            SDMinus3 = 5.2000000000000002,
+                            SDPlus1 = 7.2000000000000002,
+                            SDPlus2 = 7.9000000000000004,
+                            SDPlus3 = 8.5999999999999996,
+                            TinggiBadan = 62.5
+                        },
+                        new
+                        {
+                            Id = 47,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 6.7999999999999998,
+                            SDMinus1 = 6.2000000000000002,
+                            SDMinus2 = 5.7999999999999998,
+                            SDMinus3 = 5.2999999999999998,
+                            SDPlus1 = 7.4000000000000004,
+                            SDPlus2 = 8.0,
+                            SDPlus3 = 8.8000000000000007,
+                            TinggiBadan = 63.0
+                        },
+                        new
+                        {
+                            Id = 48,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 6.9000000000000004,
+                            SDMinus1 = 6.4000000000000004,
+                            SDMinus2 = 5.9000000000000004,
+                            SDMinus3 = 5.4000000000000004,
+                            SDPlus1 = 7.5,
+                            SDPlus2 = 8.1999999999999993,
+                            SDPlus3 = 8.9000000000000004,
+                            TinggiBadan = 63.5
+                        },
+                        new
+                        {
+                            Id = 49,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 7.0,
+                            SDMinus1 = 6.5,
+                            SDMinus2 = 6.0,
+                            SDMinus3 = 5.5,
+                            SDPlus1 = 7.5999999999999996,
+                            SDPlus2 = 8.3000000000000007,
+                            SDPlus3 = 9.0999999999999996,
+                            TinggiBadan = 64.0
+                        },
+                        new
+                        {
+                            Id = 50,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 7.0999999999999996,
+                            SDMinus1 = 6.5999999999999996,
+                            SDMinus2 = 6.0999999999999996,
+                            SDMinus3 = 5.5999999999999996,
+                            SDPlus1 = 7.7999999999999998,
+                            SDPlus2 = 8.5,
+                            SDPlus3 = 9.3000000000000007,
+                            TinggiBadan = 64.5
+                        },
+                        new
+                        {
+                            Id = 51,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 7.2999999999999998,
+                            SDMinus1 = 6.7000000000000002,
+                            SDMinus2 = 6.2000000000000002,
+                            SDMinus3 = 5.7000000000000002,
+                            SDPlus1 = 7.9000000000000004,
+                            SDPlus2 = 8.5999999999999996,
+                            SDPlus3 = 9.4000000000000004,
+                            TinggiBadan = 65.0
+                        },
+                        new
+                        {
+                            Id = 52,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 7.4000000000000004,
+                            SDMinus1 = 6.7999999999999998,
+                            SDMinus2 = 6.2999999999999998,
+                            SDMinus3 = 5.7999999999999998,
+                            SDPlus1 = 8.0,
+                            SDPlus2 = 8.6999999999999993,
+                            SDPlus3 = 9.5999999999999996,
+                            TinggiBadan = 65.5
+                        },
+                        new
+                        {
+                            Id = 53,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 7.5,
+                            SDMinus1 = 6.9000000000000004,
+                            SDMinus2 = 6.4000000000000004,
+                            SDMinus3 = 5.9000000000000004,
+                            SDPlus1 = 8.1999999999999993,
+                            SDPlus2 = 8.9000000000000004,
+                            SDPlus3 = 9.6999999999999993,
+                            TinggiBadan = 66.0
+                        },
+                        new
+                        {
+                            Id = 54,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 7.5999999999999996,
+                            SDMinus1 = 7.0,
+                            SDMinus2 = 6.5,
+                            SDMinus3 = 6.0,
+                            SDPlus1 = 8.3000000000000007,
+                            SDPlus2 = 9.0,
+                            SDPlus3 = 9.9000000000000004,
+                            TinggiBadan = 66.5
+                        },
+                        new
+                        {
+                            Id = 55,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 7.7000000000000002,
+                            SDMinus1 = 7.0999999999999996,
+                            SDMinus2 = 6.5999999999999996,
+                            SDMinus3 = 6.0999999999999996,
+                            SDPlus1 = 8.4000000000000004,
+                            SDPlus2 = 9.1999999999999993,
+                            SDPlus3 = 10.0,
+                            TinggiBadan = 67.0
+                        },
+                        new
+                        {
+                            Id = 56,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 7.9000000000000004,
+                            SDMinus1 = 7.2000000000000002,
+                            SDMinus2 = 6.7000000000000002,
+                            SDMinus3 = 6.2000000000000002,
+                            SDPlus1 = 8.5,
+                            SDPlus2 = 9.3000000000000007,
+                            SDPlus3 = 10.199999999999999,
+                            TinggiBadan = 67.5
+                        },
+                        new
+                        {
+                            Id = 57,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 8.0,
+                            SDMinus1 = 7.2999999999999998,
+                            SDMinus2 = 6.7999999999999998,
+                            SDMinus3 = 6.2999999999999998,
+                            SDPlus1 = 8.6999999999999993,
+                            SDPlus2 = 9.4000000000000004,
+                            SDPlus3 = 10.300000000000001,
+                            TinggiBadan = 68.0
+                        },
+                        new
+                        {
+                            Id = 58,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 8.0999999999999996,
+                            SDMinus1 = 7.5,
+                            SDMinus2 = 6.9000000000000004,
+                            SDMinus3 = 6.4000000000000004,
+                            SDPlus1 = 8.8000000000000007,
+                            SDPlus2 = 9.5999999999999996,
+                            SDPlus3 = 10.5,
+                            TinggiBadan = 68.5
+                        },
+                        new
+                        {
+                            Id = 59,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 8.1999999999999993,
+                            SDMinus1 = 7.5999999999999996,
+                            SDMinus2 = 7.0,
+                            SDMinus3 = 6.5,
+                            SDPlus1 = 8.9000000000000004,
+                            SDPlus2 = 9.6999999999999993,
+                            SDPlus3 = 10.6,
+                            TinggiBadan = 69.0
+                        },
+                        new
+                        {
+                            Id = 60,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 8.3000000000000007,
+                            SDMinus1 = 7.7000000000000002,
+                            SDMinus2 = 7.0999999999999996,
+                            SDMinus3 = 6.5999999999999996,
+                            SDPlus1 = 9.0,
+                            SDPlus2 = 9.8000000000000007,
+                            SDPlus3 = 10.800000000000001,
+                            TinggiBadan = 69.5
+                        },
+                        new
+                        {
+                            Id = 61,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 8.4000000000000004,
+                            SDMinus1 = 7.7999999999999998,
+                            SDMinus2 = 7.2000000000000002,
+                            SDMinus3 = 6.5999999999999996,
+                            SDPlus1 = 9.1999999999999993,
+                            SDPlus2 = 10.0,
+                            SDPlus3 = 10.9,
+                            TinggiBadan = 70.5
+                        },
+                        new
+                        {
+                            Id = 62,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 8.5,
+                            SDMinus1 = 7.9000000000000004,
+                            SDMinus2 = 7.2999999999999998,
+                            SDMinus3 = 6.7000000000000002,
+                            SDPlus1 = 9.3000000000000007,
+                            SDPlus2 = 10.1,
+                            SDPlus3 = 11.1,
+                            TinggiBadan = 70.5
+                        },
+                        new
+                        {
+                            Id = 63,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 8.5999999999999996,
+                            SDMinus1 = 8.0,
+                            SDMinus2 = 7.4000000000000004,
+                            SDMinus3 = 6.7999999999999998,
+                            SDPlus1 = 9.4000000000000004,
+                            SDPlus2 = 10.199999999999999,
+                            SDPlus3 = 11.199999999999999,
+                            TinggiBadan = 71.0
+                        },
+                        new
+                        {
+                            Id = 64,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 8.8000000000000007,
+                            SDMinus1 = 8.0999999999999996,
+                            SDMinus2 = 7.5,
+                            SDMinus3 = 6.9000000000000004,
+                            SDPlus1 = 9.5,
+                            SDPlus2 = 10.4,
+                            SDPlus3 = 11.300000000000001,
+                            TinggiBadan = 71.5
+                        },
+                        new
+                        {
+                            Id = 65,
+                            JenisKelamin = 0,
+                            KategoriUmur = 0,
+                            MedianBeratBadan = 8.9000000000000004,
+                            SDMinus1 = 8.1999999999999993,
+                            SDMinus2 = 7.5999999999999996,
+                            SDMinus3 = 7.0,
+                            SDPlus1 = 9.5999999999999996,
+                            SDPlus2 = 10.5,
+                            SDPlus3 = 11.5,
+                            TinggiBadan = 72.0
+                        });
                 });
 
             modelBuilder.Entity("StatusGizi.Domain.Entities.Balita", b =>

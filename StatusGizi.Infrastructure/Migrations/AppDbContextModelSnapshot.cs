@@ -415,23 +415,153 @@ namespace StatusGizi.Infrastructure.Migrations
                         },
                         new
                         {
-                            NIK = "5319024912229990",
-                            BeratBadanWaktuLahir = 3.2000000000000002,
-                            JenisKelamin = 1,
-                            Nama = "MELTIADES KEOR",
+                            NIK = "5306612509215198",
+                            BeratBadanWaktuLahir = 2.7000000000000002,
+                            JenisKelamin = 0,
+                            Nama = "VARELIO NAHAK",
                             OrangTuaId = 59,
-                            TanggalLahir = new DateOnly(2022, 12, 9),
-                            TinggiBadanWaktuLahir = 51.0
+                            TanggalLahir = new DateOnly(2021, 9, 25),
+                            TinggiBadanWaktuLahir = 49.0
                         },
                         new
                         {
-                            NIK = "5319025103229974",
+                            NIK = "5306612601222598",
                             BeratBadanWaktuLahir = 3.2000000000000002,
-                            JenisKelamin = 1,
-                            Nama = "MARIA Y.T. QUIN",
+                            JenisKelamin = 0,
+                            Nama = "GILBERT BANUNAEK",
                             OrangTuaId = 60,
-                            TanggalLahir = new DateOnly(2022, 3, 11),
-                            TinggiBadanWaktuLahir = 51.0
+                            TanggalLahir = new DateOnly(2022, 1, 26),
+                            TinggiBadanWaktuLahir = 50.0
+                        },
+                        new
+                        {
+                            NIK = "5306611707228503",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "JOAKIM JOVANO MAU",
+                            OrangTuaId = 61,
+                            TanggalLahir = new DateOnly(2022, 7, 17),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306610306226179",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "MARIA RASTIANA DE.J",
+                            OrangTuaId = 62,
+                            TanggalLahir = new DateOnly(2022, 6, 3),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306612104224910",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "APRILIO ADEN KOFI",
+                            OrangTuaId = 63,
+                            TanggalLahir = new DateOnly(2022, 4, 21),
+                            TinggiBadanWaktuLahir = 50.0
+                        },
+                        new
+                        {
+                            NIK = "5306612303229952",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "KOMANG B.D.S.P",
+                            OrangTuaId = 64,
+                            TanggalLahir = new DateOnly(2022, 3, 23),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306611401221414",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "JEREMI TURNIP",
+                            OrangTuaId = 65,
+                            TanggalLahir = new DateOnly(2022, 1, 14),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306610310217582",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "MUHAMMAD SYFID",
+                            OrangTuaId = 66,
+                            TanggalLahir = new DateOnly(2021, 10, 3),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306612405226168",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "ALBERT SERAN",
+                            OrangTuaId = 67,
+                            TanggalLahir = new DateOnly(2022, 5, 24),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306610311217965",
+                            BeratBadanWaktuLahir = 3.1000000000000001,
+                            JenisKelamin = 0,
+                            Nama = "MIKHAEL O. SOARES",
+                            OrangTuaId = 68,
+                            TanggalLahir = new DateOnly(2021, 11, 3),
+                            TinggiBadanWaktuLahir = 50.0
+                        },
+                        new
+                        {
+                            NIK = "5306612609215986",
+                            BeratBadanWaktuLahir = 3.1000000000000001,
+                            JenisKelamin = 0,
+                            Nama = "GILBERT NAIFATIN",
+                            OrangTuaId = 69,
+                            TanggalLahir = new DateOnly(2021, 9, 26),
+                            TinggiBadanWaktuLahir = 50.0
+                        },
+                        new
+                        {
+                            NIK = "5306613103226645",
+                            BeratBadanWaktuLahir = 3.0,
+                            JenisKelamin = 0,
+                            Nama = "ANTONIO TRINDADE DA COSTA",
+                            OrangTuaId = 70,
+                            TanggalLahir = new DateOnly(2022, 3, 31),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306611502224363",
+                            BeratBadanWaktuLahir = 2.5,
+                            JenisKelamin = 0,
+                            Nama = "DAFA UKAT",
+                            OrangTuaId = 71,
+                            TanggalLahir = new DateOnly(2022, 2, 15),
+                            TinggiBadanWaktuLahir = 49.0
+                        },
+                        new
+                        {
+                            NIK = "5306612010213287",
+                            BeratBadanWaktuLahir = 2.7999999999999998,
+                            JenisKelamin = 0,
+                            Nama = "EDWARD F. C. LOE",
+                            OrangTuaId = 72,
+                            TanggalLahir = new DateOnly(2021, 10, 20),
+                            TinggiBadanWaktuLahir = 48.0
+                        },
+                        new
+                        {
+                            NIK = "5306612907215730",
+                            BeratBadanWaktuLahir = 3.1000000000000001,
+                            JenisKelamin = 0,
+                            Nama = "JESON UKAT",
+                            OrangTuaId = 73,
+                            TanggalLahir = new DateOnly(2021, 7, 29),
+                            TinggiBadanWaktuLahir = 50.0
                         });
                 });
 
@@ -471,71 +601,6 @@ namespace StatusGizi.Infrastructure.Migrations
                         {
                             Id = 4,
                             Nama = "Umanen"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Nama = "Bangka Kuleng"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Nama = "Bangka Leleng"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Nama = "Bangka Pau"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Nama = "Bea Waek"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Nama = "Compang Wesang"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            Nama = "Golo Lobos"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            Nama = "Golo Nderu"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            Nama = "Golo Rengket"
-                        },
-                        new
-                        {
-                            Id = 13,
-                            Nama = "Gurung Turi"
-                        },
-                        new
-                        {
-                            Id = 14,
-                            Nama = "Mando Sawu"
-                        },
-                        new
-                        {
-                            Id = 15,
-                            Nama = "Nggalak Leleng"
-                        },
-                        new
-                        {
-                            Id = 16,
-                            Nama = "Pocolia"
-                        },
-                        new
-                        {
-                            Id = 17,
-                            Nama = "Satar Tesem"
                         });
                 });
 
@@ -912,14 +977,122 @@ namespace StatusGizi.Infrastructure.Migrations
                         new
                         {
                             Id = 59,
-                            DesaKelurahanId = 14,
-                            Nama = "BONEFASIUS KEOR"
+                            DesaKelurahanId = 3,
+                            Nama = "YASINTUS NAHAK"
                         },
                         new
                         {
                             Id = 60,
-                            DesaKelurahanId = 13,
-                            Nama = "ELFRIDA NDIMUN"
+                            DesaKelurahanId = 3,
+                            Nama = "SUSAN NAES"
+                        },
+                        new
+                        {
+                            Id = 61,
+                            DesaKelurahanId = 4,
+                            Nama = "DIONISIUS MAU"
+                        },
+                        new
+                        {
+                            Id = 62,
+                            DesaKelurahanId = 4,
+                            Nama = "AGUSTINO DE. J"
+                        },
+                        new
+                        {
+                            Id = 63,
+                            DesaKelurahanId = 4,
+                            Nama = "YASINTUS KOFI"
+                        },
+                        new
+                        {
+                            Id = 64,
+                            DesaKelurahanId = 4,
+                            Nama = "I PUTU DEDI SETIAWAN"
+                        },
+                        new
+                        {
+                            Id = 65,
+                            DesaKelurahanId = 4,
+                            Nama = "FLORA"
+                        },
+                        new
+                        {
+                            Id = 66,
+                            DesaKelurahanId = 4,
+                            Nama = "MUHAMMAD ISA F USI"
+                        },
+                        new
+                        {
+                            Id = 67,
+                            DesaKelurahanId = 4,
+                            Nama = "FRANSISKUS PONGKI SERAN"
+                        },
+                        new
+                        {
+                            Id = 68,
+                            DesaKelurahanId = 4,
+                            Nama = "ADELINO O. SOARES"
+                        },
+                        new
+                        {
+                            Id = 69,
+                            DesaKelurahanId = 4,
+                            Nama = "JAFRIANUS NAIFATIN"
+                        },
+                        new
+                        {
+                            Id = 70,
+                            DesaKelurahanId = 4,
+                            Nama = "FRANSISKUS TRINDADE"
+                        },
+                        new
+                        {
+                            Id = 71,
+                            DesaKelurahanId = 4,
+                            Nama = "SON UKAT"
+                        },
+                        new
+                        {
+                            Id = 72,
+                            DesaKelurahanId = 4,
+                            Nama = "LONGGINUS LOE"
+                        },
+                        new
+                        {
+                            Id = 73,
+                            DesaKelurahanId = 4,
+                            Nama = "UKAT"
+                        },
+                        new
+                        {
+                            Id = 74,
+                            DesaKelurahanId = 4,
+                            Nama = "GERFAS LOLOMSAIT"
+                        },
+                        new
+                        {
+                            Id = 75,
+                            DesaKelurahanId = 4,
+                            Nama = ""
+                        },
+                        new
+                        {
+                            Id = 76,
+                            DesaKelurahanId = 4,
+                            Nama = "YOHANES KENJAM"
+                        },
+                        new
+                        {
+                            Id = 77,
+                            DesaKelurahanId = 4,
+                            Nama = "MANUEL N"
+                        },
+                        new
+                        {
+                            Id = 78,
+                            DesaKelurahanId = 4,
+                            Nama = "SONNY LY RAU"
                         });
                 });
 
@@ -1361,24 +1534,167 @@ namespace StatusGizi.Infrastructure.Migrations
                         new
                         {
                             Id = 37,
-                            BalitaNIK = "5319024912229990",
-                            BeratBadan = 3.3999999999999999,
-                            KategoriGizi = 0,
-                            LingkarLenganAtas = 10.5,
-                            PosyanduId = 40,
-                            TanggalPengecekan = new DateOnly(2022, 12, 9),
-                            TinggiBadan = 59.899999999999999
+                            BalitaNIK = "5306612509215198",
+                            BeratBadan = 8.0999999999999996,
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 14.0,
+                            PosyanduId = 15,
+                            TanggalPengecekan = new DateOnly(2022, 8, 12),
+                            TinggiBadan = 65.299999999999997
                         },
                         new
                         {
                             Id = 38,
-                            BalitaNIK = "5319025103229974",
+                            BalitaNIK = "5306612509215198",
+                            BeratBadan = 8.0999999999999996,
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 15.0,
+                            PosyanduId = 15,
+                            TanggalPengecekan = new DateOnly(2022, 8, 12),
+                            TinggiBadan = 64.700000000000003
+                        },
+                        new
+                        {
+                            Id = 39,
+                            BalitaNIK = "5306611707228503",
+                            BeratBadan = 5.0999999999999996,
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 0.0,
+                            PosyanduId = 15,
+                            TanggalPengecekan = new DateOnly(2022, 8, 19),
+                            TinggiBadan = 54.299999999999997
+                        },
+                        new
+                        {
+                            Id = 40,
+                            BalitaNIK = "5306610306226179",
+                            BeratBadan = 5.2000000000000002,
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 15.0,
+                            PosyanduId = 11,
+                            TanggalPengecekan = new DateOnly(2022, 8, 9),
+                            TinggiBadan = 55.299999999999997
+                        },
+                        new
+                        {
+                            Id = 41,
+                            BalitaNIK = "5306612104224910",
                             BeratBadan = 6.7999999999999998,
-                            KategoriGizi = 0,
-                            LingkarLenganAtas = 13.699999999999999,
-                            PosyanduId = 36,
-                            TanggalPengecekan = new DateOnly(2022, 3, 11),
-                            TinggiBadan = 75.900000000000006
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 0.0,
+                            PosyanduId = 17,
+                            TanggalPengecekan = new DateOnly(2022, 8, 5),
+                            TinggiBadan = 60.799999999999997
+                        },
+                        new
+                        {
+                            Id = 42,
+                            BalitaNIK = "5306612303229952",
+                            BeratBadan = 8.9000000000000004,
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 19.0,
+                            PosyanduId = 9,
+                            TanggalPengecekan = new DateOnly(2022, 8, 9),
+                            TinggiBadan = 66.299999999999997
+                        },
+                        new
+                        {
+                            Id = 43,
+                            BalitaNIK = "5306611401221414",
+                            BeratBadan = 9.5,
+                            KategoriGizi = 3,
+                            LingkarLenganAtas = 17.0,
+                            PosyanduId = 2,
+                            TanggalPengecekan = new DateOnly(2022, 8, 8),
+                            TinggiBadan = 70.0
+                        },
+                        new
+                        {
+                            Id = 44,
+                            BalitaNIK = "5306610310217582",
+                            BeratBadan = 10.0,
+                            KategoriGizi = 4,
+                            LingkarLenganAtas = 14.0,
+                            PosyanduId = 18,
+                            TanggalPengecekan = new DateOnly(2022, 8, 15),
+                            TinggiBadan = 70.0
+                        },
+                        new
+                        {
+                            Id = 45,
+                            BalitaNIK = "5306610310217582",
+                            BeratBadan = 6.9000000000000004,
+                            KategoriGizi = 4,
+                            LingkarLenganAtas = 14.4,
+                            PosyanduId = 3,
+                            TanggalPengecekan = new DateOnly(2022, 8, 20),
+                            TinggiBadan = 58.0
+                        },
+                        new
+                        {
+                            Id = 46,
+                            BalitaNIK = "5306610311217965",
+                            BeratBadan = 10.0,
+                            KategoriGizi = 4,
+                            LingkarLenganAtas = 14.0,
+                            PosyanduId = 9,
+                            TanggalPengecekan = new DateOnly(2022, 8, 19),
+                            TinggiBadan = 69.0
+                        },
+                        new
+                        {
+                            Id = 47,
+                            BalitaNIK = "5306612609215986",
+                            BeratBadan = 7.2999999999999998,
+                            KategoriGizi = 1,
+                            LingkarLenganAtas = 14.0,
+                            PosyanduId = 12,
+                            TanggalPengecekan = new DateOnly(2022, 8, 18),
+                            TinggiBadan = 72.799999999999997
+                        },
+                        new
+                        {
+                            Id = 48,
+                            BalitaNIK = "5306613103226645",
+                            BeratBadan = 5.5,
+                            KategoriGizi = 1,
+                            LingkarLenganAtas = 13.0,
+                            PosyanduId = 11,
+                            TanggalPengecekan = new DateOnly(2022, 8, 9),
+                            TinggiBadan = 62.0
+                        },
+                        new
+                        {
+                            Id = 49,
+                            BalitaNIK = "5306611502224363",
+                            BeratBadan = 5.7999999999999998,
+                            KategoriGizi = 1,
+                            LingkarLenganAtas = 0.0,
+                            PosyanduId = 17,
+                            TanggalPengecekan = new DateOnly(2022, 8, 5),
+                            TinggiBadan = 63.700000000000003
+                        },
+                        new
+                        {
+                            Id = 50,
+                            BalitaNIK = "5306612010213287",
+                            BeratBadan = 6.7999999999999998,
+                            KategoriGizi = 1,
+                            LingkarLenganAtas = 13.0,
+                            PosyanduId = 18,
+                            TanggalPengecekan = new DateOnly(2022, 8, 15),
+                            TinggiBadan = 68.799999999999997
+                        },
+                        new
+                        {
+                            Id = 51,
+                            BalitaNIK = "5306612907215730",
+                            BeratBadan = 7.7999999999999998,
+                            KategoriGizi = 1,
+                            LingkarLenganAtas = 14.0,
+                            PosyanduId = 2,
+                            TanggalPengecekan = new DateOnly(2022, 8, 8),
+                            TinggiBadan = 74.0
                         });
                 });
 
@@ -1517,174 +1833,6 @@ namespace StatusGizi.Infrastructure.Migrations
                             Id = 19,
                             DesaKelurahanId = 4,
                             Nama = "Wekatimun 3"
-                        },
-                        new
-                        {
-                            Id = 20,
-                            DesaKelurahanId = 7,
-                            Nama = "Bealing 1"
-                        },
-                        new
-                        {
-                            Id = 21,
-                            DesaKelurahanId = 7,
-                            Nama = "Bealing 2"
-                        },
-                        new
-                        {
-                            Id = 22,
-                            DesaKelurahanId = 7,
-                            Nama = "Bealing 2"
-                        },
-                        new
-                        {
-                            Id = 23,
-                            DesaKelurahanId = 5,
-                            Nama = "Leci"
-                        },
-                        new
-                        {
-                            Id = 24,
-                            DesaKelurahanId = 6,
-                            Nama = "Ceka Likang"
-                        },
-                        new
-                        {
-                            Id = 25,
-                            DesaKelurahanId = 6,
-                            Nama = "Golo Tenda"
-                        },
-                        new
-                        {
-                            Id = 26,
-                            DesaKelurahanId = 8,
-                            Nama = "Carang"
-                        },
-                        new
-                        {
-                            Id = 27,
-                            DesaKelurahanId = 9,
-                            Nama = "Geleng"
-                        },
-                        new
-                        {
-                            Id = 28,
-                            DesaKelurahanId = 9,
-                            Nama = "Golo Ara"
-                        },
-                        new
-                        {
-                            Id = 29,
-                            DesaKelurahanId = 9,
-                            Nama = "Wesang"
-                        },
-                        new
-                        {
-                            Id = 30,
-                            DesaKelurahanId = 10,
-                            Nama = "Lame 2"
-                        },
-                        new
-                        {
-                            Id = 31,
-                            DesaKelurahanId = 10,
-                            Nama = "Pelus"
-                        },
-                        new
-                        {
-                            Id = 32,
-                            DesaKelurahanId = 11,
-                            Nama = "Lamba"
-                        },
-                        new
-                        {
-                            Id = 33,
-                            DesaKelurahanId = 11,
-                            Nama = "Nderu"
-                        },
-                        new
-                        {
-                            Id = 34,
-                            DesaKelurahanId = 11,
-                            Nama = "Nggari"
-                        },
-                        new
-                        {
-                            Id = 35,
-                            DesaKelurahanId = 12,
-                            Nama = "Majung"
-                        },
-                        new
-                        {
-                            Id = 36,
-                            DesaKelurahanId = 13,
-                            Nama = "Ncuang"
-                        },
-                        new
-                        {
-                            Id = 37,
-                            DesaKelurahanId = 13,
-                            Nama = "Ndueng"
-                        },
-                        new
-                        {
-                            Id = 38,
-                            DesaKelurahanId = 13,
-                            Nama = "Nengkal"
-                        },
-                        new
-                        {
-                            Id = 39,
-                            DesaKelurahanId = 13,
-                            Nama = "Pocong"
-                        },
-                        new
-                        {
-                            Id = 40,
-                            DesaKelurahanId = 14,
-                            Nama = "Benteng Dima"
-                        },
-                        new
-                        {
-                            Id = 41,
-                            DesaKelurahanId = 14,
-                            Nama = "Golo Laci"
-                        },
-                        new
-                        {
-                            Id = 42,
-                            DesaKelurahanId = 14,
-                            Nama = "Kompas"
-                        },
-                        new
-                        {
-                            Id = 43,
-                            DesaKelurahanId = 15,
-                            Nama = "Lewe"
-                        },
-                        new
-                        {
-                            Id = 44,
-                            DesaKelurahanId = 15,
-                            Nama = "Watu Cie"
-                        },
-                        new
-                        {
-                            Id = 45,
-                            DesaKelurahanId = 16,
-                            Nama = "Pandang"
-                        },
-                        new
-                        {
-                            Id = 46,
-                            DesaKelurahanId = 16,
-                            Nama = "Pongkor"
-                        },
-                        new
-                        {
-                            Id = 47,
-                            DesaKelurahanId = 17,
-                            Nama = "Moncok"
                         });
                 });
 
