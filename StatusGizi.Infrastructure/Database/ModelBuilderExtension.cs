@@ -1140,58 +1140,7 @@ public static class ModelBuilderExtension
                 BeratBadanWaktuLahir = 3.1d,
                 TinggiBadanWaktuLahir = 50d,
                 OrangTuaId = 73
-            },
-            new
-            {
-                NIK = "5306611907229365",
-                Nama = "GRACIANO LOLOMSAIT",
-                JenisKelamin = JenisKelamin.LakiLaki,
-                TanggalLahir = new DateOnly(2022, 7, 19),
-                BeratBadanWaktuLahir = 2.6d,
-                TinggiBadanWaktuLahir = 49d,
-                OrangTuaId = 74
-            },
-            new
-            {
-                NIK = "5306612807224014",
-                Nama = "AGNESIA TIARA SIN MAU",
-                JenisKelamin = JenisKelamin.LakiLaki,
-                TanggalLahir = new DateOnly(2022, 7, 28),
-                BeratBadanWaktuLahir = 2.6d,
-                TinggiBadanWaktuLahir = 45d,
-                OrangTuaId = 75
-            },
-            new
-            {
-                NIK = "5303244310870001",
-                Nama = "ALANA FERNANDES",
-                JenisKelamin = JenisKelamin.LakiLaki,
-                TanggalLahir = new DateOnly(2022, 7, 18),
-                BeratBadanWaktuLahir = 3.1d,
-                TinggiBadanWaktuLahir = 50d,
-                OrangTuaId = 76
-            },
-            new
-            {
-                NIK = "5304214606940004",
-                Nama = "ALFIAN E. N",
-                JenisKelamin = JenisKelamin.LakiLaki,
-                TanggalLahir = new DateOnly(2022, 7, 1),
-                BeratBadanWaktuLahir = 2.9d,
-                TinggiBadanWaktuLahir = 49d,
-                OrangTuaId = 77
-            },
-            new
-            {
-                NIK = "5306611706223451",
-                Nama = "GIBRAN M. LY RATU",
-                JenisKelamin = JenisKelamin.LakiLaki,
-                TanggalLahir = new DateOnly(2022, 6, 17),
-                BeratBadanWaktuLahir = 3.5d,
-                TinggiBadanWaktuLahir = 50d,
-                OrangTuaId = 78
             }
-
         );
         #endregion
 
@@ -1625,17 +1574,6 @@ public static class ModelBuilderExtension
                 LingkarLenganAtas = 0d,
                 KategoriGizi = KategoriGizi.BerpotensiBerlebih,
                 PosyanduId = 15,
-            },
-            new
-            {
-                Id = 39,
-                BalitaNIK = "5306611707228503",
-                TanggalPengecekan = new DateOnly(2022, 8, 19),
-                BeratBadan = 5.1d,
-                TinggiBadan = 54.3d,
-                LingkarLenganAtas = 0d,
-                KategoriGizi = KategoriGizi.BerpotensiBerlebih,
-                PosyanduId = 9,
             },
             new
             {
