@@ -7,4 +7,5 @@ public class Posyandu
 
     public DesaKelurahan DesaKelurahan { get; set; }
     public List<Pengecekan> DaftarPengecekan { get; set; } = [];
+    public List<KaderPosyandu> DaftarKaderPosyandu { get; set; } = [];
 }
