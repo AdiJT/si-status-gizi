@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@using StatusGizi.Web.Authentication
+@inject ISignInManager SignInManager
+
+@{
+    var user = await SignInManager.GetUser();
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -29,7 +36,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SI Status Gizi</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">       
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -43,9 +50,30 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Posyandu" asp-action="Index">Posyandu</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Balita" asp-action="Index">Balita</a>
-                        </li>
+                        @if (user is not null && user.Role == AppUserRoles.Kader)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Balita" asp-action="Index">Balita</a>
+                            </li>
+                        }
+                        @if (user is null)
+                        {
+                            <li class="nav-item ms-auto me-3">
+                                <a class="nav-link text-light btn btn-primary" asp-area="" asp-controller="Home" asp-action="Login">Masuk</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light btn btn-primary" asp-area="" asp-controller="Home" asp-action="Daftar">Daftar</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item ms-auto">
+                                <form asp-area="" asp-controller="Home" asp-action="Logout" asp-route-returnUrl="@Context.Request.Path@Context.Request.QueryString">
+                                    <button class="nav-link text-light btn btn-primary">Logout</button>
+                                </form>
+                            </li>
+                        }
+
                     </ul>
                 </div>
             </div>
@@ -70,7 +98,6 @@
     <!-- Inisisalisasi Chart.JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
     <!-- Akhir Inisisalisasi Chart.JS -->
-
     <!-- Inisisalisasi Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Akhir Inisisalisasi Chart.JS -->

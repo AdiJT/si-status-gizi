@@ -1,9 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StatusGizi.Domain.Entities;
 using StatusGizi.Domain.Enums;
 using StatusGizi.Infrastructure.Database;
-using StatusGizi.Web.Models.KelurahanController;
+using StatusGizi.Web.Models.KelurahanModels;
 using System.Data;
 
 namespace StatusGizi.Web.Controllers;
@@ -28,6 +29,7 @@ public class KelurahanController : Controller
         return View(vm);
     }
 
+    [Authorize(Roles = AppUserRoles.Kader)]
     public async Task<IActionResult> Detail(int id)
     {
         var desaKelurahan = await _appDbContext.TblDesaKelurahan

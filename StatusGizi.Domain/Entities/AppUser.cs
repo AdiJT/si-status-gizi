@@ -16,6 +16,6 @@ public class AppUser
 
 public static class AppUserRoles
 {
-    public static readonly string Kader = "Kader";
-    public static readonly string OrangTua = "OrangTua";
+    public const string Kader = "Kader";
+    public const string OrangTua = "OrangTua";
 }

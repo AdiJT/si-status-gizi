@@ -1,0 +1,60 @@
+﻿@using Microsoft.EntityFrameworkCore
+@using StatusGizi.Infrastructure.Database
+@inject AppDbContext AppDbContext
+
+@model DaftarVM
+
+@{
+    ViewData["Title"] = "Daftar";
+
+    var daftarPosyandu = await AppDbContext.TblPosyandu.ToListAsync();
+}
+
+<section class="card">
+    <div class="card-body">
+        <form asp-action="Daftar">
+            <div asp-validation-summary="ModelOnly" class="form-text text-danger"></div>
+
+            <h4 class="bold">Data Diri</h4>
+            <div class="row mb-3 mx-3">
+                <label asp-for="@Model.Nama" class="form-label"></label>
+                <input asp-for="@Model.Nama" class="form-control"/>
+                <span asp-validation-for="@Model.Nama" class="form-text text-danger"></span>
+            </div>
+
+            <div class="row mb-3 mx-3">
+                <label asp-for="@Model.PosyanduId" class="form-label"></label>
+                <select asp-for="@Model.PosyanduId" class="form-control">
+                    @foreach(var posyandu in daftarPosyandu)
+                    {
+                        <option value="@posyandu.Id">@posyandu.Nama</option>
+                    }
+                </select>
+                <span asp-validation-for="@Model.PosyanduId" class="form-text text-danger"></span>
+            </div>
+
+            <h4 class="bold">Informasi Login</h4>
+            <div class="row mb-3 mx-3">
+                <label asp-for="@Model.UserName" class="form-label"></label>
+                <input asp-for="@Model.UserName" class="form-control" />
+                <span asp-validation-for="@Model.UserName" class="form-text text-danger"></span>
+            </div>
+
+            <div class="row mb-3 mx-3">
+                <label asp-for="@Model.Password" class="form-label"></label>
+                <input asp-for="@Model.Password" type="password" class="form-control" />
+                <span asp-validation-for="@Model.Password" class="form-text text-danger"></span>
+            </div>
+
+            <div class="row mb-3 mx-3">
+                <label asp-for="@Model.KonfirmasiPassword" class="form-label"></label>
+                <input asp-for="@Model.KonfirmasiPassword" type="password" class="form-control" />
+                <span asp-validation-for="@Model.KonfirmasiPassword" class="form-text text-danger"></span>
+            </div>
+
+            <div class="row">
+                <button class="btn btn-primary" type="submit">Daftar</button>
+            </div>
+        </form>
+    </div>
+</section>

@@ -1,7 +1,11 @@
-﻿@model List<IGrouping<DesaKelurahan, Pengecekan>>
+﻿@using StatusGizi.Web.Authentication
+@inject ISignInManager SignInManager
+
+@model List<IGrouping<DesaKelurahan, Pengecekan>>
 
 @{
     ViewData["Title"] = "Kelurahan";
+    var user = await SignInManager.GetUser();
 }
 
 <style>
@@ -25,7 +29,10 @@
                         <th>@kategoriGizi.Humanize()</th>
                     }
                     <th>Sub Total</th>
-                    <th>Aksi</th>
+                    @if (user is not null && user.Role == AppUserRoles.Kader)
+                    {
+                        <th>Aksi</th>
+                    }
                 </tr>
             </thead>
             <tbody>
@@ -40,9 +47,12 @@
                         <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBerlebih)?.Count() ?? 0)</td>
                         <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.Obesitas)?.Count() ?? 0)</td>
                         <td>@(group.Count())</td>
-                        <td>
-                            <a asp-action="Detail" asp-route-id="@group.Key.Id" class="btn btn-primary">Detail</a>
-                        </td>
+                        @if (user is not null && user.Role == AppUserRoles.Kader)
+                        {
+                            <td>
+                                <a asp-action="Detail" asp-route-id="@group.Key.Id" class="btn btn-primary">Detail</a>
+                            </td>
+                        }
                     </tr>
                 }
             </tbody>
@@ -56,7 +66,10 @@
                     <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziBerlebih).Count())</td>
                     <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.Obesitas).Count())</td>
                     <td>@(Model.SelectMany(g => g.ToList()).Count())</td>
-                    <td> </td>
+                    @if (user is not null && user.Role == AppUserRoles.Kader)
+                    {
+                        <td> </td>
+                    }
                 </tr>
             </tfoot>
         </table>

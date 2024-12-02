@@ -122,7 +122,7 @@ Hasil
 {
     <div class="card">
         <div class="card-body">
-            Menurut Rule No. 1, karena Berat Badan &lt; -3 SD maka kategori gizi adalah : @KategoriGizi.GiziBuruk.Humanize()
+            Menurut Rule No. 1, karena Berat Badan &lt; -3 SD maka kategori gizi adalah : <b>@KategoriGizi.GiziBuruk.Humanize()</b>
         </div>
     </div>
 }
@@ -130,7 +130,7 @@ else if (beratBadan >= Model.StandarBeratMenurutBBTB.SDMinus3 && beratBadan < Mo
 {
     <div class="card">
         <div class="card-body">
-            Menurut Rule No. 2, karena Berat Badan -3 SD sd. &lt; -2 SD maka kategori gizi adalah : @KategoriGizi.GiziKurang.Humanize()
+            Menurut Rule No. 2, karena Berat Badan -3 SD sd. &lt; -2 SD maka kategori gizi adalah : <b>@KategoriGizi.GiziKurang.Humanize()</b>
         </div>
     </div>
 }
@@ -138,7 +138,7 @@ else if (beratBadan >= Model.StandarBeratMenurutBBTB.SDMinus2 && beratBadan <= M
 {
     <div class="card">
         <div class="card-body">
-            Menurut Rule No. 3, karena Berat Badan -2 SD sd. +1 SD maka kategori gizi adalah : @KategoriGizi.GiziBaik.Humanize()
+            Menurut Rule No. 3, karena Berat Badan -2 SD sd. +1 SD maka kategori gizi adalah : <b>@KategoriGizi.GiziBaik.Humanize()</b>
         </div>
     </div>
 }
@@ -146,7 +146,7 @@ else if (beratBadan > Model.StandarBeratMenurutBBTB.SDPlus1 && beratBadan <= Mod
 {
     <div class="card">
         <div class="card-body">
-            Menurut Rule No. 4, karena Berat Badan &gt; +1 SD sd. +2 SD maka kategori gizi adalah : @KategoriGizi.BerpotensiBerlebih.Humanize()
+            Menurut Rule No. 4, karena Berat Badan &gt; +1 SD sd. +2 SD maka kategori gizi adalah : <b>@KategoriGizi.BerpotensiBerlebih.Humanize()</b>
         </div>
     </div>
 }
@@ -154,7 +154,7 @@ else if (beratBadan > Model.StandarBeratMenurutBBTB.SDPlus2 && beratBadan <= Mod
 {
     <div class="card">
         <div class="card-body">
-            Menurut Rule No. 5, karena Berat Badan &gt; +2 SD sd. +3 SD maka kategori gizi adalah : @KategoriGizi.GiziBerlebih.Humanize()
+            Menurut Rule No. 5, karena Berat Badan &gt; +2 SD sd. +3 SD maka kategori gizi adalah : <b>@KategoriGizi.GiziBerlebih.Humanize()</b>
         </div>
     </div>
 }
@@ -162,7 +162,7 @@ else
 {
     <div class="card">
         <div class="card-body">
-            Menurut Rule No. 6, karena Berat Badan &gt; +3 SD maka kategori gizi adalah : @KategoriGizi.Obesitas.Humanize()
+            Menurut Rule No. 6, karena Berat Badan &gt; +3 SD maka kategori gizi adalah : <b>@KategoriGizi.Obesitas.Humanize()</b>
         </div>
     </div>
 }

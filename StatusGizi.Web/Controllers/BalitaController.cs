@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using StatusGizi.Domain.Entities;
 using StatusGizi.Infrastructure.Database;
 
 namespace StatusGizi.Web.Controllers;
 
+[Authorize(Roles = AppUserRoles.Kader)]
 public class BalitaController : Controller
 {
     private readonly AppDbContext _appDbContext;

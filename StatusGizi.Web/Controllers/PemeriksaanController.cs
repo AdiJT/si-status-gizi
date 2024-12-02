@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using StatusGizi.Domain.Entities;
 using StatusGizi.Domain.Enums;
 using StatusGizi.Infrastructure.Database;
-using StatusGizi.Web.Models.PemeriksaanController;
+using StatusGizi.Web.Models.PemeriksaanModels;
 
 namespace StatusGizi.Web.Controllers;
 
+[Authorize(Roles = AppUserRoles.Kader)]
 public class PemeriksaanController : Controller
 {
     private readonly AppDbContext _appDbContext;

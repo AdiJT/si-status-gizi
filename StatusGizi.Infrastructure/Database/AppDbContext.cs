@@ -23,4 +23,6 @@ public class AppDbContext : DbContext
     public DbSet<DesaKelurahan> TblDesaKelurahan { get; set; }
     public DbSet<Pengecekan> TblPengecekan { get; set; }
     public DbSet<StandarBeratMenurutBBTB> TblStandarBeratMenurutBBTB { get; set; }
+    public DbSet<KaderPosyandu> TblKaderPosyandu { get; set; }
+    public DbSet<AppUser> TblAppUser { get; set; }
 }

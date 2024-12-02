@@ -1,6 +1,6 @@
 ﻿using StatusGizi.Domain.Entities;
 
-namespace StatusGizi.Web.Models.KelurahanController;
+namespace StatusGizi.Web.Models.KelurahanModels;
 
 public class DetailVM
 {

@@ -1,6 +1,6 @@
 ﻿using StatusGizi.Domain.Entities;
 
-namespace StatusGizi.Web.Models.PemeriksaanController;
+namespace StatusGizi.Web.Models.PemeriksaanModels;
 
 public class IndexVM
 {
