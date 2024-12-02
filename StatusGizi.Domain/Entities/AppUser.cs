@@ -7,8 +7,8 @@ public class AppUser
     public string PasswordHash { get; set; } = string.Empty;
     public string Role { get; set; } = string.Empty;
 
-    public int OrangTuaId { get; set; }
-    public int KaderPosyanduId { get; set; }
+    public int? OrangTuaId { get; set; }
+    public int? KaderPosyanduId { get; set; }
 
     public OrangTua? OrangTua { get; set; }
     public KaderPosyandu? KaderPosyandu { get; set; }

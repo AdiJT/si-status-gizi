@@ -30,10 +30,10 @@ namespace StatusGizi.Infrastructure.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("KaderPosyanduId")
+                    b.Property<int?>("KaderPosyanduId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("OrangTuaId")
+                    b.Property<int?>("OrangTuaId")
                         .HasColumnType("integer");
 
                     b.Property<string>("PasswordHash")
@@ -57,6 +57,640 @@ namespace StatusGizi.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("AppUser");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            OrangTuaId = 1,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "valentinus"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            OrangTuaId = 2,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "julius"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            OrangTuaId = 3,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "arsiliu"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            OrangTuaId = 4,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "damianus"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            OrangTuaId = 5,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "defri"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            OrangTuaId = 6,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "julius"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            OrangTuaId = 7,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "delviana"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            OrangTuaId = 8,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "oktovianus"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            OrangTuaId = 9,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "muhamad"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            OrangTuaId = 10,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "khanifatul"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            OrangTuaId = 11,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "jasman"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            OrangTuaId = 12,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "ronald"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            OrangTuaId = 13,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "melki"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            OrangTuaId = 14,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "yuven"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            OrangTuaId = 15,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "petrus"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            OrangTuaId = 16,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "misda"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            OrangTuaId = 17,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "adrianus"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            OrangTuaId = 18,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "gaudensia"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            OrangTuaId = 19,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "nobertus"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            OrangTuaId = 20,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "martinus"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            OrangTuaId = 21,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "mustofa"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            OrangTuaId = 22,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "r."
+                        },
+                        new
+                        {
+                            Id = 23,
+                            OrangTuaId = 23,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "hendrikus"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            OrangTuaId = 24,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "ari"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            OrangTuaId = 25,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "rasid"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            OrangTuaId = 26,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "jufrianus"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            OrangTuaId = 27,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "adrianus"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            OrangTuaId = 28,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "melfianus"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            OrangTuaId = 29,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "yeremia"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            OrangTuaId = 30,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "jerikson"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            OrangTuaId = 31,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "apolinaris"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            OrangTuaId = 32,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "linus"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            OrangTuaId = 33,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "flavianus"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            OrangTuaId = 34,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "agustinus"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            OrangTuaId = 35,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "jamaria"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            OrangTuaId = 36,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "hari"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            OrangTuaId = 37,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "paulus"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            OrangTuaId = 38,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "irfan"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            OrangTuaId = 39,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "karlus"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            OrangTuaId = 40,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "jisma"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            OrangTuaId = 41,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "erlin"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            OrangTuaId = 42,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "dionisius"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            OrangTuaId = 43,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "sahrudin"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            OrangTuaId = 44,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "randi"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            OrangTuaId = 45,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "saver"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            OrangTuaId = 46,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "agapitus"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            OrangTuaId = 47,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "pedro"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            OrangTuaId = 48,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "alfred"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            OrangTuaId = 49,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "jhon"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            OrangTuaId = 50,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "aminudin"
+                        },
+                        new
+                        {
+                            Id = 51,
+                            OrangTuaId = 51,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "gerfas"
+                        },
+                        new
+                        {
+                            Id = 52,
+                            OrangTuaId = 52,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = ""
+                        },
+                        new
+                        {
+                            Id = 53,
+                            OrangTuaId = 53,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "yohanes"
+                        },
+                        new
+                        {
+                            Id = 54,
+                            OrangTuaId = 54,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "manuel"
+                        },
+                        new
+                        {
+                            Id = 55,
+                            OrangTuaId = 55,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "sonny"
+                        },
+                        new
+                        {
+                            Id = 56,
+                            OrangTuaId = 56,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "yohanes"
+                        },
+                        new
+                        {
+                            Id = 57,
+                            OrangTuaId = 57,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "stefanus"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            OrangTuaId = 58,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "maria"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            OrangTuaId = 59,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "yasintus"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            OrangTuaId = 60,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "susan"
+                        },
+                        new
+                        {
+                            Id = 61,
+                            OrangTuaId = 61,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "dionisius"
+                        },
+                        new
+                        {
+                            Id = 62,
+                            OrangTuaId = 62,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "agustino"
+                        },
+                        new
+                        {
+                            Id = 63,
+                            OrangTuaId = 63,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "yasintus"
+                        },
+                        new
+                        {
+                            Id = 64,
+                            OrangTuaId = 64,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "i"
+                        },
+                        new
+                        {
+                            Id = 65,
+                            OrangTuaId = 65,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "flora"
+                        },
+                        new
+                        {
+                            Id = 66,
+                            OrangTuaId = 66,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "muhammad"
+                        },
+                        new
+                        {
+                            Id = 67,
+                            OrangTuaId = 67,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "fransiskus"
+                        },
+                        new
+                        {
+                            Id = 68,
+                            OrangTuaId = 68,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "adelino"
+                        },
+                        new
+                        {
+                            Id = 69,
+                            OrangTuaId = 69,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "jafrianus"
+                        },
+                        new
+                        {
+                            Id = 70,
+                            OrangTuaId = 70,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "fransiskus"
+                        },
+                        new
+                        {
+                            Id = 71,
+                            OrangTuaId = 71,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "son"
+                        },
+                        new
+                        {
+                            Id = 72,
+                            OrangTuaId = 72,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "longginus"
+                        },
+                        new
+                        {
+                            Id = 73,
+                            OrangTuaId = 73,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "ukat"
+                        },
+                        new
+                        {
+                            Id = 74,
+                            OrangTuaId = 74,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "gerfas"
+                        },
+                        new
+                        {
+                            Id = 75,
+                            OrangTuaId = 75,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = ""
+                        },
+                        new
+                        {
+                            Id = 76,
+                            OrangTuaId = 76,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "yohanes"
+                        },
+                        new
+                        {
+                            Id = 77,
+                            OrangTuaId = 77,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "manuel"
+                        },
+                        new
+                        {
+                            Id = 78,
+                            OrangTuaId = 78,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "OrangTua",
+                            UserName = "sonny"
+                        },
+                        new
+                        {
+                            Id = 79,
+                            KaderPosyanduId = 1,
+                            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+                            Role = "Kader",
+                            UserName = "kader1"
+                        });
                 });
 
             modelBuilder.Entity("StatusGizi.Domain.Entities.Balita", b =>
@@ -661,6 +1295,14 @@ namespace StatusGizi.Infrastructure.Migrations
                     b.HasIndex("PosyanduId");
 
                     b.ToTable("KaderPosyandu");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nama = "Kader Posyandu 1",
+                            PosyanduId = 1
+                        });
                 });
 
             modelBuilder.Entity("StatusGizi.Domain.Entities.OrangTua", b =>
@@ -2714,15 +3356,11 @@ namespace StatusGizi.Infrastructure.Migrations
                 {
                     b.HasOne("StatusGizi.Domain.Entities.KaderPosyandu", "KaderPosyandu")
                         .WithOne("AppUser")
-                        .HasForeignKey("StatusGizi.Domain.Entities.AppUser", "KaderPosyanduId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("StatusGizi.Domain.Entities.AppUser", "KaderPosyanduId");
 
                     b.HasOne("StatusGizi.Domain.Entities.OrangTua", "OrangTua")
                         .WithOne("AppUser")
-                        .HasForeignKey("StatusGizi.Domain.Entities.AppUser", "OrangTuaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("StatusGizi.Domain.Entities.AppUser", "OrangTuaId");
 
                     b.Navigation("KaderPosyandu");
 

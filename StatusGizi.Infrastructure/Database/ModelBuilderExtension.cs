@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using StatusGizi.Domain.Entities;
 using StatusGizi.Domain.Enums;
 
@@ -156,7 +157,8 @@ public static class ModelBuilderExtension
         #endregion
 
         #region OrangTua
-        modelBuilder.Entity<OrangTua>().HasData(
+        var daftarOrangTua = new[]
+        {
             new
             {
                 Id = 1,
@@ -625,8 +627,9 @@ public static class ModelBuilderExtension
                 Nama = "SONNY LY RAU",
                 DesaKelurahanId = 4
             }
+        };
 
-        );
+        modelBuilder.Entity<OrangTua>().HasData(daftarOrangTua);
         #endregion
 
         #region Balita
@@ -1408,7 +1411,7 @@ public static class ModelBuilderExtension
                 TinggiBadan = 53.5d,
                 LingkarLenganAtas = 0d,
                 KategoriGizi = KategoriGizi.GiziBaik,
-                PosyanduId =16 ,
+                PosyanduId = 16,
             },
             new
             {
@@ -2486,6 +2489,39 @@ public static class ModelBuilderExtension
             }
 
             );
+        #endregion
+
+        #region KaderPosyandu
+        modelBuilder.Entity<KaderPosyandu>().HasData(
+            new
+            {
+                Id = 1,
+                Nama = "Kader Posyandu 1",
+                PosyanduId = 1
+            }
+        );
+        #endregion
+
+        #region AppUser
+        var daftarAppUser = daftarOrangTua.Select(o => new
+        {
+            o.Id,
+            UserName = o.Nama.ToLower().Split(' ')[0],
+            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+            Role = AppUserRoles.OrangTua,
+            OrangTuaId = o.Id
+        }).ToArray();
+
+        modelBuilder.Entity<AppUser>().HasData(daftarAppUser);
+        modelBuilder.Entity<AppUser>().HasData(new
+        {
+            Id = daftarOrangTua.Length + 1,
+            UserName = "kader1",
+            PasswordHash = "AQAAAAIAAYagAAAAECmcRXcV5KyEDpMLwLciJBfjfm57BFXhVvSiQjI7RVcix0HYbQjnJCoWh42IjSveEw==",
+            Role = AppUserRoles.Kader,
+            KaderPosyanduId = 1
+        });
+
         #endregion
 
         return modelBuilder;
