@@ -100,7 +100,8 @@ namespace StatusGizi.Web.Controllers
             {
                 UserName = vm.UserName,
                 PasswordHash = _passwordHasher.HashPassword(null, vm.Password),
-                KaderPosyandu = kader
+                KaderPosyandu = kader,
+                Role = AppUserRoles.Kader
             };
 
             _appDbContext.TblKaderPosyandu.Add(kader);
