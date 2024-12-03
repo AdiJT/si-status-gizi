@@ -4,7 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using StatusGizi.Domain.Entities;
 using StatusGizi.Domain.Enums;
 using StatusGizi.Infrastructure.Database;
+using StatusGizi.Web.Models;
 using StatusGizi.Web.Models.KelurahanModels;
+using StatusGizi.Web.Services.Contracts;
 using System.Data;
 
 namespace StatusGizi.Web.Controllers;
@@ -12,18 +14,18 @@ namespace StatusGizi.Web.Controllers;
 public class KelurahanController : Controller
 {
     private readonly AppDbContext _appDbContext;
+    private readonly IToastrNotificationService _notificationService;
 
-    public KelurahanController(AppDbContext appDbContext)
+    public KelurahanController(AppDbContext appDbContext, IToastrNotificationService notificationService)
     {
         _appDbContext = appDbContext;
+        _notificationService = notificationService;
     }
 
     public async Task<IActionResult> Index()
     {
-        var vm = await _appDbContext.TblPengecekan
-            .Include(p => p.Balita)
-            .Include(p => p.Posyandu).ThenInclude(p => p.DesaKelurahan)
-            .GroupBy(p => p.Posyandu.DesaKelurahan)
+        var vm = await _appDbContext.TblDesaKelurahan
+            .Include(p => p.DaftarPosyandu).ThenInclude(p => p.DaftarPengecekan)
             .ToListAsync();
 
         return View(vm);
@@ -50,112 +52,45 @@ public class KelurahanController : Controller
         });
     }
 
-    public IActionResult IsiData()
+    [Authorize(Roles = AppUserRoles.Kader)]
+    public IActionResult Tambah()
     {
-        return View(new IsiDataVM());
+        return View(new TambahVM());
     }
 
+    [Authorize(Roles = AppUserRoles.Kader)]
     [HttpPost]
-    public async Task<IActionResult> IsiData(IsiDataVM vm)
+    public async Task<IActionResult> Tambah(TambahVM vm)
     {
-        var orangTua = await _appDbContext.TblOrangTua.Include(o => o.DaftarBalita).FirstOrDefaultAsync(o => o.Nama == vm.OrangTua);
+        if (!ModelState.IsValid) return View(vm);
 
-        if (orangTua is null)
+        if(await _appDbContext.TblDesaKelurahan.AnyAsync(d => d.Nama == vm.Nama))
         {
-            var desaKelurahan = await _appDbContext.TblDesaKelurahan.FirstOrDefaultAsync(d => d.Id == vm.DesaKelurahanTinggalId);
-            if (desaKelurahan is null)
-            {
-                ModelState.AddModelError(nameof(IsiDataVM.DesaKelurahanTinggalId), "Desa/Kelurahan tidak ditemukan");
-                return View(vm);
-            }
-
-            orangTua = new OrangTua
-            {
-                Nama = vm.Nama,
-                DesaKelurahan = desaKelurahan
-            };
-            _appDbContext.TblOrangTua.Add(orangTua);
-        }
-
-        var balita = await _appDbContext.TblBalita.Include(b => b.OrangTua).FirstOrDefaultAsync(b => b.NIK == vm.NIK);
-        if (balita is null)
-        {
-            balita = new Balita
-            {
-                NIK = vm.NIK,
-                Nama = vm.Nama,
-                JenisKelamin = vm.JenisKelamin,
-                TanggalLahir = vm.TanggalLahir,
-                BeratBadanWaktuLahir = vm.BeratBadanLahir,
-                TinggiBadanWaktuLahir = vm.TinggiBadanLahir,
-                OrangTua = orangTua
-            };
-            _appDbContext.TblBalita.Add(balita);
-        }
-
-        var posyandu = await _appDbContext.TblPosyandu.FirstOrDefaultAsync(p => p.Id == vm.PosyanduId);
-        if (posyandu is null)
-        {
-            ModelState.AddModelError(nameof(IsiDataVM.PosyanduId), "Posyandu stidak ditemukan");
+            ModelState.AddModelError(nameof(TambahVM.Nama), $"Nama '{vm.Nama}' sudah digunakan");
             return View(vm);
         }
 
-        var pengecekan = new Pengecekan
+        var desaKelurahan = new DesaKelurahan
         {
-            Balita = balita,
-            Posyandu = posyandu,
-            LingkarLenganAtas = vm.LingkarLenganAtas,
-            BeratBadan = vm.BeratBadan,
-            TanggalPengecekan = vm.TanggalUkur,
-            TinggiBadan = vm.TinggiBadan,
+            Nama = vm.Nama
         };
-
-        var kategoriUmur = pengecekan.UsiaDalamBulan <= 24 ? KategoriUmur.BulanBawah24 : KategoriUmur.Bulan24Sampai60;
-        var standarBeratMenurutBBTB = await _appDbContext
-            .TblStandarBeratMenurutBBTB
-            .Where(s => s.JenisKelamin == pengecekan.Balita.JenisKelamin && s.KategoriUmur == kategoriUmur && s.TinggiBadan <= pengecekan.TinggiBadan)
-            .OrderBy(s => s.TinggiBadan)
-            .LastOrDefaultAsync();
-
-        if (standarBeratMenurutBBTB is null) return BadRequest();
-
-        if (pengecekan.BeratBadan < standarBeratMenurutBBTB.SDMinus3)
-        {
-            pengecekan.KategoriGizi = KategoriGizi.GiziBuruk;
-        }
-        else if (pengecekan.BeratBadan >= standarBeratMenurutBBTB.SDMinus3 && pengecekan.BeratBadan < standarBeratMenurutBBTB.SDMinus2)
-        {
-            pengecekan.KategoriGizi = KategoriGizi.GiziKurang;
-        }
-        else if (pengecekan.BeratBadan >= standarBeratMenurutBBTB.SDMinus2 && pengecekan.BeratBadan <= standarBeratMenurutBBTB.SDPlus1)
-        {
-            pengecekan.KategoriGizi = KategoriGizi.GiziBaik;
-        }
-        else if (pengecekan.BeratBadan > standarBeratMenurutBBTB.SDPlus1 && pengecekan.BeratBadan <= standarBeratMenurutBBTB.SDPlus2)
-        {
-            pengecekan.KategoriGizi = KategoriGizi.BerpotensiBerlebih;
-        }
-        else if (pengecekan.BeratBadan > standarBeratMenurutBBTB.SDPlus2 && pengecekan.BeratBadan <= standarBeratMenurutBBTB.SDPlus3)
-        {
-            pengecekan.KategoriGizi = KategoriGizi.GiziBerlebih;
-        }
-        else
-        {
-            pengecekan.KategoriGizi = KategoriGizi.Obesitas;
-        }
-
-        _appDbContext.TblPengecekan.Add(pengecekan);
-
+        _appDbContext.TblDesaKelurahan.Add(desaKelurahan);
         try
         {
             await _appDbContext.SaveChangesAsync();
         }
         catch (Exception)
         {
-            ModelState.AddModelError(string.Empty, "Terjadi error saat menyimpan data ke database");
+            ModelState.AddModelError(string.Empty, "Terjadi masalah saat mencoba menyimpan");
             return View(vm);
         }
 
-        return View(vm);
+        _notificationService.AddNotification(new ToastrNotification
+        {
+            Type = ToastrNotificationType.Success,
+            Title = "Kelurahan Berhasil DiTambahkan!"
+        });
+
+        return RedirectToAction(nameof(Detail), new { id = desaKelurahan.Id });
     }
 }

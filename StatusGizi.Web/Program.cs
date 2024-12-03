@@ -3,11 +3,14 @@ using Microsoft.AspNetCore.Identity;
 using StatusGizi.Domain.Entities;
 using StatusGizi.Infrastructure;
 using StatusGizi.Web.Authentication;
+using StatusGizi.Web.Services.Contracts;
+using StatusGizi.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddNewtonsoftJson().AddSessionStateTempDataProvider();
+builder.Services.AddSession();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -20,6 +23,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 builder.Services.AddScoped<IPasswordHasher<AppUser>, PasswordHasher<AppUser>>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped<ISignInManager, SignInManager>();
+builder.Services.AddScoped<IToastrNotificationService, ToastrNotificationService>();
 
 var app = builder.Build();
 
@@ -37,6 +41,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",

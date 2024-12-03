@@ -7,6 +7,7 @@ using StatusGizi.Infrastructure.Database;
 using StatusGizi.Web.Authentication;
 using StatusGizi.Web.Models;
 using StatusGizi.Web.Models.HomeModels;
+using StatusGizi.Web.Services.Contracts;
 using System.Diagnostics;
 
 namespace StatusGizi.Web.Controllers
@@ -17,17 +18,20 @@ namespace StatusGizi.Web.Controllers
         private readonly ISignInManager _signInManager;
         private readonly AppDbContext _appDbContext;
         private readonly IPasswordHasher<AppUser> _passwordHasher;
+        private readonly IToastrNotificationService _notificationService;
 
         public HomeController(
             ILogger<HomeController> logger,
             ISignInManager signInManager,
             AppDbContext appDbContext,
-            IPasswordHasher<AppUser> passwordHasher)
+            IPasswordHasher<AppUser> passwordHasher,
+            IToastrNotificationService notificationService)
         {
             _logger = logger;
             _signInManager = signInManager;
             _appDbContext = appDbContext;
             _passwordHasher = passwordHasher;
+            _notificationService = notificationService;
         }
 
         public IActionResult Index()
@@ -53,6 +57,12 @@ namespace StatusGizi.Web.Controllers
                 ModelState.AddModelError(string.Empty, result.Error.Message);
                 return View(vm);
             }
+
+            _notificationService.AddNotification(new ToastrNotification
+            {
+                Type = ToastrNotificationType.Success,
+                Title = $"Selamat Datang!"
+            });
 
             return Redirect(vm.ReturnUrl);
         }

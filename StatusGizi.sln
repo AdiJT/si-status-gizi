@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatusGizi.Web", "StatusGizi.Web\StatusGizi.Web.csproj", "{CB750A25-A039-40A8-9D45-E863E2A536FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatusGizi.Web", "StatusGizi.Web\StatusGizi.Web.csproj", "{CB750A25-A039-40A8-9D45-E863E2A536FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatusGizi.Domain", "StatusGizi.Domain\StatusGizi.Domain.csproj", "{D813E9CD-A63C-49F2-94A9-C4B2C913EE03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatusGizi.Domain", "StatusGizi.Domain\StatusGizi.Domain.csproj", "{D813E9CD-A63C-49F2-94A9-C4B2C913EE03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatusGizi.Infrastructure", "StatusGizi.Infrastructure\StatusGizi.Infrastructure.csproj", "{0A76D5E2-C117-472B-B158-C68B14A71F3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatusGizi.Infrastructure", "StatusGizi.Infrastructure\StatusGizi.Infrastructure.csproj", "{0A76D5E2-C117-472B-B158-C68B14A71F3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

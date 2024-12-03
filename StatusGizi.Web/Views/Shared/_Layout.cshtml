@@ -53,13 +53,20 @@
                         @if (user is not null && user.Role == AppUserRoles.Kader)
                         {
                             <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="OrangTua" asp-action="Index">Orang Tua</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Balita" asp-action="Index">Balita</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Pemeriksaan" asp-action="Tambah">Tambah Data Pemeriksaan</a>
+                            </li>
                         }
+
                         @if (user is null)
                         {
                             <li class="nav-item ms-auto me-3">
-                                <a class="nav-link text-light btn btn-primary" asp-area="" asp-controller="Home" asp-action="Login">Masuk</a>
+                                <a class="nav-link text-dark btn" asp-area="" asp-controller="Home" asp-action="Login">Masuk</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-light btn btn-primary" asp-area="" asp-controller="Home" asp-action="Daftar">Daftar</a>
@@ -126,6 +133,26 @@
             }
         );
     </script>
+
+    @{
+        var globalOptions = new ToastrOptions
+        {
+            closeButton = true,
+            progressBar = true,
+            newestOnTop = true,
+            preventDuplicates = false,
+            timeOut = (int)TimeSpan.FromSeconds(5).TotalMilliseconds,
+            extendedTimeOut = (int)TimeSpan.FromSeconds(5).TotalMilliseconds,
+            showDuration = (int)TimeSpan.FromSeconds(0.5).TotalMilliseconds,
+            hideDuration = (int)TimeSpan.FromSeconds(0.5).TotalMilliseconds,
+            showEasing = Easings.Swing,
+            hideEasing = Easings.Swing,
+            showMethod = AnimationMethods.FadeIn,
+            hideMethod = AnimationMethods.FadeOut,
+            positionClass = PositionClasses.TopRight,
+        };
+    }
+    <vc:toastr global-options=globalOptions></vc:toastr>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

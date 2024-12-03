@@ -1,0 +1,44 @@
+﻿@inject ISignInManager SignInManager
+
+@model List<OrangTua>
+
+@{
+    ViewData["Title"] = "Orang Tua";
+}
+
+<div class="row mb-3">
+    <div class="col">
+        <a asp-action="Tambah" class="btn btn-primary">Tambah</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <table class="table dataTable">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Desa/Kelurahan</th>
+                    <th>Jumlah Balita</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{ var no = 1; }
+                @foreach(var orangTua in Model)
+                {
+                    <tr>
+                        <td>@no</td>
+                        <td>@orangTua.Nama</td>
+                        <td>@orangTua.DesaKelurahan.Nama</td>
+                        <td>@orangTua.DaftarBalita.Count</td>
+                        <td>
+                            <a asp-action="Detail" asp-route-id="@orangTua.Id" class="btn btn-primary">Detail</a>
+                        </td>
+                    </tr>
+                    no++;
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

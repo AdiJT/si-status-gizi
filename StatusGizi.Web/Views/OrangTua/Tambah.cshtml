@@ -1,0 +1,43 @@
+﻿@inject AppDbContext AppDbContext
+
+@model TambahVM
+
+@{
+    ViewData["Title"] = "Tambah | Orang Tua";
+    var daftarDesaKelurahan = await AppDbContext.TblDesaKelurahan.ToListAsync();
+}
+
+<section class="d-flex h-100 w-100 justify-content-center align-items-center p-1">
+    <div class="card w-lg-75">
+        <div class="card-body">
+            <h3 class="mb-3">Tambah Orang Tua</h3>
+
+            <form asp-action="@nameof(OrangTuaController.Tambah)">
+                <div class="col">
+                    <div asp-validation-summary="ModelOnly" class="form-text text-danger"></div>
+                </div>
+
+                <div class="col-12 form-floating mb-3">
+                    <input class="form-control" asp-for="@Model.Nama" placeholder="" />
+                    <label asp-for="@Model.Nama"></label>
+                    <span asp-validation-for="@Model.Nama" class="form-text form-danger"></span>
+                </div>
+
+                <div class="col-12 mb-3">
+                    <label asp-for="DesaKelurahanId" class="form-label"></label>
+                    <select asp-for="DesaKelurahanId" class="form-control">
+                        @foreach(var desaKelurahan in daftarDesaKelurahan)
+                        {
+                            <option value="@desaKelurahan.Id">@desaKelurahan.Nama</option>
+                        }
+                    </select>
+                    <span asp-validation-for="@Model.DesaKelurahanId" class="form-text form-danger"></span>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Tambah</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

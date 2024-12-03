@@ -1,0 +1,84 @@
+﻿@inject AppDbContext AppDbContext
+
+@model TambahVM
+
+@{
+    ViewData["Title"] = "Tambah Pemeriksaan";
+
+    var daftarBalita = await AppDbContext.TblBalita.ToListAsync();
+    var daftarPosyandu = await AppDbContext.TblPosyandu.ToListAsync();
+}
+
+<h3 class="mb-3">Tambah Pemeriksaan</h3>
+
+<div class="card">
+    <div class="card-body">
+        <form asp-action="@nameof(PemeriksaanController.Tambah)" asp-controller="Pemeriksaan" asp-area="" method="post">
+            <div class="row">
+                <div asp-validation-summary="ModelOnly"></div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="@Model.NIK" class="form-label"></label>
+                    <select class="form-control" asp-for="@Model.NIK">
+                        <option value="@null">Pilih Balita...</option>
+                        @foreach (var balita in daftarBalita)
+                        {
+                            <option value="@balita.NIK">@balita.Nama (@balita.NIK)</option>
+                        }
+                    </select>
+                    <span asp-validation-for="@Model.NIK" class="form-text text-danger"></span>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="@Model.PosyanduId" class="form-label"></label>
+                    <select class="form-control" asp-for="@Model.PosyanduId">
+                        <option value="@null">Pilih Posyandu...</option>
+                        @foreach (var posyandu in daftarPosyandu)
+                        {
+                            <option value="@posyandu.Id">@posyandu.Nama</option>
+                        }
+                    </select>
+                    <span asp-validation-for="@Model.PosyanduId" class="form-text text-danger"></span>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="@Model.TanggalUkur" class="form-label"></label>
+                    <input asp-for="@Model.TanggalUkur" type="date" class="form-control" />
+                    <span asp-validation-for="@Model.TanggalUkur" class="form-text text-danger"></span>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="form-floating">
+                        <input asp-for="@Model.LingkarLenganAtas" class="form-control" placeholder="" />
+                        <label asp-for="@Model.LingkarLenganAtas"></label>
+                        <span asp-validation-for="@Model.LingkarLenganAtas" class="form-text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="form-floating">
+                        <input asp-for="@Model.TinggiBadan" class="form-control" placeholder="" />
+                        <label asp-for="@Model.TinggiBadan"></label>
+                        <span asp-validation-for="@Model.TinggiBadan" class="form-text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="form-floating">
+                        <input asp-for="@Model.BeratBadan" class="form-control" placeholder="" />
+                        <label asp-for="@Model.BeratBadan"></label>
+                        <span asp-validation-for="@Model.BeratBadan" class="form-text text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row" style="margin: 0 0;">
+                    <button class="btn btn-primary">Simpan</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

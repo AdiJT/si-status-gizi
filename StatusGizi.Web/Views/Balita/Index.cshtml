@@ -5,42 +5,52 @@
     var cultureInfo = new CultureInfo("id-ID");
 }
 
-<table class="table dataTable">
-    <thead>
-        <tr>
-            <th>No</th>
-            <th>NIK</th>
-            <th>Nama</th>
-            <th>JK</th>
-            <th>Tgl Lahir</th>
-            <th>BB Lahir</th>
-            <th>TB Lahir</th>
-            <th>Orang Tua</th>
-            <th>Desa/Kelurahan</th>
-            <th>Aksi</th>
-        </tr>
-    </thead>
-    <tbody>
-        @{
-            var no = 1;
-        }
-        @foreach (var balita in Model)
-        {
+<div class="row mb-3">
+    <div class="col">
+        <a asp-action="Tambah" class="btn btn-primary">Tambah</a>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <table class="table dataTable">
+        <thead>
             <tr>
-                <td>@no</td>
-                <td>@balita.NIK</td>
-                <td>@balita.Nama</td>
-                <td>@balita.JenisKelamin.Humanize()</td>
-                <td>@balita.TanggalLahir.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
-                <td>@balita.BeratBadanWaktuLahir Kg</td>
-                <td>@balita.TinggiBadanWaktuLahir cm</td>
-                <td>@balita.OrangTua.Nama</td>
-                <td>@balita.OrangTua.DesaKelurahan.Nama</td>
-                <td>
-                    <a asp-action="Detail" asp-route-id="@balita.NIK" class="btn btn-primary">Detail</a>
-                </td>
+                <th>No</th>
+                <th>NIK</th>
+                <th>Nama</th>
+                <th>JK</th>
+                <th>Tgl Lahir</th>
+                <th>BB Lahir</th>
+                <th>TB Lahir</th>
+                <th>Orang Tua</th>
+                <th>Desa/Kelurahan</th>
+                <th>Kategori Gizi</th>
+                <th>Aksi</th>
             </tr>
-            no++;
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @{
+                var no = 1;
+            }
+            @foreach (var balita in Model)
+            {
+                <tr>
+                    <td>@no</td>
+                    <td>@balita.NIK</td>
+                    <td>@balita.Nama</td>
+                    <td>@balita.JenisKelamin.Humanize()</td>
+                    <td>@balita.TanggalLahir.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
+                    <td>@balita.BeratBadanWaktuLahir Kg</td>
+                    <td>@balita.TinggiBadanWaktuLahir cm</td>
+                    <td>@balita.OrangTua.Nama</td>
+                    <td>@balita.OrangTua.DesaKelurahan.Nama</td>
+                    <td>@(balita.DaftarPengecekan.OrderBy(p => p.TanggalPengecekan).LastOrDefault()?.KategoriGizi.Humanize() ?? "Belum Ada")</td>
+                    <td>
+                        <a asp-action="Detail" asp-route-id="@balita.NIK" class="btn btn-primary">Detail</a>
+                    </td>
+                </tr>
+                no++;
+            }
+        </tbody>
+    </table>
+</div>

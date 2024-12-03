@@ -1,0 +1,69 @@
+﻿@model OrangTua
+
+@{
+    ViewData["Title"] = "Detail | Orang Tua";
+    var cultureInfo = new CultureInfo("id-ID");
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="mb-3">Data Orang Tua</h4>
+
+        <div class="row mx-2 mb-3">
+            <div class="col-12 mb-3">
+                <label class="form-label" asp-for="@Model.Nama">Nama</label>
+                <input class="form-control" asp-for="@Model.Nama" readonly />
+            </div>
+
+            <div class="col-12">
+                <label class="form-label" for="Desa/Kelurahan">Desa/Kelurahan</label>
+                <input class="form-control" name="Desa/Kelurahan" value="@Model.DesaKelurahan.Nama" readonly />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="mb-3">Daftar Balita</h4>
+
+        <div class="row mx-2 mb-3">
+            <table class="table dataTable">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>NIK</th>
+                        <th>Nama</th>
+                        <th>JK</th>
+                        <th>Tgl Lahir</th>
+                        <th>BB Lahir</th>
+                        <th>TB Lahir</th>
+                        <th>Kategori Gizi</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        var no = 1;
+                    }
+                    @foreach(var balita in Model.DaftarBalita)
+                    {
+                        <tr>
+                            <td>@no</td>
+                            <td>@balita.NIK</td>
+                            <td>@balita.Nama</td>
+                            <td>@balita.JenisKelamin.Humanize()</td>
+                            <td>@balita.TanggalLahir.ToString(cultureInfo.DateTimeFormat.ShortDatePattern, cultureInfo)</td>
+                            <td>@balita.BeratBadanWaktuLahir Kg</td>
+                            <td>@balita.TinggiBadanWaktuLahir cm</td>
+                            <td>@(balita.DaftarPengecekan.OrderBy(p => p.TanggalPengecekan).LastOrDefault()?.KategoriGizi.Humanize() ?? "Belum Ada")</td>
+                            <td>
+                                <a asp-action="Detail" asp-controller="Balita" asp-route-id="@balita.NIK" class="btn btn-primary">Detail</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

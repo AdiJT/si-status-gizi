@@ -11,9 +11,9 @@
         font-size: 0.7em;
     }
 
-    .btn {
-        font-size: 0.7em;
-    }
+        .table .btn {
+            font-size: 0.7em;
+        }
 </style>
 
 <h1>Posyandu : @Model.Nama</h1>
@@ -68,11 +68,11 @@
             <div class="card-body">
                 @{
                     var chartVM = new ChartVM
-                    {
-                        Label = $"Jumlah",
-                        Type = ChartType.Pie,
-                        Data = new Dictionary<string, double>(Model.DaftarPengecekan.GroupBy(p => p.KategoriGizi).OrderBy(g => g.Key).Select(g => new KeyValuePair<string, double>(g.Key.Humanize(), g.Count()))),
-                    };
+            {
+                Label = $"Jumlah",
+                Type = ChartType.Pie,
+                Data = new Dictionary<string, double>(Model.DaftarPengecekan.GroupBy(p => p.KategoriGizi).OrderBy(g => g.Key).Select(g => new KeyValuePair<string, double>(g.Key.Humanize(), g.Count()))),
+            };
                 }
                 <vc:chart chart-model=chartVM />
             </div>

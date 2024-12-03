@@ -1,0 +1,45 @@
+﻿@inject AppDbContext AppDbContext
+
+@model TambahVM
+
+@{
+    ViewData["Title"] = "Posyandu | Tambah";
+    var daftarDesaKelurahan = await AppDbContext.TblDesaKelurahan.ToListAsync();
+}
+
+<section class="d-flex flex-column justify-context-center align-items-center h-100 w-100">
+    <div class="card m-3 w-lg-75">
+        <div class="card-body">
+            <h4 class="mb-3">Tambah Posyandu</h4>
+
+            <form asp-action="@nameof(PosyanduController.Tambah)">
+                <div asp-validation-summary="ModelOnly" class="form-text text-danger"></div>
+
+                <div class="col form-floating mb-3">
+                    <input class="form-control" placeholder="" asp-for="@Model.Nama" />
+                    <label asp-for="@Model.Nama"></label>
+                    <span asp-validation-for="@Model.Nama"></span>
+                </div>
+
+                <div class="col mb-3">
+                    <label asp-for="@Model.DesaKelurahanId" class="form-label"></label>
+                    <select class="form-control" asp-for="@Model.DesaKelurahanId">
+                        @foreach (var desaKelurahan in daftarDesaKelurahan)
+                        {
+                            <option value="@desaKelurahan.Id">@desaKelurahan.Nama</option>
+                        }
+                    </select>
+                    <span asp-validation-for="@Model.DesaKelurahanId"></span>
+                </div>
+
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,7 +1,7 @@
 ﻿@using StatusGizi.Web.Authentication
 @inject ISignInManager SignInManager
 
-@model List<IGrouping<DesaKelurahan, Pengecekan>>
+@model List<DesaKelurahan>
 
 @{
     ViewData["Title"] = "Kelurahan";
@@ -13,11 +13,20 @@
         font-size: 0.6em;
     }
 
-    .btn {
-        font-size: 0.6em;
-    }
+        .table .btn {
+            font-size: 0.6em;
+        }
 </style>
 
+
+@if (user is not null && user.Role == AppUserRoles.Kader)
+{
+    <div class="row mb-3">
+        <div class="col">
+            <a asp-action="@nameof(KelurahanController.Tambah)" class="btn btn-primary">Tambah</a>
+        </div>
+    </div>
+}
 <div class="row">
     <div class="col-md-6">
         <table class="table dataTable">
@@ -36,21 +45,23 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var group in Model)
+                @foreach (var kelurahan in Model)
                 {
+                    var daftarPengecekan = kelurahan.DaftarPosyandu.SelectMany(p => p.DaftarPengecekan);
+                    var grouping = daftarPengecekan.GroupBy(p => p.KategoriGizi);
                     <tr>
-                        <th>@group.Key.Nama</th>
-                        <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBuruk)?.Count() ?? 0)</td>
-                        <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziKurang)?.Count() ?? 0)</td>
-                        <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBaik)?.Count() ?? 0)</td>
-                        <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.BerpotensiBerlebih)?.Count() ?? 0)</td>
-                        <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.GiziBerlebih)?.Count() ?? 0)</td>
-                        <td>@(group.GroupBy(p => p.KategoriGizi).FirstOrDefault(g => g.Key == KategoriGizi.Obesitas)?.Count() ?? 0)</td>
-                        <td>@(group.Count())</td>
+                        <th>@kelurahan.Nama</th>
+                        <td>@(grouping.FirstOrDefault(g => g.Key == KategoriGizi.GiziBuruk)?.Count() ?? 0)</td>
+                        <td>@(grouping.FirstOrDefault(g => g.Key == KategoriGizi.GiziKurang)?.Count() ?? 0)</td>
+                        <td>@(grouping.FirstOrDefault(g => g.Key == KategoriGizi.GiziBaik)?.Count() ?? 0)</td>
+                        <td>@(grouping.FirstOrDefault(g => g.Key == KategoriGizi.BerpotensiBerlebih)?.Count() ?? 0)</td>
+                        <td>@(grouping.FirstOrDefault(g => g.Key == KategoriGizi.GiziBerlebih)?.Count() ?? 0)</td>
+                        <td>@(grouping.FirstOrDefault(g => g.Key == KategoriGizi.Obesitas)?.Count() ?? 0)</td>
+                        <td>@(daftarPengecekan.Count())</td>
                         @if (user is not null && user.Role == AppUserRoles.Kader)
                         {
                             <td>
-                                <a asp-action="Detail" asp-route-id="@group.Key.Id" class="btn btn-primary">Detail</a>
+                                <a asp-action="Detail" asp-route-id="@kelurahan.Id" class="btn btn-primary">Detail</a>
                             </td>
                         }
                     </tr>
@@ -58,14 +69,17 @@
             </tbody>
             <tfoot>
                 <tr>
+                    @{
+                        var daftarPengecekanSemua = Model.SelectMany(k => k.DaftarPosyandu.SelectMany(p => p.DaftarPengecekan));
+                    }
                     <th>Total</th>
-                    <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziBuruk).Count())</td>
-                    <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziKurang).Count())</td>
-                    <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziBaik).Count())</td>
-                    <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.BerpotensiBerlebih).Count())</td>
-                    <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.GiziBerlebih).Count())</td>
-                    <td>@(Model.SelectMany(g => g.ToList()).Where(p => p.KategoriGizi == KategoriGizi.Obesitas).Count())</td>
-                    <td>@(Model.SelectMany(g => g.ToList()).Count())</td>
+                    <td>@(daftarPengecekanSemua.Where(p => p.KategoriGizi == KategoriGizi.GiziBuruk).Count())</td>
+                    <td>@(daftarPengecekanSemua.Where(p => p.KategoriGizi == KategoriGizi.GiziKurang).Count())</td>
+                    <td>@(daftarPengecekanSemua.Where(p => p.KategoriGizi == KategoriGizi.GiziBaik).Count())</td>
+                    <td>@(daftarPengecekanSemua.Where(p => p.KategoriGizi == KategoriGizi.BerpotensiBerlebih).Count())</td>
+                    <td>@(daftarPengecekanSemua.Where(p => p.KategoriGizi == KategoriGizi.GiziBerlebih).Count())</td>
+                    <td>@(daftarPengecekanSemua.Where(p => p.KategoriGizi == KategoriGizi.Obesitas).Count())</td>
+                    <td>@(daftarPengecekanSemua.Count())</td>
                     @if (user is not null && user.Role == AppUserRoles.Kader)
                     {
                         <td> </td>
@@ -84,7 +98,7 @@
                             Jumlah Balita @kategoriGizi.Humanize()
                         </div>
                         <div class="card-body">
-                            <vc:chart chart-model=@(new ChartVM { Label = $"Jumlah Balita {kategoriGizi.Humanize()}", Type = ChartType.Bar, Data = new Dictionary<string, double>(Model.Select(g => new KeyValuePair<string, double>(g.Key.Nama, g.Where(p => p.KategoriGizi == kategoriGizi).Count())))}) />
+                            <vc:chart chart-model=@(new ChartVM { Label = $"Jumlah Balita {kategoriGizi.Humanize()}", Type = ChartType.Bar, Data = new Dictionary<string, double>(Model.Select(k => new KeyValuePair<string, double>(k.Nama, k.DaftarPosyandu.SelectMany(p => p.DaftarPengecekan).Where(p => p.KategoriGizi == kategoriGizi).Count())))}) />
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,28 @@
-html {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*-----------------------------------*\
+  #CSS GLOBAL
+\*-----------------------------------*/
+:root {
+    --primary-color: #2c5cc5;
+    --primary-color-dark: #244a9f;
+    --container-color: #f8f8f8;
+    --text-dark: #262626;
+    --text-light: #737373;
+    --extra-light: #e5e5e5;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
   font-size: 14px;
+  font-family: Poppins !important;
 }
 
 @media (min-width: 768px) {
@@ -19,4 +42,27 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+.w-lg-75 {
+    width: 75%;
+}
+
+/* typical phone screen resolution */
+@media only screen and (max-width : 667px) {
+    .w-lg-75 {
+        width: 100%;
+    }
+}
+/* landscape orientation */
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+    .w-lg-75 {
+        width: 75%;
+    }
+}
+/* portrait orientation */
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait) {
+    .w-lg-75 {
+        width: 100%;
+    }
 }
